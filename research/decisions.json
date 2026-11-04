@@ -1,0 +1,846 @@
+[
+  {
+    "repo": "openclaw/openclaw",
+    "category": "personal",
+    "scope": "core",
+    "claim": "连接消息渠道、记忆与工具的常驻个人助手。",
+    "boundary": "后台执行依赖 gateway；各平台和工具权限需单独配置。",
+    "evidence": [
+      {
+        "url": "https://github.com/openclaw/openclaw/blob/8cb658e39b6dbe1bbe03746bf2a468a898c15da2/README.md#L18",
+        "locator": "README.md:18",
+        "note": "官方 README 文档核验；非实机测试"
+      },
+      {
+        "url": "https://docs.openclaw.ai/gateway/heartbeat",
+        "note": "官方 heartbeat 与自动化文档"
+      },
+      {
+        "url": "https://docs.openclaw.ai/gateway/heartbeat",
+        "note": "官方 heartbeat 与自动化文档"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/openclaw/openclaw/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "NousResearch/hermes-agent",
+    "category": "personal",
+    "scope": "core",
+    "claim": "带持久记忆、技能积累和跨渠道定时交付的个人 Agent。",
+    "boundary": "功能依据官方文档，未在本清单中实机测评。",
+    "evidence": [
+      {
+        "url": "https://github.com/NousResearch/hermes-agent/blob/cad0aaaf0d77ffa4899ebf0d3db8bae7a6b5147f/README.md#L27",
+        "locator": "README.md:27",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/NousResearch/hermes-agent/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "HKUDS/nanobot",
+    "category": "personal",
+    "scope": "core",
+    "claim": "轻量 Python 个人 Agent，支持文件、记忆、MCP 和长期目标。",
+    "boundary": "后台服务重启后不补跑错过的定时任务，见官方恢复说明。",
+    "evidence": [
+      {
+        "url": "https://github.com/HKUDS/nanobot/blob/ce3aa50e70f6550d7be19f73f2cfa2ba6fb66880/README.md#L63",
+        "locator": "README.md:63",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/HKUDS/nanobot/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "nanocoai/nanoclaw",
+    "category": "personal",
+    "scope": "core",
+    "claim": "通过消息渠道操作的助手，使用容器运行 Agent 并执行周期任务。",
+    "boundary": "执行环境为容器，不能据此声称拥有任意宿主桌面操作能力。",
+    "evidence": [
+      {
+        "url": "https://github.com/nanocoai/nanoclaw/blob/f7440e85f8b2a75b17fc9a08f0cc6aacf723a1e2/README.md#L65",
+        "locator": "README.md:65",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/nanocoai/nanoclaw/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "sipeed/picoclaw",
+    "category": "personal",
+    "scope": "core",
+    "claim": "面向低资源设备的 Go 个人助手，包含文件、执行和调度工具。",
+    "boundary": "低资源运行时不代表所调用模型或浏览器同样低成本。",
+    "evidence": [
+      {
+        "url": "https://github.com/sipeed/picoclaw/blob/bbf6893ca7afad27f1d00a0f5a45982a549c6ed6/README.md#L632",
+        "locator": "README.md:632",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/sipeed/picoclaw/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "zeroclaw-labs/zeroclaw",
+    "category": "personal",
+    "scope": "core",
+    "claim": "Rust Agent 运行时，支持后台服务、工具及事件触发流程。",
+    "boundary": "电脑操作范围取决于已配置的工具与执行环境。",
+    "evidence": [
+      {
+        "url": "https://github.com/zeroclaw-labs/zeroclaw/blob/683d10139bc200ab8db768fcb4515f79404846ac/README.md#L83",
+        "locator": "README.md:83",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/zeroclaw-labs/zeroclaw/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "nearai/ironclaw",
+    "category": "personal",
+    "scope": "core",
+    "claim": "Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。",
+    "boundary": "工具隔离是设计特征，不等于本清单已审计安全性。",
+    "evidence": [
+      {
+        "url": "https://github.com/nearai/ironclaw/blob/b0b999d96781516ee05e6ba961d6f3ead900da96/README.md#L95",
+        "locator": "README.md:95",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/nearai/ironclaw/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "moltis-org/moltis",
+    "category": "personal",
+    "scope": "core",
+    "claim": "集成记忆、语音、消息、浏览器和调度的个人 Agent 服务。",
+    "boundary": "需自行配置模型和所需集成。",
+    "evidence": [
+      {
+        "url": "https://github.com/moltis-org/moltis/blob/8a12400dc10551dfb9a6b568414b91a343ef2d5d/README.md#L28",
+        "locator": "README.md:28",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/moltis-org/moltis/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "khoj-ai/khoj",
+    "category": "personal",
+    "scope": "core",
+    "claim": "个人知识助手，支持文档与网络研究及定时自动化。",
+    "boundary": "以知识与信息工作为主，不是通用桌面控制器。",
+    "evidence": [
+      {
+        "url": "https://github.com/khoj-ai/khoj/blob/ae229ca894c0b80ad84664afcfdde523b5e87057/README.md#L50",
+        "locator": "README.md:50",
+        "note": "官方 README 文档核验；非实机测试"
+      },
+      {
+        "url": "https://docs.khoj.dev/features/automations",
+        "note": "官方 automations 文档"
+      },
+      {
+        "url": "https://docs.khoj.dev/features/automations",
+        "note": "官方 automations 文档"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "AGPL-3.0",
+      "source": "https://api.github.com/repos/khoj-ai/khoj/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "nano-muse/nanoMuse",
+    "category": "personal",
+    "scope": "core",
+    "claim": "跨手机与电脑的个人 Agent，结合记忆、后台目标与设备操作。",
+    "boundary": "设备能力和后台运行条件因平台而异；论文与软件各列一项。",
+    "evidence": [
+      {
+        "url": "https://github.com/nano-muse/nanoMuse/blob/57f5c5abed2d66fa19ab8fc39fd52eb365e4f14d/README.md#L80",
+        "locator": "README.md:80",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "GPL-3.0",
+      "source": "https://api.github.com/repos/nano-muse/nanoMuse/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "elie222/rakazo",
+    "category": "personal",
+    "scope": "core",
+    "claim": "可自托管的持久 Bot 与团队电脑工作空间，支持自选模型和沙箱。",
+    "boundary": "私有电脑、团队电脑与容器能力按配置区分。",
+    "evidence": [
+      {
+        "url": "https://github.com/elie222/rakazo/blob/ed67158935a95b6153aad6c9cd874c6cc8d2413d/README.md#L24",
+        "locator": "README.md:24",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/elie222/rakazo/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "AFK-surf/Comma",
+    "category": "personal",
+    "scope": "core",
+    "claim": "持续任务状态与跨设备工作结合，通过监控循环唤醒 Agent。",
+    "boundary": "云端运行环境和本地设备连接是不同组件。",
+    "evidence": [
+      {
+        "url": "https://github.com/AFK-surf/Comma/blob/66ab3dc92475005aea9afd123df36a28e4ef86ab/README.md#L64",
+        "locator": "README.md:64",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "AGPL-3.0",
+      "source": "https://api.github.com/repos/AFK-surf/Comma/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "mikeyobrien/rho",
+    "category": "personal",
+    "scope": "core",
+    "claim": "基于 Pi 的常驻个人操作助手，提供持久记忆和定期主动检查。",
+    "boundary": "是 Pi 的上层应用；Android 与桌面的运行方式不同。",
+    "evidence": [
+      {
+        "url": "https://github.com/mikeyobrien/rho/blob/073a3ee8a5dc0efd5dd32d773a760575ed38abc7/README.md#L34",
+        "locator": "README.md:34",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/mikeyobrien/rho/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "maikunari/mame",
+    "category": "personal",
+    "scope": "core",
+    "claim": "带持久记忆和消息渠道的轻量常驻助手，可编排编码 Agent。",
+    "boundary": "适合作为小型实现参考，项目维护分不代表成熟度。",
+    "evidence": [
+      {
+        "url": "https://github.com/maikunari/mame/blob/20901dd3cbdf3da11e3edcf2c8b4a8ff3b47134c/README.md#L300",
+        "locator": "README.md:300",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "unverified",
+      "label": "README 声明 MIT",
+      "source": "https://github.com/maikunari/mame/blob/20901dd3cbdf3da11e3edcf2c8b4a8ff3b47134c/README.md",
+      "note": "未找到许可证全文；候选，不进入开源推荐榜"
+    }
+  },
+  {
+    "repo": "OpenBMB/PilotDeck",
+    "category": "workspace",
+    "scope": "core",
+    "claim": "按工作空间隔离文件、记忆与技能，支持后台发现任务并交付文件。",
+    "boundary": "README 的 benchmark 属作者自报，本仓库不将其纳入跨项目能力排名。",
+    "evidence": [
+      {
+        "url": "https://github.com/OpenBMB/PilotDeck/blob/2865f05b1722c7473ea8a9dda317a92fb8c92dd8/README.md#L97",
+        "locator": "README.md:97",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "AGPL-3.0",
+      "source": "https://api.github.com/repos/OpenBMB/PilotDeck/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "agent0ai/agent-zero",
+    "category": "workspace",
+    "scope": "core",
+    "claim": "在电脑执行环境中运行工具、项目和周期监控任务的 Agent。",
+    "boundary": "以所配置的执行环境为边界，并非默认控制宿主所有资源。",
+    "evidence": [
+      {
+        "url": "https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md#L259",
+        "locator": "README.md:259",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/LICENSE",
+      "note": "根目录 LICENSE 人工核验"
+    }
+  },
+  {
+    "repo": "volcengine/MineContext",
+    "category": "workspace",
+    "scope": "adjacent",
+    "claim": "从屏幕上下文生成洞察、待办和日周总结的主动信息助手。",
+    "boundary": "主动建议有据；不据此认定它能自主操作全部应用。",
+    "evidence": [
+      {
+        "url": "https://github.com/volcengine/MineContext/blob/171c7a9ea8091e326ddcf0f10718aa1b58c83c65/README.md#L9",
+        "locator": "README.md:9",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/volcengine/MineContext/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "CopilotKit/openmuse",
+    "category": "workspace",
+    "scope": "adjacent",
+    "claim": "提供个人 Agent 界面、浏览器与工作空间的开源应用。",
+    "boundary": "后台 worker 不等于自主发起；部分连接器和动作仍在 roadmap。",
+    "evidence": [
+      {
+        "url": "https://github.com/CopilotKit/openmuse/blob/a4944f4c471d3dc93b8bfc060b5da309b5216ab2/README.md#L43",
+        "locator": "README.md:43",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/CopilotKit/openmuse/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "CopilotKit/OpenDuet",
+    "category": "workspace",
+    "scope": "core",
+    "claim": "用于构建主动工作助手的开源应用模板。",
+    "boundary": "模板需配置依赖和模型；不是已部署的托管服务。",
+    "evidence": [
+      {
+        "url": "https://github.com/CopilotKit/OpenDuet/blob/f52288fff5ccdbd3de428d573d9f026fce5ff480/README.md#L5",
+        "locator": "README.md:5",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/CopilotKit/OpenDuet/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "Fei2411/DS-Bot",
+    "category": "extensions",
+    "scope": "adjacent",
+    "claim": "把 DeepSeek Harness 扩展为有记忆、群聊和 Bot 协作的桌面应用及插件。",
+    "boundary": "首页未确认独立定时机制；不可把长期会话直接等同主动运行。",
+    "evidence": [
+      {
+        "url": "https://github.com/Fei2411/DS-Bot/blob/71d344bf193f3f18185f25de3d8e5c483046910a/README.md#L41",
+        "locator": "README.md:41",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/Fei2411/DS-Bot/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "NousResearch/Hermes-Bot-Mode",
+    "category": "extensions",
+    "scope": "historical",
+    "claim": "为 Hermes 桌面端增加命名 Bot、独立对话和周期任务面板。",
+    "boundary": "GitHub 已归档；保留为 Hermes Bot UI 与 cron 集成参考，不作为活跃插件推荐。",
+    "evidence": [
+      {
+        "url": "https://github.com/NousResearch/Hermes-Bot-Mode/blob/80fee22582b871b9765a65e2992b8b5a8211c9f8/README.md#L23",
+        "locator": "README.md:23",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/NousResearch/Hermes-Bot-Mode/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "john-walks-slow/dsh-proactive",
+    "category": "extensions",
+    "scope": "core",
+    "claim": "为 DeepSeek Harness 增加会话冷却后仍可触发的主动唤醒。",
+    "boundary": "依赖宿主运行与版本兼容；包含免打扰和通知预算配置。",
+    "evidence": [
+      {
+        "url": "https://github.com/john-walks-slow/dsh-proactive/blob/cae01f36b8aa6af2979ef138e9f8b2b62e6af0f9/README.md#L1",
+        "locator": "README.md:1",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://github.com/john-walks-slow/dsh-proactive/blob/cae01f36b8aa6af2979ef138e9f8b2b62e6af0f9/packages/dsh-proactive/LICENSE",
+      "note": "插件子目录 LICENSE 人工核验"
+    }
+  },
+  {
+    "repo": "t0dorakis/murmur",
+    "category": "extensions",
+    "scope": "core",
+    "claim": "定期启动 Claude、Codex、Pi 等 CLI 会话的轻量调度守护进程。",
+    "boundary": "消息投递和业务操作由提示词与被调用 Agent 实现。",
+    "evidence": [
+      {
+        "url": "https://github.com/t0dorakis/murmur/blob/d666df4c749c28ecb775613ecec8b12954b387e7/README.md#L10",
+        "locator": "README.md:10",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/t0dorakis/murmur/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "Hypostas/pulse",
+    "category": "extensions",
+    "scope": "core",
+    "claim": "为 OpenClaw 提供按变化、目标和紧急度唤醒的扩展守护进程。",
+    "boundary": "依赖 OpenClaw webhook；作者的自主性表述不是本仓库的实测结论。",
+    "evidence": [
+      {
+        "url": "https://github.com/Hypostas/pulse/blob/4bebd1e23bff218dde1cd0b693f901493d45f972/README.md#L5",
+        "locator": "README.md:5",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/Hypostas/pulse/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "earendil-works/pi",
+    "category": "harness",
+    "scope": "adjacent",
+    "claim": "可扩展 Agent harness，可通过 SDK、RPC 和插件构建常驻助手。",
+    "boundary": "旧地址 badlogic/pi-mono 已重定向；可结合 rho 或 murmur。",
+    "evidence": [
+      {
+        "url": "https://github.com/earendil-works/pi/blob/fcebc099565d8f30c15b321ff6a1af5f34d89400/README.md#L15",
+        "locator": "README.md:15",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/earendil-works/pi/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "deepseek-ai/deepseek-harness",
+    "category": "harness",
+    "scope": "adjacent",
+    "claim": "以插件架构提供 Agent 运行基础，适合接入 Bot 与主动唤醒插件。",
+    "boundary": "developer preview；插件兼容性需要核验。",
+    "evidence": [
+      {
+        "url": "https://github.com/deepseek-ai/deepseek-harness/blob/fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159/README.md#L7",
+        "locator": "README.md:7",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/deepseek-ai/deepseek-harness/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "letta-ai/letta-code",
+    "category": "harness",
+    "scope": "core",
+    "claim": "带持久记忆的 Agent，可通过远程环境和 channels 构成常驻助手。",
+    "boundary": "LettaBot 官方迁移目标；需要结合远程环境与调度配置。",
+    "evidence": [
+      {
+        "url": "https://github.com/letta-ai/letta-code/blob/e6d6cc27ef1111da80e919dc1cef179613894b66/README.md#L29",
+        "locator": "README.md:29",
+        "note": "官方 README 文档核验；非实机测试"
+      },
+      {
+        "url": "https://docs.letta.com/letta-code/scheduling",
+        "note": "官方 schedules 文档"
+      },
+      {
+        "url": "https://docs.letta.com/letta-code/scheduling",
+        "note": "官方 schedules 文档"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/letta-ai/letta-code/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "CursorTouch/Windows-MCP",
+    "category": "computer-use",
+    "scope": "adjacent",
+    "claim": "向 Agent 暴露 Windows 电脑操作能力的 MCP 服务。",
+    "boundary": "控制组件本身不是常驻个人助手，需外接模型、记忆与触发器。",
+    "evidence": [
+      {
+        "url": "https://github.com/CursorTouch/Windows-MCP/blob/9ab92bca2772dfb53ae3ed4feb98dac22c5b3dea/README.md#L25",
+        "locator": "README.md:25",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/CursorTouch/Windows-MCP/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "browser-use/browser-use",
+    "category": "computer-use",
+    "scope": "adjacent",
+    "claim": "为 Agent 提供网页理解和浏览器执行能力。",
+    "boundary": "主要作用于浏览器；不证明具备主动调度或整个桌面控制。",
+    "evidence": [
+      {
+        "url": "https://github.com/browser-use/browser-use/blob/b49a68e4060acb226da8f784194fef301c53a6d7/README.md#L1",
+        "locator": "README.md:1",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/browser-use/browser-use/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "bytedance/UI-TARS-desktop",
+    "category": "computer-use",
+    "scope": "adjacent",
+    "claim": "提供 GUI 与浏览器操作的 Agent 应用和相关工具。",
+    "boundary": "电脑任务自动执行与无人提示的主动发起是两个维度。",
+    "evidence": [
+      {
+        "url": "https://github.com/bytedance/UI-TARS-desktop/blob/3ac2cb8d946d78d5ff92ad17b318eaafa18c178c/README.md#L13",
+        "locator": "README.md:13",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/bytedance/UI-TARS-desktop/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "alibaba/page-agent",
+    "category": "computer-use",
+    "scope": "adjacent",
+    "claim": "在网页内用自然语言控制界面的 JavaScript Agent。",
+    "boundary": "网页控制层；不具备完整常驻助手生命周期。",
+    "evidence": [
+      {
+        "url": "https://github.com/alibaba/page-agent/blob/9eb6b6646500264d9034dd466a4270cb9fc1ef1e/README.md#L35",
+        "locator": "README.md:35",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/alibaba/page-agent/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "thunlp/ProactiveAgent",
+    "category": "research",
+    "scope": "research",
+    "claim": "主动任务预测方法及其数据与评测代码。",
+    "boundary": "研究实现，不等同开箱即用的通用个人助手。",
+    "evidence": [
+      {
+        "url": "https://github.com/thunlp/ProactiveAgent/blob/3fcf9beebe256b86871659fbb12541c41c9381b9/README.md#L2",
+        "locator": "README.md:2",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/thunlp/ProactiveAgent/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "openaiotlab/ContextAgent",
+    "category": "research",
+    "scope": "research",
+    "claim": "研究如何用开放世界感知信息判断主动服务及工具调用。",
+    "boundary": "研究数据和工具场景不能直接泛化为任意桌面。",
+    "evidence": [
+      {
+        "url": "https://github.com/openaiotlab/ContextAgent/blob/f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/README.md#L3",
+        "locator": "README.md:3",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "unverified",
+      "label": "待核验",
+      "source": "https://github.com/openaiotlab/ContextAgent/blob/f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/README.md",
+      "note": "未找到 LICENSE；仅作研究资源，不推断授权"
+    }
+  },
+  {
+    "repo": "xzf-thu/Pask",
+    "category": "research",
+    "scope": "research",
+    "claim": "研究结合长期记忆、持续上下文与延迟约束的主动辅助。",
+    "boundary": "技术报告与研究代码；实用成熟度需另行验证。",
+    "evidence": [
+      {
+        "url": "https://github.com/xzf-thu/Pask/blob/d54646c52b1555232ce4ab39103768d7f65b8267/README.md#L30",
+        "locator": "README.md:30",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/xzf-thu/Pask/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "Simplified-Reasoning/Pi-Bench",
+    "category": "research",
+    "scope": "research",
+    "claim": "评测长期多轮工作流中隐藏需求识别与主动协助。",
+    "boundary": "这是 benchmark；与 Pi harness 无关。",
+    "evidence": [
+      {
+        "url": "https://github.com/Simplified-Reasoning/Pi-Bench/blob/4f545be5d289b28ff022d2904d455007358ed3b7/README.md#L1",
+        "locator": "README.md:1",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/Simplified-Reasoning/Pi-Bench/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "tdemin16/proactivebench",
+    "category": "research",
+    "scope": "research",
+    "claim": "评测多模态模型主动获取有用信息的研究基准。",
+    "boundary": "与 ProactiveAgent 使用的同名基准区分；官方论文页标注 ECCV 2026。",
+    "evidence": [
+      {
+        "url": "https://github.com/tdemin16/proactivebench/blob/428885c9224418b544dfbdbde5307bccc58018d5/README.md#L2",
+        "locator": "README.md:2",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/tdemin16/proactivebench/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "xlang-ai/OSWorld",
+    "category": "research",
+    "scope": "research",
+    "claim": "在真实电脑环境中评测多模态 Agent 的执行能力。",
+    "boundary": "衡量任务执行，不能单独衡量主动发起与打扰时机。",
+    "evidence": [
+      {
+        "url": "https://github.com/xlang-ai/OSWorld/blob/8903ebeb0efdf74331bd7dc37ed91ccbbff22317/README.md#L294",
+        "locator": "README.md:294",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/xlang-ai/OSWorld/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "deepakn97/pare",
+    "category": "research",
+    "scope": "research",
+    "claim": "通过主动用户与有状态数字环境模拟评估主动助手。",
+    "boundary": "模拟用户不等同真实用户长期使用效果。",
+    "evidence": [
+      {
+        "url": "https://github.com/deepakn97/pare/blob/261149914a9e9dcacb12de620575c691d50e3c2e/README.md#L3",
+        "locator": "README.md:3",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/deepakn97/pare/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "ZJU-REAL/KnowU-Bench",
+    "category": "research",
+    "scope": "research",
+    "claim": "评测移动 Agent 获取偏好、主动介入与征求同意的能力。",
+    "boundary": "聚焦移动 GUI 与个人偏好，不是全平台运行时。",
+    "evidence": [
+      {
+        "url": "https://github.com/ZJU-REAL/KnowU-Bench/blob/c03a825991ede13add6631f2ed19b90755930dc6/README.md#L4",
+        "locator": "README.md:4",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/ZJU-REAL/KnowU-Bench/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  },
+  {
+    "repo": "facebookresearch/Memo-Pro-Agent",
+    "category": "research",
+    "scope": "research",
+    "claim": "研究从长期个人记忆中寻找证据来决定是否主动介入。",
+    "boundary": "论文早期名称 ProPerAgent；按同一 arXiv ID 去重。",
+    "evidence": [
+      {
+        "url": "https://github.com/facebookresearch/Memo-Pro-Agent/blob/8563e58d3106c8e0b3108bff64c04d00e1c8f095/README.md#L3",
+        "locator": "README.md:3",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "source_available",
+      "label": "CC-BY-NC-4.0",
+      "source": "https://github.com/facebookresearch/Memo-Pro-Agent/blob/8563e58d3106c8e0b3108bff64c04d00e1c8f095/LICENSE",
+      "note": "非商业许可；仅作为研究源码列出"
+    }
+  },
+  {
+    "repo": "letta-ai/lettabot",
+    "category": "historical",
+    "scope": "historical",
+    "claim": "曾提供消息渠道、记忆、heartbeat 和定时任务的个人助手。",
+    "boundary": "官方 README 已宣布不再积极维护，建议迁往 Letta Code。",
+    "evidence": [
+      {
+        "url": "https://github.com/letta-ai/lettabot/blob/99c3b5dd73550fe0a4eac2ee31b1c3229ca9e550/README.md#L8",
+        "locator": "README.md:8",
+        "note": "官方 README 文档核验；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/letta-ai/lettabot/license",
+      "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
+    }
+  }
+]

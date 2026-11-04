@@ -1,0 +1,112 @@
+{
+  "objective": "Which open source proactive personal agents, extensible harnesses, computer-use components and research papers belong in awesome_bot, and how should maintenance and popularity be ranked?",
+  "mode": "standard",
+  "rounds": [
+    {
+      "round": 1,
+      "queries": 12,
+      "executed": 12,
+      "results": 228,
+      "relevant": 196,
+      "new_sources": 220,
+      "novelty_score": 12.769,
+      "novel_terms": 12,
+      "new_source_rate": 0.965
+    },
+    {
+      "round": 2,
+      "queries": 6,
+      "executed": 6,
+      "results": 53,
+      "relevant": 42,
+      "new_sources": 42,
+      "novelty_score": 3.968,
+      "novel_terms": 12,
+      "new_source_rate": 0.792
+    },
+    {
+      "round": 3,
+      "queries": 4,
+      "executed": 4,
+      "results": 171,
+      "relevant": 147,
+      "new_sources": 138,
+      "novelty_score": null,
+      "novel_terms": 0,
+      "new_source_rate": 0.807
+    }
+  ],
+  "axes": {
+    "semantics": {
+      "queries": 1,
+      "done": 1,
+      "retained": 17,
+      "intent": "definition, mechanism, terminology boundaries"
+    },
+    "primary": {
+      "queries": 4,
+      "done": 4,
+      "retained": 110,
+      "intent": "first-party sources: official docs, specs, source code"
+    },
+    "index": {
+      "queries": 2,
+      "done": 2,
+      "retained": 117,
+      "intent": "curated maps, awesome lists and leaderboards that enumerate the field"
+    },
+    "repo": {
+      "queries": 6,
+      "done": 6,
+      "retained": 53,
+      "intent": "usable code and install surfaces: repositories, packages, registries"
+    },
+    "compare": {
+      "queries": 4,
+      "done": 4,
+      "retained": 9,
+      "intent": "alternatives, substitutes, head-to-head"
+    },
+    "data": {
+      "queries": 3,
+      "done": 3,
+      "retained": 53,
+      "intent": "quantitative evidence, benchmarks, scale"
+    },
+    "risks": {
+      "queries": 1,
+      "done": 1,
+      "retained": 13,
+      "intent": "failure modes, criticism, limits"
+    },
+    "recency": {
+      "queries": 1,
+      "done": 1,
+      "retained": 18,
+      "intent": "changes in the last 12-18 months"
+    }
+  },
+  "gaps": [],
+  "sources": 400,
+  "sources_relevant": 283,
+  "sources_duplicate": 0,
+  "sources_by_source": {
+    "web": 400
+  },
+  "evidence": 99,
+  "claims": 99,
+  "metrics": 123,
+  "coverage": {
+    "rate": 1.0,
+    "entities_total": 0,
+    "entities_covered": 0,
+    "entities_missing": [],
+    "gap": false,
+    "baseline": "research/baseline.md"
+  },
+  "pending_queries": [],
+  "verdict": "stop",
+  "reasons": [
+    "max_rounds reached (3)"
+  ]
+}

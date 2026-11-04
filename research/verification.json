@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "query q0009 returned zero results: 主动式 Agent",
+    "query q0010 returned zero results: Grok Bot OR nanoMuse OR rakazo OR PilotDeck",
+    "query q0011 returned zero results: Hermes Agent OR DeepSeek Harness OR Pi Agent",
+    "query q0017 returned zero results: OpenClaw",
+    "query q0018 returned zero results: Hermes"
+  ]
+}
