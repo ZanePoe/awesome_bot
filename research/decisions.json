@@ -396,6 +396,31 @@
     }
   },
   {
+    "repo": "CopilotKit/OpenBot",
+    "category": "workspace",
+    "scope": "core",
+    "claim": "为 AG-UI Agent 提供独立浏览器、文件工作区、工具权限、审计记录和定时任务的自托管 AI coworker 平台。",
+    "boundary": "OpenBot 负责电脑环境、策略、审计和调度；Agent 能力由接入的 AG-UI endpoint 提供，持久会话与记忆依赖 CopilotKit Intelligence。",
+    "evidence": [
+      {
+        "url": "https://github.com/CopilotKit/OpenBot/blob/5b94b6aa881fb7829abd4c931489415c28815122/README.md#L251",
+        "locator": "README.md:251",
+        "note": "官方 README 的 Routines 与运行边界；非实机测试"
+      },
+      {
+        "url": "https://github.com/CopilotKit/OpenBot/blob/5b94b6aa881fb7829abd4c931489415c28815122/README.md#L52",
+        "locator": "README.md:52",
+        "note": "官方 README 的电脑操作网关与审计机制；非实机测试"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "MIT",
+      "source": "https://api.github.com/repos/CopilotKit/OpenBot/license",
+      "note": "GitHub licenseInfo 识别；CopilotKit Intelligence 的部署与许可证条件另计"
+    }
+  },
+  {
     "repo": "Fei2411/DS-Bot",
     "category": "extensions",
     "scope": "adjacent",
