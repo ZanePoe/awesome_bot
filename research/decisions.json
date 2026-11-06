@@ -296,6 +296,36 @@
     }
   },
   {
+    "repo": "milind-soni/OpenMausBot",
+    "category": "personal",
+    "scope": "core",
+    "claim": "本地优先的多 Bot 聊天应用，每个 Bot 可使用独立模型、线程记忆、电脑和连接应用。",
+    "boundary": "Bot 运行依赖本机的 Claude、Codex、Grok 等 CLI 或兼容模型提供商；云桌面、Composio 和 enterprise 功能具有独立服务或许可边界。",
+    "evidence": [
+      {
+        "url": "https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L73",
+        "locator": "README.md:73",
+        "note": "官方 README 的 Bot、模型、记忆与电脑架构；非实机测试"
+      },
+      {
+        "url": "https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L413",
+        "locator": "README.md:413",
+        "note": "官方 README 的 schedules、webhooks 与 app events；非实机测试"
+      },
+      {
+        "url": "https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L519",
+        "locator": "README.md:519",
+        "note": "官方 README 的开源版与 enterprise 许可边界"
+      }
+    ],
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0（enterprise/ 除外）",
+      "source": "https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L519",
+      "note": "删除 enterprise/ 后为 Apache-2.0 开源版；enterprise/ 为独立 source-available 许可，生产启用需许可证密钥且禁止再分发或向第三方托管"
+    }
+  },
+  {
     "repo": "OpenBMB/PilotDeck",
     "category": "workspace",
     "scope": "core",

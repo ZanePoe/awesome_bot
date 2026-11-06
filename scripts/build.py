@@ -92,10 +92,11 @@ def validate(projects,papers,snapshot):
 
 def render(projects,papers,snapshot):
     metrics=snapshot['repositories']; as_of=snapshot['as_of']
+    reviewed_at=max(p['reviewed_at'] for p in projects)
     ordered=rank(projects,metrics,as_of)
     shortlist=[p for p in ordered if p['scope']=='core' and p['license_review']['status']=='verified' and tier(p,metrics[p['repo']],as_of)==0]
     intro=(ROOT/'docs/readme-intro.md').read_text(encoding='utf-8')
-    readme=[intro, f'\n## 当前快照\n\n收录 **{len(projects)} 个项目 / 研究代码库、{len(papers)} 篇论文**。指标采集：**{as_of}（UTC）**；功能人工核验：2026-11-05。\n\n仅依据公开文档和 GitHub 元数据，尚未开展统一运行测评。类别与功能需人工复核，指标由脚本更新。', '\n## 活跃主动项目速览\n\n以下只从已核验开放许可证、主动机制已文档化、未归档项目中选取，按维护分排序；相邻组件、待核验许可和历史项目不进入此表。']
+    readme=[intro, f'\n## 当前快照\n\n收录 **{len(projects)} 个项目 / 研究代码库、{len(papers)} 篇论文**。指标采集：**{as_of}（UTC）**；功能人工核验：{reviewed_at}。\n\n仅依据公开文档和 GitHub 元数据，尚未开展统一运行测评。类别与功能需人工复核，指标由脚本更新。', '\n## 活跃主动项目速览\n\n以下只从已核验开放许可证、主动机制已文档化、未归档项目中选取，按维护分排序；相邻组件、待核验许可和历史项目不进入此表。']
     def compact(p):
         m=metrics[p['repo']]
         return [f"[{p['name']}](https://github.com/{p['repo']})",p['trigger'],f"{m['stars']:,}",f"{m['commits_90d']:,}",m['last_commit_at'][:10],f"{score(m,as_of):.1f}"]
