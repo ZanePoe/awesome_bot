@@ -2,44 +2,44 @@
 
 全目录元数据排序；组件、研究与助手仅展示维护指标，不表示可以相互替代。所有视图先按维护状态分层，再按该视图指标降序；同分以 star、仓库名稳定排序。
 
-快照：2026-11-06T03:31:11+00:00。公式与字段口径见 [methodology.md](methodology.md)。
+快照：2026-11-06T07:57:58+00:00。公式与字段口径见 [methodology.md](methodology.md)。
 
 
 ## Star 优先
 
 | 项目 | 类别 | 维护层 | Stars | 90天提交 | 最近提交 UTC |
 | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 393,998 | 48930 | 2026-11-06 |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 273,975 | 15441 | 2026-11-04 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 260,917 | 41656 | 2026-11-06 |
-| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 120,336 | 2000 | 2026-11-05 |
-| [Browser Use](https://github.com/browser-use/browser-use) | 电脑与浏览器控制组件 | 近90天有提交 | 120,151 | 407 | 2026-10-30 |
-| [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 49,869 | 1353 | 2026-11-06 |
-| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) | 电脑与浏览器控制组件 | 近90天有提交 | 39,554 | 8 | 2026-10-09 |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 33,142 | 1085 | 2026-11-06 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 31,087 | 741 | 2026-11-05 |
-| [PicoClaw](https://github.com/sipeed/picoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 30,103 | 1 | 2026-08-19 |
-| [Page Agent](https://github.com/alibaba/page-agent) | 电脑与浏览器控制组件 | 近90天有提交 | 29,642 | 20 | 2026-09-06 |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | 工作空间与上下文助手 | 近90天有提交 | 19,756 | 540 | 2026-11-01 |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 13,593 | 8528 | 2026-11-06 |
-| [IronClaw](https://github.com/nearai/ironclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 12,713 | 261 | 2026-09-10 |
-| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | 电脑与浏览器控制组件 | 近90天有提交 | 11,150 | 118 | 2026-11-06 |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | 工作空间与上下文助手 | 近90天有提交 | 10,262 | 692 | 2026-11-06 |
-| [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,212 | 3009 | 2026-11-06 |
-| [OpenMuse](https://github.com/CopilotKit/openmuse) | 工作空间与上下文助手 | 近90天有提交 | 6,236 | 144 | 2026-10-26 |
-| [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 5,747 | 1576 | 2026-11-03 |
-| [PilotDeck](https://github.com/OpenBMB/PilotDeck) | 工作空间与上下文助手 | 近90天有提交 | 4,981 | 968 | 2026-11-05 |
-| [Letta Code](https://github.com/letta-ai/letta-code) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 3,787 | 994 | 2026-11-06 |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | 研究实现与评测代码 | 近90天有提交 | 3,251 | 190 | 2026-11-02 |
-| [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,229 | 2474 | 2026-11-05 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 394,013 | 48962 | 2026-11-06 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 274,271 | 15359 | 2026-11-04 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 260,983 | 41691 | 2026-11-06 |
+| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 120,382 | 2003 | 2026-11-06 |
+| [Browser Use](https://github.com/browser-use/browser-use) | 电脑与浏览器控制组件 | 近90天有提交 | 120,169 | 407 | 2026-10-30 |
+| [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 49,870 | 1363 | 2026-11-06 |
+| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) | 电脑与浏览器控制组件 | 近90天有提交 | 39,556 | 8 | 2026-10-09 |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 33,143 | 1103 | 2026-11-06 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 31,088 | 741 | 2026-11-05 |
+| [PicoClaw](https://github.com/sipeed/picoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 30,104 | 1 | 2026-08-19 |
+| [Page Agent](https://github.com/alibaba/page-agent) | 电脑与浏览器控制组件 | 近90天有提交 | 29,643 | 20 | 2026-09-06 |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | 工作空间与上下文助手 | 近90天有提交 | 19,764 | 540 | 2026-11-01 |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 13,912 | 8551 | 2026-11-06 |
+| [IronClaw](https://github.com/nearai/ironclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 12,714 | 257 | 2026-09-10 |
+| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | 电脑与浏览器控制组件 | 近90天有提交 | 11,159 | 118 | 2026-11-06 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | 工作空间与上下文助手 | 近90天有提交 | 10,288 | 700 | 2026-11-06 |
+| [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,229 | 3031 | 2026-11-06 |
+| [OpenMuse](https://github.com/CopilotKit/openmuse) | 工作空间与上下文助手 | 近90天有提交 | 6,247 | 144 | 2026-10-26 |
+| [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 5,814 | 1576 | 2026-11-03 |
+| [PilotDeck](https://github.com/OpenBMB/PilotDeck) | 工作空间与上下文助手 | 近90天有提交 | 4,981 | 982 | 2026-11-06 |
+| [Letta Code](https://github.com/letta-ai/letta-code) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 3,790 | 996 | 2026-11-06 |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | 研究实现与评测代码 | 近90天有提交 | 3,252 | 190 | 2026-11-02 |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,240 | 2509 | 2026-11-06 |
 | [Moltis](https://github.com/moltis-org/moltis) | 常驻个人助手与轻量运行时 | 近90天有提交 | 2,941 | 157 | 2026-10-23 |
-| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | 工作空间与上下文助手 | 近90天有提交 | 1,963 | 75 | 2026-10-31 |
-| [Comma](https://github.com/AFK-surf/Comma) | 常驻个人助手与轻量运行时 | 近90天有提交 | 475 | 8 | 2026-10-27 |
+| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | 工作空间与上下文助手 | 近90天有提交 | 1,967 | 75 | 2026-10-31 |
+| [Comma](https://github.com/AFK-surf/Comma) | 常驻个人助手与轻量运行时 | 近90天有提交 | 476 | 8 | 2026-10-27 |
 | [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | 研究实现与评测代码 | 近90天有提交 | 76 | 1 | 2026-10-13 |
 | [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | 主动插件与调度扩展 | 近90天有提交 | 13 | 97 | 2026-10-26 |
 | [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) | 研究实现与评测代码 | 近90天有提交 | 11 | 6 | 2026-10-22 |
 | [Mame](https://github.com/maikunari/mame) | 常驻个人助手与轻量运行时 | 近90天有提交 | 0 | 28 | 2026-08-21 |
-| [Khoj](https://github.com/khoj-ai/khoj) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 38,013 | 0 | 2026-08-02 |
+| [Khoj](https://github.com/khoj-ai/khoj) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 38,016 | 0 | 2026-08-02 |
 | [MineContext](https://github.com/volcengine/MineContext) | 工作空间与上下文助手 | 91–365天未提交 | 5,543 | 0 | 2026-05-07 |
 | [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | 研究实现与评测代码 | 91–365天未提交 | 688 | 0 | 2026-05-12 |
 | [rho](https://github.com/mikeyobrien/rho) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 376 | 0 | 2026-05-26 |
@@ -57,37 +57,37 @@
 
 | 项目 | 类别 | 维护层 | Stars | 90天提交 | 最近提交 UTC |
 | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 393,998 | 48930 | 2026-11-06 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 260,917 | 41656 | 2026-11-06 |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 273,975 | 15441 | 2026-11-04 |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 13,593 | 8528 | 2026-11-06 |
-| [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,212 | 3009 | 2026-11-06 |
-| [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,229 | 2474 | 2026-11-05 |
-| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 120,336 | 2000 | 2026-11-05 |
-| [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 5,747 | 1576 | 2026-11-03 |
-| [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 49,869 | 1353 | 2026-11-06 |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 33,142 | 1085 | 2026-11-06 |
-| [Letta Code](https://github.com/letta-ai/letta-code) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 3,787 | 994 | 2026-11-06 |
-| [PilotDeck](https://github.com/OpenBMB/PilotDeck) | 工作空间与上下文助手 | 近90天有提交 | 4,981 | 968 | 2026-11-05 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 31,087 | 741 | 2026-11-05 |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | 工作空间与上下文助手 | 近90天有提交 | 10,262 | 692 | 2026-11-06 |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | 工作空间与上下文助手 | 近90天有提交 | 19,756 | 540 | 2026-11-01 |
-| [Browser Use](https://github.com/browser-use/browser-use) | 电脑与浏览器控制组件 | 近90天有提交 | 120,151 | 407 | 2026-10-30 |
-| [IronClaw](https://github.com/nearai/ironclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 12,713 | 261 | 2026-09-10 |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | 研究实现与评测代码 | 近90天有提交 | 3,251 | 190 | 2026-11-02 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 394,013 | 48962 | 2026-11-06 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 260,983 | 41691 | 2026-11-06 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 274,271 | 15359 | 2026-11-04 |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 13,912 | 8551 | 2026-11-06 |
+| [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,229 | 3031 | 2026-11-06 |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,240 | 2509 | 2026-11-06 |
+| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 120,382 | 2003 | 2026-11-06 |
+| [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 5,814 | 1576 | 2026-11-03 |
+| [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 49,870 | 1363 | 2026-11-06 |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 33,143 | 1103 | 2026-11-06 |
+| [Letta Code](https://github.com/letta-ai/letta-code) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 3,790 | 996 | 2026-11-06 |
+| [PilotDeck](https://github.com/OpenBMB/PilotDeck) | 工作空间与上下文助手 | 近90天有提交 | 4,981 | 982 | 2026-11-06 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 31,088 | 741 | 2026-11-05 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | 工作空间与上下文助手 | 近90天有提交 | 10,288 | 700 | 2026-11-06 |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | 工作空间与上下文助手 | 近90天有提交 | 19,764 | 540 | 2026-11-01 |
+| [Browser Use](https://github.com/browser-use/browser-use) | 电脑与浏览器控制组件 | 近90天有提交 | 120,169 | 407 | 2026-10-30 |
+| [IronClaw](https://github.com/nearai/ironclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 12,714 | 257 | 2026-09-10 |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | 研究实现与评测代码 | 近90天有提交 | 3,252 | 190 | 2026-11-02 |
 | [Moltis](https://github.com/moltis-org/moltis) | 常驻个人助手与轻量运行时 | 近90天有提交 | 2,941 | 157 | 2026-10-23 |
-| [OpenMuse](https://github.com/CopilotKit/openmuse) | 工作空间与上下文助手 | 近90天有提交 | 6,236 | 144 | 2026-10-26 |
-| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | 电脑与浏览器控制组件 | 近90天有提交 | 11,150 | 118 | 2026-11-06 |
+| [OpenMuse](https://github.com/CopilotKit/openmuse) | 工作空间与上下文助手 | 近90天有提交 | 6,247 | 144 | 2026-10-26 |
+| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | 电脑与浏览器控制组件 | 近90天有提交 | 11,159 | 118 | 2026-11-06 |
 | [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | 主动插件与调度扩展 | 近90天有提交 | 13 | 97 | 2026-10-26 |
-| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | 工作空间与上下文助手 | 近90天有提交 | 1,963 | 75 | 2026-10-31 |
+| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | 工作空间与上下文助手 | 近90天有提交 | 1,967 | 75 | 2026-10-31 |
 | [Mame](https://github.com/maikunari/mame) | 常驻个人助手与轻量运行时 | 近90天有提交 | 0 | 28 | 2026-08-21 |
-| [Page Agent](https://github.com/alibaba/page-agent) | 电脑与浏览器控制组件 | 近90天有提交 | 29,642 | 20 | 2026-09-06 |
-| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) | 电脑与浏览器控制组件 | 近90天有提交 | 39,554 | 8 | 2026-10-09 |
-| [Comma](https://github.com/AFK-surf/Comma) | 常驻个人助手与轻量运行时 | 近90天有提交 | 475 | 8 | 2026-10-27 |
+| [Page Agent](https://github.com/alibaba/page-agent) | 电脑与浏览器控制组件 | 近90天有提交 | 29,643 | 20 | 2026-09-06 |
+| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) | 电脑与浏览器控制组件 | 近90天有提交 | 39,556 | 8 | 2026-10-09 |
+| [Comma](https://github.com/AFK-surf/Comma) | 常驻个人助手与轻量运行时 | 近90天有提交 | 476 | 8 | 2026-10-27 |
 | [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) | 研究实现与评测代码 | 近90天有提交 | 11 | 6 | 2026-10-22 |
-| [PicoClaw](https://github.com/sipeed/picoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 30,103 | 1 | 2026-08-19 |
+| [PicoClaw](https://github.com/sipeed/picoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 30,104 | 1 | 2026-08-19 |
 | [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | 研究实现与评测代码 | 近90天有提交 | 76 | 1 | 2026-10-13 |
-| [Khoj](https://github.com/khoj-ai/khoj) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 38,013 | 0 | 2026-08-02 |
+| [Khoj](https://github.com/khoj-ai/khoj) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 38,016 | 0 | 2026-08-02 |
 | [MineContext](https://github.com/volcengine/MineContext) | 工作空间与上下文助手 | 91–365天未提交 | 5,543 | 0 | 2026-05-07 |
 | [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | 研究实现与评测代码 | 91–365天未提交 | 688 | 0 | 2026-05-12 |
 | [rho](https://github.com/mikeyobrien/rho) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 376 | 0 | 2026-05-26 |
@@ -105,37 +105,37 @@
 
 | 项目 | 类别 | 维护层 | Stars | 90天提交 | 最近提交 UTC |
 | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 393,998 | 48930 | 2026-11-06 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 260,917 | 41656 | 2026-11-06 |
-| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | 电脑与浏览器控制组件 | 近90天有提交 | 11,150 | 118 | 2026-11-06 |
-| [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 49,869 | 1353 | 2026-11-06 |
-| [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,212 | 3009 | 2026-11-06 |
-| [Letta Code](https://github.com/letta-ai/letta-code) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 3,787 | 994 | 2026-11-06 |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 13,593 | 8528 | 2026-11-06 |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | 工作空间与上下文助手 | 近90天有提交 | 10,262 | 692 | 2026-11-06 |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 33,142 | 1085 | 2026-11-06 |
-| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 120,336 | 2000 | 2026-11-05 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 31,087 | 741 | 2026-11-05 |
-| [PilotDeck](https://github.com/OpenBMB/PilotDeck) | 工作空间与上下文助手 | 近90天有提交 | 4,981 | 968 | 2026-11-05 |
-| [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,229 | 2474 | 2026-11-05 |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 273,975 | 15441 | 2026-11-04 |
-| [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 5,747 | 1576 | 2026-11-03 |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | 研究实现与评测代码 | 近90天有提交 | 3,251 | 190 | 2026-11-02 |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | 工作空间与上下文助手 | 近90天有提交 | 19,756 | 540 | 2026-11-01 |
-| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | 工作空间与上下文助手 | 近90天有提交 | 1,963 | 75 | 2026-10-31 |
-| [Browser Use](https://github.com/browser-use/browser-use) | 电脑与浏览器控制组件 | 近90天有提交 | 120,151 | 407 | 2026-10-30 |
-| [Comma](https://github.com/AFK-surf/Comma) | 常驻个人助手与轻量运行时 | 近90天有提交 | 475 | 8 | 2026-10-27 |
-| [OpenMuse](https://github.com/CopilotKit/openmuse) | 工作空间与上下文助手 | 近90天有提交 | 6,236 | 144 | 2026-10-26 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 394,013 | 48962 | 2026-11-06 |
+| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 120,382 | 2003 | 2026-11-06 |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,240 | 2509 | 2026-11-06 |
+| [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,229 | 3031 | 2026-11-06 |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 13,912 | 8551 | 2026-11-06 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 260,983 | 41691 | 2026-11-06 |
+| [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 49,870 | 1363 | 2026-11-06 |
+| [Letta Code](https://github.com/letta-ai/letta-code) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 3,790 | 996 | 2026-11-06 |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 33,143 | 1103 | 2026-11-06 |
+| [PilotDeck](https://github.com/OpenBMB/PilotDeck) | 工作空间与上下文助手 | 近90天有提交 | 4,981 | 982 | 2026-11-06 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | 工作空间与上下文助手 | 近90天有提交 | 10,288 | 700 | 2026-11-06 |
+| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | 电脑与浏览器控制组件 | 近90天有提交 | 11,159 | 118 | 2026-11-06 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 31,088 | 741 | 2026-11-05 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 274,271 | 15359 | 2026-11-04 |
+| [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 5,814 | 1576 | 2026-11-03 |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | 研究实现与评测代码 | 近90天有提交 | 3,252 | 190 | 2026-11-02 |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | 工作空间与上下文助手 | 近90天有提交 | 19,764 | 540 | 2026-11-01 |
+| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | 工作空间与上下文助手 | 近90天有提交 | 1,967 | 75 | 2026-10-31 |
+| [Browser Use](https://github.com/browser-use/browser-use) | 电脑与浏览器控制组件 | 近90天有提交 | 120,169 | 407 | 2026-10-30 |
+| [Comma](https://github.com/AFK-surf/Comma) | 常驻个人助手与轻量运行时 | 近90天有提交 | 476 | 8 | 2026-10-27 |
+| [OpenMuse](https://github.com/CopilotKit/openmuse) | 工作空间与上下文助手 | 近90天有提交 | 6,247 | 144 | 2026-10-26 |
 | [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | 主动插件与调度扩展 | 近90天有提交 | 13 | 97 | 2026-10-26 |
 | [Moltis](https://github.com/moltis-org/moltis) | 常驻个人助手与轻量运行时 | 近90天有提交 | 2,941 | 157 | 2026-10-23 |
 | [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) | 研究实现与评测代码 | 近90天有提交 | 11 | 6 | 2026-10-22 |
 | [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | 研究实现与评测代码 | 近90天有提交 | 76 | 1 | 2026-10-13 |
-| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) | 电脑与浏览器控制组件 | 近90天有提交 | 39,554 | 8 | 2026-10-09 |
-| [IronClaw](https://github.com/nearai/ironclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 12,713 | 261 | 2026-09-10 |
-| [Page Agent](https://github.com/alibaba/page-agent) | 电脑与浏览器控制组件 | 近90天有提交 | 29,642 | 20 | 2026-09-06 |
+| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) | 电脑与浏览器控制组件 | 近90天有提交 | 39,556 | 8 | 2026-10-09 |
+| [IronClaw](https://github.com/nearai/ironclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 12,714 | 257 | 2026-09-10 |
+| [Page Agent](https://github.com/alibaba/page-agent) | 电脑与浏览器控制组件 | 近90天有提交 | 29,643 | 20 | 2026-09-06 |
 | [Mame](https://github.com/maikunari/mame) | 常驻个人助手与轻量运行时 | 近90天有提交 | 0 | 28 | 2026-08-21 |
-| [PicoClaw](https://github.com/sipeed/picoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 30,103 | 1 | 2026-08-19 |
-| [Khoj](https://github.com/khoj-ai/khoj) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 38,013 | 0 | 2026-08-02 |
+| [PicoClaw](https://github.com/sipeed/picoclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 30,104 | 1 | 2026-08-19 |
+| [Khoj](https://github.com/khoj-ai/khoj) | 常驻个人助手与轻量运行时 | 91–365天未提交 | 38,016 | 0 | 2026-08-02 |
 | [Pulse](https://github.com/Hypostas/pulse) | 主动插件与调度扩展 | 91–365天未提交 | 4 | 0 | 2026-07-06 |
 | [ProactiveBench (MLLM)](https://github.com/tdemin16/proactivebench) | 研究实现与评测代码 | 91–365天未提交 | 32 | 0 | 2026-06-22 |
 | [KnowU-Bench](https://github.com/ZJU-REAL/KnowU-Bench) | 研究实现与评测代码 | 91–365天未提交 | 82 | 0 | 2026-06-13 |
