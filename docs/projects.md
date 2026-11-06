@@ -12,7 +12,7 @@
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：定时 / heartbeat / 事件。
 - 边界：后台执行依赖 gateway；各平台和工具权限需单独配置。
-- 当前维护状态：近90天有提交；20047 次 / 30 天，48928 次 / 90 天。
+- 当前维护状态：近90天有提交；20044 次 / 30 天，48930 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/openclaw/openclaw/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/openclaw/openclaw/blob/8cb658e39b6dbe1bbe03746bf2a468a898c15da2/README.md#L18) · [来源2](https://docs.openclaw.ai/gateway/heartbeat) · [来源3](https://docs.openclaw.ai/gateway/heartbeat)。
 
@@ -25,7 +25,7 @@
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：定时 / 会话 heartbeat。
 - 边界：功能依据官方文档，未在本清单中实机测评。
-- 当前维护状态：近90天有提交；11512 次 / 30 天，41643 次 / 90 天。
+- 当前维护状态：近90天有提交；11524 次 / 30 天，41656 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/NousResearch/hermes-agent/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/NousResearch/hermes-agent/blob/cad0aaaf0d77ffa4899ebf0d3db8bae7a6b5147f/README.md#L27)。
 
@@ -90,7 +90,7 @@ Rust Agent 运行时，支持后台服务、工具及事件触发流程。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：routines。
 - 边界：私有电脑、团队电脑与容器能力按配置区分。
-- 当前维护状态：近90天有提交；1941 次 / 30 天，3009 次 / 90 天。
+- 当前维护状态：近90天有提交；1937 次 / 30 天，3009 次 / 90 天。
 - 许可：[Apache-2.0](https://api.github.com/repos/elie222/rakazo/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/elie222/rakazo/blob/ed67158935a95b6153aad6c9cd874c6cc8d2413d/README.md#L24)。
 
@@ -103,7 +103,7 @@ Rust Agent 运行时，支持后台服务、工具及事件触发流程。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：目标巡检 / routines。
 - 边界：设备能力和后台运行条件因平台而异；论文与软件各列一项。
-- 当前维护状态：近90天有提交；1785 次 / 30 天，2474 次 / 90 天。
+- 当前维护状态：近90天有提交；1784 次 / 30 天，2474 次 / 90 天。
 - 许可：[GPL-3.0](https://api.github.com/repos/nano-muse/nanoMuse/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/nano-muse/nanoMuse/blob/57f5c5abed2d66fa19ab8fc39fd52eb365e4f14d/README.md#L80)。
 
@@ -363,7 +363,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：可扩展 Harness 与持久运行基础；相邻能力。
 - 触发方式：需宿主插件提供主动机制。
 - 边界：developer preview；插件兼容性需要核验。
-- 当前维护状态：近90天有提交；4264 次 / 30 天，15443 次 / 90 天。
+- 当前维护状态：近90天有提交；4264 次 / 30 天，15441 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/deepseek-ai/deepseek-harness/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/deepseek-ai/deepseek-harness/blob/fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159/README.md#L7)。
 
@@ -402,7 +402,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：电脑与浏览器控制组件；相邻能力。
 - 触发方式：由宿主调用。
 - 边界：控制组件本身不是常驻个人助手，需外接模型、记忆与触发器。
-- 当前维护状态：近90天有提交；75 次 / 30 天，117 次 / 90 天。
+- 当前维护状态：近90天有提交；76 次 / 30 天，118 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/CursorTouch/Windows-MCP/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/CursorTouch/Windows-MCP/blob/9ab92bca2772dfb53ae3ed4feb98dac22c5b3dea/README.md#L25)。
 
