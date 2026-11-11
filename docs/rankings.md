@@ -2,7 +2,7 @@
 
 全目录元数据排序；组件、研究与助手仅展示维护指标，不表示可以相互替代。所有视图先按维护状态分层，再按该视图指标降序；同分以 star、仓库名稳定排序。
 
-快照：2026-11-11T07:46:55+00:00。公式与字段口径见 [methodology.md](methodology.md)。
+快照：2026-11-11T07:48:17+00:00。公式与字段口径见 [methodology.md](methodology.md)。
 
 
 ## Star 优先
@@ -10,9 +10,9 @@
 | 项目 | 类别 | 维护层 | Stars | 90天提交 | 最近提交 UTC |
 | --- | --- | --- | --- | --- | --- |
 | [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 394,313 | 48749 | 2026-11-11 |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 278,485 | 13439 | 2026-11-04 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 262,536 | 45040 | 2026-11-11 |
-| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 121,337 | 2083 | 2026-11-11 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 278,488 | 13439 | 2026-11-04 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 262,537 | 45040 | 2026-11-11 |
+| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 121,338 | 2083 | 2026-11-11 |
 | [Browser Use](https://github.com/browser-use/browser-use) | 电脑与浏览器控制组件 | 近90天有提交 | 120,655 | 952 | 2026-11-11 |
 | [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 50,004 | 1328 | 2026-11-11 |
 | [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 33,313 | 1084 | 2026-11-11 |
@@ -59,12 +59,12 @@
 | 项目 | 类别 | 维护层 | Stars | 90天提交 | 最近提交 UTC |
 | --- | --- | --- | --- | --- | --- |
 | [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 394,313 | 48749 | 2026-11-11 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 262,536 | 45040 | 2026-11-11 |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 278,485 | 13439 | 2026-11-04 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 262,537 | 45040 | 2026-11-11 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 278,488 | 13439 | 2026-11-04 |
 | [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 20,873 | 9703 | 2026-11-11 |
 | [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,876 | 3357 | 2026-11-11 |
 | [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,400 | 2634 | 2026-11-10 |
-| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 121,337 | 2083 | 2026-11-11 |
+| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 121,338 | 2083 | 2026-11-11 |
 | [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 6,917 | 2024 | 2026-11-10 |
 | [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 50,004 | 1328 | 2026-11-11 |
 | [PilotDeck](https://github.com/OpenBMB/PilotDeck) | 工作空间与上下文助手 | 近90天有提交 | 4,992 | 1086 | 2026-11-11 |
@@ -110,8 +110,8 @@
 | [OpenClaw](https://github.com/openclaw/openclaw) | 常驻个人助手与轻量运行时 | 近90天有提交 | 394,313 | 48749 | 2026-11-11 |
 | [Rakazo](https://github.com/elie222/rakazo) | 常驻个人助手与轻量运行时 | 近90天有提交 | 7,876 | 3357 | 2026-11-11 |
 | [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 20,873 | 9703 | 2026-11-11 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 262,536 | 45040 | 2026-11-11 |
-| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 121,337 | 2083 | 2026-11-11 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 常驻个人助手与轻量运行时 | 近90天有提交 | 262,537 | 45040 | 2026-11-11 |
+| [Pi](https://github.com/earendil-works/pi) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 121,338 | 2083 | 2026-11-11 |
 | [nanobot](https://github.com/HKUDS/nanobot) | 常驻个人助手与轻量运行时 | 近90天有提交 | 50,004 | 1328 | 2026-11-11 |
 | [OpenBot](https://github.com/CopilotKit/OpenBot) | 工作空间与上下文助手 | 近90天有提交 | 10,855 | 1072 | 2026-11-11 |
 | [Letta Code](https://github.com/letta-ai/letta-code) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 3,814 | 1004 | 2026-11-11 |
@@ -125,7 +125,7 @@
 | [OpenDuet](https://github.com/CopilotKit/OpenDuet) | 工作空间与上下文助手 | 近90天有提交 | 2,031 | 83 | 2026-11-10 |
 | [nanoMuse](https://github.com/nano-muse/nanoMuse) | 常驻个人助手与轻量运行时 | 近90天有提交 | 3,400 | 2634 | 2026-11-10 |
 | [DS Bot](https://github.com/Fei2411/DS-Bot) | 主动插件与调度扩展 | 近90天有提交 | 6,917 | 2024 | 2026-11-10 |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 278,485 | 13439 | 2026-11-04 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 可扩展 Harness 与持久运行基础 | 近90天有提交 | 278,488 | 13439 | 2026-11-04 |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | 工作空间与上下文助手 | 近90天有提交 | 19,825 | 489 | 2026-11-01 |
 | [Comma](https://github.com/AFK-surf/Comma) | 常驻个人助手与轻量运行时 | 近90天有提交 | 587 | 8 | 2026-10-27 |
 | [OpenMuse](https://github.com/CopilotKit/openmuse) | 工作空间与上下文助手 | 近90天有提交 | 6,402 | 144 | 2026-10-26 |

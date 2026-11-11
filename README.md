@@ -25,7 +25,7 @@ flowchart LR
 
 ## 当前快照
 
-收录 **44 个项目 / 研究代码库、17 篇论文**。指标采集：**2026-11-11T07:46:55+00:00（UTC）**；功能人工核验：2026-11-11。
+收录 **44 个项目 / 研究代码库、17 篇论文**。指标采集：**2026-11-11T07:48:17+00:00（UTC）**；功能人工核验：2026-11-11。
 
 仅依据公开文档和 GitHub 元数据，尚未开展统一运行测评。类别与功能需人工复核，指标由脚本更新。
 
@@ -37,7 +37,7 @@ flowchart LR
 | 项目 | 主动机制 | Stars | 90天提交 | 最近提交 UTC | 维护分 |
 | --- | --- | --- | --- | --- | --- |
 | [OpenClaw](https://github.com/openclaw/openclaw) | 定时 / heartbeat / 事件 | 394,313 | 48,749 | 2026-11-11 | 100.0 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,536 | 45,040 | 2026-11-11 | 100.0 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,537 | 45,040 | 2026-11-11 | 100.0 |
 | [nanobot](https://github.com/HKUDS/nanobot) | 定时 / 本地触发器 | 50,004 | 1,328 | 2026-11-11 | 97.6 |
 | [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,313 | 1,084 | 2026-11-11 | 96.1 |
 | [NanoClaw](https://github.com/nanocoai/nanoclaw) | 定时 / script gates | 31,103 | 716 | 2026-11-10 | 95.8 |
@@ -59,7 +59,7 @@ flowchart LR
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
 | [OpenClaw](https://github.com/openclaw/openclaw) | 定时 / heartbeat / 事件 | 394,313 | 48,749 | 2026-11-11 | 100.0 | MIT |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,536 | 45,040 | 2026-11-11 | 100.0 | MIT |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,537 | 45,040 | 2026-11-11 | 100.0 | MIT |
 | [nanobot](https://github.com/HKUDS/nanobot) | 定时 / 本地触发器 | 50,004 | 1,328 | 2026-11-11 | 97.6 | MIT |
 | [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,313 | 1,084 | 2026-11-11 | 96.1 | Apache-2.0 |
 | [NanoClaw](https://github.com/nanocoai/nanoclaw) | 定时 / script gates | 31,103 | 716 | 2026-11-10 | 95.8 | MIT |
@@ -106,8 +106,8 @@ flowchart LR
 
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Pi](https://github.com/earendil-works/pi) | 需上层调度 / 扩展 | 121,337 | 2,083 | 2026-11-11 | 100.0 | MIT |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 需宿主插件提供主动机制 | 278,485 | 13,439 | 2026-11-04 | 98.1 | MIT |
+| [Pi](https://github.com/earendil-works/pi) | 需上层调度 / 扩展 | 121,338 | 2,083 | 2026-11-11 | 100.0 | MIT |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 需宿主插件提供主动机制 | 278,488 | 13,439 | 2026-11-04 | 98.1 | MIT |
 | [Letta Code](https://github.com/letta-ai/letta-code) | remote environments / cron | 3,814 | 1,004 | 2026-11-11 | 88.6 | Apache-2.0 |
 
 

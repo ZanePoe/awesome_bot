@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-11T07:46:55+00:00",
+  "as_of": "2026-11-11T07:48:17+00:00",
   "window_days": [
     30,
     90
@@ -20,20 +20,20 @@
       "last_commit_at": "2026-11-11T07:46:48Z",
       "commits_30d": 19255,
       "commits_90d": 48749,
-      "pushed_at": "2026-11-11T07:46:49Z",
+      "pushed_at": "2026-11-11T07:48:13Z",
       "updated_at": "2026-11-11T07:38:27Z",
       "latest_release": {
         "tagName": "v2026.11.3",
         "publishedAt": "2026-11-10T18:53:07Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "NousResearch/hermes-agent": {
       "canonical_repo": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 262536,
+      "stars": 262537,
       "forks": 58737,
       "archived": false,
       "disabled": false,
@@ -44,14 +44,14 @@
       "last_commit_at": "2026-11-11T07:20:02Z",
       "commits_30d": 13794,
       "commits_90d": 45040,
-      "pushed_at": "2026-11-11T07:46:07Z",
-      "updated_at": "2026-11-11T07:43:47Z",
+      "pushed_at": "2026-11-11T07:47:13Z",
+      "updated_at": "2026-11-11T07:47:10Z",
       "latest_release": {
         "tagName": "v0.23.1",
         "publishedAt": "2026-11-10T01:42:15Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "HKUDS/nanobot": {
@@ -75,7 +75,7 @@
         "publishedAt": "2026-11-06T15:55:22Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "nanocoai/nanoclaw": {
@@ -99,7 +99,7 @@
         "publishedAt": "2026-11-09T12:00:44Z",
         "isPrerelease": true
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "sipeed/picoclaw": {
@@ -123,7 +123,7 @@
         "publishedAt": "2026-07-02T01:26:53Z",
         "isPrerelease": true
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "zeroclaw-labs/zeroclaw": {
@@ -147,7 +147,7 @@
         "publishedAt": "2026-10-27T22:50:03Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "nearai/ironclaw": {
@@ -171,7 +171,7 @@
         "publishedAt": "2026-09-29T20:40:32Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "moltis-org/moltis": {
@@ -195,7 +195,7 @@
         "publishedAt": "2026-10-23T19:29:03Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "khoj-ai/khoj": {
@@ -219,7 +219,7 @@
         "publishedAt": "2026-03-26T03:36:04Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "nano-muse/nanoMuse": {
@@ -243,7 +243,7 @@
         "publishedAt": "2026-10-29T15:07:55Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "elie222/rakazo": {
@@ -267,7 +267,7 @@
         "publishedAt": "2026-10-10T22:04:11Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "AFK-surf/Comma": {
@@ -291,7 +291,7 @@
         "publishedAt": "2026-10-27T07:15:14Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "mikeyobrien/rho": {
@@ -315,7 +315,7 @@
         "publishedAt": "2026-03-15T02:42:20Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "maikunari/mame": {
@@ -335,14 +335,14 @@
       "pushed_at": "2026-08-21T02:02:11Z",
       "updated_at": "2026-08-21T02:02:47Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "milind-soni/OpenMausBot": {
       "canonical_repo": "milind-soni/OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
       "stars": 20873,
-      "forks": 2896,
+      "forks": 2897,
       "archived": false,
       "disabled": false,
       "license_spdx": "Apache-2.0",
@@ -359,7 +359,7 @@
         "publishedAt": "2026-11-10T19:57:50Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "OpenBMB/PilotDeck": {
@@ -383,7 +383,7 @@
         "publishedAt": "2026-11-10T23:42:42Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "agent0ai/agent-zero": {
@@ -407,7 +407,7 @@
         "publishedAt": "2026-11-01T23:52:00Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "volcengine/MineContext": {
@@ -431,7 +431,7 @@
         "publishedAt": "2026-01-28T09:51:23Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "CopilotKit/openmuse": {
@@ -451,7 +451,7 @@
       "pushed_at": "2026-11-11T02:14:38Z",
       "updated_at": "2026-11-11T06:51:44Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "CopilotKit/OpenDuet": {
@@ -471,7 +471,7 @@
       "pushed_at": "2026-11-10T17:02:16Z",
       "updated_at": "2026-11-11T06:15:36Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "CopilotKit/OpenBot": {
@@ -495,7 +495,7 @@
         "publishedAt": "2026-11-11T07:19:03Z",
         "isPrerelease": true
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "Anil-matcha/suparagent": {
@@ -512,14 +512,14 @@
       "last_commit_at": "2026-11-11T06:04:46Z",
       "commits_30d": 618,
       "commits_90d": 656,
-      "pushed_at": "2026-11-11T06:18:49Z",
+      "pushed_at": "2026-11-11T07:47:36Z",
       "updated_at": "2026-11-11T06:07:53Z",
       "latest_release": {
         "tagName": "v0.8.5",
         "publishedAt": "2026-11-09T18:04:32Z",
         "isPrerelease": true
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "Fei2411/DS-Bot": {
@@ -543,7 +543,7 @@
         "publishedAt": "2026-11-09T09:50:35Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "NousResearch/Hermes-Bot-Mode": {
@@ -563,7 +563,7 @@
       "pushed_at": "2026-08-17T01:32:13Z",
       "updated_at": "2026-11-10T01:03:20Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "john-walks-slow/dsh-proactive": {
@@ -583,7 +583,7 @@
       "pushed_at": "2026-10-26T03:08:45Z",
       "updated_at": "2026-11-07T06:40:16Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "t0dorakis/murmur": {
@@ -607,7 +607,7 @@
         "publishedAt": "2026-02-09T17:33:48Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "Hypostas/pulse": {
@@ -631,13 +631,13 @@
         "publishedAt": "2026-03-08T20:23:23Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "earendil-works/pi": {
       "canonical_repo": "earendil-works/pi",
       "url": "https://github.com/earendil-works/pi",
-      "stars": 121337,
+      "stars": 121338,
       "forks": 15635,
       "archived": false,
       "disabled": false,
@@ -649,19 +649,19 @@
       "commits_30d": 921,
       "commits_90d": 2083,
       "pushed_at": "2026-11-11T07:08:19Z",
-      "updated_at": "2026-11-11T07:45:25Z",
+      "updated_at": "2026-11-11T07:47:08Z",
       "latest_release": {
         "tagName": "v1.5.2",
         "publishedAt": "2026-11-10T12:25:43Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "deepseek-ai/deepseek-harness": {
       "canonical_repo": "deepseek-ai/deepseek-harness",
       "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "stars": 278485,
+      "stars": 278488,
       "forks": 34242,
       "archived": false,
       "disabled": false,
@@ -673,13 +673,13 @@
       "commits_30d": 3665,
       "commits_90d": 13439,
       "pushed_at": "2026-11-04T13:06:39Z",
-      "updated_at": "2026-11-11T07:46:44Z",
+      "updated_at": "2026-11-11T07:48:14Z",
       "latest_release": {
         "tagName": "dsh-v0.2.2-rc.1",
         "publishedAt": "2026-11-04T13:07:14Z",
         "isPrerelease": true
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "letta-ai/letta-code": {
@@ -703,7 +703,7 @@
         "publishedAt": "2026-11-10T07:49:52Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "CursorTouch/Windows-MCP": {
@@ -727,7 +727,7 @@
         "publishedAt": "2026-10-10T01:33:58Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "browser-use/browser-use": {
@@ -751,7 +751,7 @@
         "publishedAt": "2026-11-11T04:00:00Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "bytedance/UI-TARS-desktop": {
@@ -775,7 +775,7 @@
         "publishedAt": "2026-10-08T21:14:26Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "alibaba/page-agent": {
@@ -799,7 +799,7 @@
         "publishedAt": "2026-09-06T07:46:41Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "thunlp/ProactiveAgent": {
@@ -819,7 +819,7 @@
       "pushed_at": "2026-05-12T08:51:07Z",
       "updated_at": "2026-11-10T13:33:25Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "openaiotlab/ContextAgent": {
@@ -839,7 +839,7 @@
       "pushed_at": "2025-12-07T15:47:00Z",
       "updated_at": "2026-10-23T02:46:32Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "xzf-thu/Pask": {
@@ -859,7 +859,7 @@
       "pushed_at": "2026-04-17T16:50:38Z",
       "updated_at": "2026-11-02T11:22:30Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "Simplified-Reasoning/Pi-Bench": {
@@ -879,7 +879,7 @@
       "pushed_at": "2026-10-13T08:41:08Z",
       "updated_at": "2026-11-10T06:37:18Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "tdemin16/proactivebench": {
@@ -899,7 +899,7 @@
       "pushed_at": "2026-06-22T09:44:05Z",
       "updated_at": "2026-09-18T04:35:32Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "xlang-ai/OSWorld": {
@@ -923,7 +923,7 @@
         "publishedAt": "2026-11-10T17:30:17Z",
         "isPrerelease": false
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "deepakn97/pare": {
@@ -943,7 +943,7 @@
       "pushed_at": "2026-05-23T05:43:33Z",
       "updated_at": "2026-10-29T17:07:54Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "ZJU-REAL/KnowU-Bench": {
@@ -963,7 +963,7 @@
       "pushed_at": "2026-06-13T07:16:37Z",
       "updated_at": "2026-10-29T15:43:25Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "facebookresearch/Memo-Pro-Agent": {
@@ -983,7 +983,7 @@
       "pushed_at": "2026-10-22T00:48:16Z",
       "updated_at": "2026-11-06T09:29:48Z",
       "latest_release": null,
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     },
     "letta-ai/lettabot": {
@@ -1007,7 +1007,7 @@
         "publishedAt": "2026-03-12T01:13:36Z",
         "isPrerelease": true
       },
-      "collected_at": "2026-11-11T07:46:55+00:00",
+      "collected_at": "2026-11-11T07:48:17+00:00",
       "source": "https://api.github.com/graphql"
     }
   }
