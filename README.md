@@ -25,7 +25,7 @@ flowchart LR
 
 ## 当前快照
 
-收录 **43 个项目 / 研究代码库、17 篇论文**。指标采集：**2026-11-10T08:27:50+00:00（UTC）**；功能人工核验：2026-11-06。
+收录 **44 个项目 / 研究代码库、17 篇论文**。指标采集：**2026-11-11T07:40:56+00:00（UTC）**；功能人工核验：2026-11-11。
 
 仅依据公开文档和 GitHub 元数据，尚未开展统一运行测评。类别与功能需人工复核，指标由脚本更新。
 
@@ -36,16 +36,16 @@ flowchart LR
 
 | 项目 | 主动机制 | Stars | 90天提交 | 最近提交 UTC | 维护分 |
 | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | 定时 / heartbeat / 事件 | 394,270 | 48,732 | 2026-11-10 | 100.0 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,187 | 43,443 | 2026-11-10 | 100.0 |
-| [nanobot](https://github.com/HKUDS/nanobot) | 定时 / 本地触发器 | 49,989 | 1,348 | 2026-11-10 | 97.6 |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,303 | 1,097 | 2026-11-10 | 96.2 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 定时 / script gates | 31,099 | 718 | 2026-11-09 | 95.7 |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 20,179 | 9,345 | 2026-11-10 | 94.4 |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | 定时 routines / 人工发起 | 10,603 | 1,009 | 2026-11-10 | 92.2 |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,816 | 539 | 2026-11-01 | 92.1 |
-| [Rakazo](https://github.com/elie222/rakazo) | routines | 7,744 | 3,299 | 2026-11-10 | 91.1 |
-| [PilotDeck](https://github.com/OpenBMB/PilotDeck) | always-on 任务发现 | 4,988 | 1,065 | 2026-11-09 | 89.3 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | 定时 / heartbeat / 事件 | 394,313 | 48,747 | 2026-11-11 | 100.0 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,534 | 45,040 | 2026-11-11 | 100.0 |
+| [nanobot](https://github.com/HKUDS/nanobot) | 定时 / 本地触发器 | 50,004 | 1,328 | 2026-11-11 | 97.6 |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,313 | 1,084 | 2026-11-11 | 96.1 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 定时 / script gates | 31,103 | 716 | 2026-11-10 | 95.8 |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 20,871 | 9,703 | 2026-11-11 | 94.6 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | 定时 routines / 人工发起 | 10,854 | 1,072 | 2026-11-11 | 92.3 |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,825 | 489 | 2026-11-01 | 91.8 |
+| [Rakazo](https://github.com/elie222/rakazo) | routines | 7,875 | 3,357 | 2026-11-11 | 91.1 |
+| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,013 | 656 | 2026-11-11 | 90.8 |
 
 
 ## 分类目录
@@ -58,20 +58,20 @@ flowchart LR
 
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | 定时 / heartbeat / 事件 | 394,270 | 48,732 | 2026-11-10 | 100.0 | MIT |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,187 | 43,443 | 2026-11-10 | 100.0 | MIT |
-| [nanobot](https://github.com/HKUDS/nanobot) | 定时 / 本地触发器 | 49,989 | 1,348 | 2026-11-10 | 97.6 | MIT |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,303 | 1,097 | 2026-11-10 | 96.2 | Apache-2.0 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 定时 / script gates | 31,099 | 718 | 2026-11-09 | 95.7 | MIT |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 20,179 | 9,345 | 2026-11-10 | 94.4 | Apache-2.0（enterprise/ 除外） |
-| [Rakazo](https://github.com/elie222/rakazo) · ★种子 | routines | 7,744 | 3,299 | 2026-11-10 | 91.1 | Apache-2.0 |
-| [nanoMuse](https://github.com/nano-muse/nanoMuse) · ★种子 | 目标巡检 / routines | 3,370 | 2,624 | 2026-11-10 | 88.2 | GPL-3.0 |
-| [Moltis](https://github.com/moltis-org/moltis) | cron | 2,951 | 156 | 2026-10-23 | 76.8 | MIT |
-| [IronClaw](https://github.com/nearai/ironclaw) | 定时 / 事件 / heartbeat | 12,717 | 203 | 2026-09-10 | 75.5 | Apache-2.0 |
-| [Comma](https://github.com/AFK-surf/Comma) | routines / event loops | 578 | 8 | 2026-10-27 | 55.9 | AGPL-3.0 |
-| [PicoClaw](https://github.com/sipeed/picoclaw) | 定时 | 30,117 | 1 | 2026-08-19 | 49.7 | MIT |
-| [Mame](https://github.com/maikunari/mame) · 许可限制/待核验 | cron / heartbeat | 0 | 28 | 2026-08-21 | 29.1 | README 声明 MIT |
-| [Khoj](https://github.com/khoj-ai/khoj) | scheduled automations | 38,096 | 0 | 2026-08-02 | 44.9 | AGPL-3.0 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | 定时 / heartbeat / 事件 | 394,313 | 48,747 | 2026-11-11 | 100.0 | MIT |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 定时 / 会话 heartbeat | 262,534 | 45,040 | 2026-11-11 | 100.0 | MIT |
+| [nanobot](https://github.com/HKUDS/nanobot) | 定时 / 本地触发器 | 50,004 | 1,328 | 2026-11-11 | 97.6 | MIT |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,313 | 1,084 | 2026-11-11 | 96.1 | Apache-2.0 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | 定时 / script gates | 31,103 | 716 | 2026-11-10 | 95.8 | MIT |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 20,871 | 9,703 | 2026-11-11 | 94.6 | Apache-2.0（enterprise/ 除外） |
+| [Rakazo](https://github.com/elie222/rakazo) · ★种子 | routines | 7,875 | 3,357 | 2026-11-11 | 91.1 | Apache-2.0 |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) · ★种子 | 目标巡检 / routines | 3,400 | 2,634 | 2026-11-10 | 88.1 | GPL-3.0 |
+| [Moltis](https://github.com/moltis-org/moltis) | cron | 2,953 | 156 | 2026-10-23 | 76.6 | MIT |
+| [IronClaw](https://github.com/nearai/ironclaw) | 定时 / 事件 / heartbeat | 12,717 | 192 | 2026-09-10 | 75.1 | Apache-2.0 |
+| [Comma](https://github.com/AFK-surf/Comma) | routines / event loops | 587 | 8 | 2026-10-27 | 55.7 | AGPL-3.0 |
+| [PicoClaw](https://github.com/sipeed/picoclaw) | 定时 | 30,120 | 1 | 2026-08-19 | 49.6 | MIT |
+| [Mame](https://github.com/maikunari/mame) · 许可限制/待核验 | cron / heartbeat | 0 | 28 | 2026-08-21 | 29.0 | README 声明 MIT |
+| [Khoj](https://github.com/khoj-ai/khoj) | scheduled automations | 38,105 | 0 | 2026-08-02 | 44.8 | AGPL-3.0 |
 | [rho](https://github.com/mikeyobrien/rho) | heartbeat | 377 | 0 | 2026-05-26 | 24.5 | MIT |
 
 
@@ -80,12 +80,13 @@ flowchart LR
 
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | 定时 routines / 人工发起 | 10,603 | 1,009 | 2026-11-10 | 92.2 | MIT |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,816 | 539 | 2026-11-01 | 92.1 | MIT |
-| [PilotDeck](https://github.com/OpenBMB/PilotDeck) · ★种子 | always-on 任务发现 | 4,988 | 1,065 | 2026-11-09 | 89.3 | AGPL-3.0 |
-| [OpenMuse](https://github.com/CopilotKit/openmuse) | 后台任务 worker；自主触发待核验 | 6,375 | 144 | 2026-10-26 | 79.7 | MIT |
-| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | routines / 后台建议 | 2,016 | 75 | 2026-10-31 | 73.3 | MIT |
-| [MineContext](https://github.com/volcengine/MineContext) | 上下文观察 / 主动推送 | 5,545 | 0 | 2026-05-07 | 33.1 | Apache-2.0 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | 定时 routines / 人工发起 | 10,854 | 1,072 | 2026-11-11 | 92.3 | MIT |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,825 | 489 | 2026-11-01 | 91.8 | MIT |
+| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,013 | 656 | 2026-11-11 | 90.8 | Apache-2.0 |
+| [PilotDeck](https://github.com/OpenBMB/PilotDeck) · ★种子 | always-on 任务发现 | 4,992 | 1,086 | 2026-11-11 | 89.5 | AGPL-3.0 |
+| [OpenMuse](https://github.com/CopilotKit/openmuse) | 后台任务 worker；自主触发待核验 | 6,402 | 144 | 2026-10-26 | 79.5 | MIT |
+| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | routines / 后台建议 | 2,031 | 83 | 2026-11-10 | 76.2 | MIT |
+| [MineContext](https://github.com/volcengine/MineContext) | 上下文观察 / 主动推送 | 5,547 | 0 | 2026-05-07 | 33.1 | Apache-2.0 |
 
 
 ### 主动插件与调度扩展
@@ -93,11 +94,11 @@ flowchart LR
 
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
-| [DS Bot](https://github.com/Fei2411/DS-Bot) · ★种子 | 持久 Bot / 群聊；自主唤醒待核验 | 6,755 | 2,024 | 2026-11-10 | 90.6 | Apache-2.0 |
-| [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | host 级 once / interval / cron | 15 | 97 | 2026-10-26 | 56.6 | MIT |
-| [murmur](https://github.com/t0dorakis/murmur) | cron / interval | 32 | 0 | 2026-02-10 | 13.4 | MIT |
-| [Pulse](https://github.com/Hypostas/pulse) | 传感 / 紧急度触发 | 4 | 0 | 2026-07-06 | 11.7 | MIT |
-| [Hermes Bot Mode](https://github.com/NousResearch/Hermes-Bot-Mode) · 归档 | 宿主 cron routines | 671 | 114 | 2026-08-17 | 59.0 | MIT |
+| [DS Bot](https://github.com/Fei2411/DS-Bot) · ★种子 | 持久 Bot / 群聊；自主唤醒待核验 | 6,915 | 2,024 | 2026-11-10 | 90.4 | Apache-2.0 |
+| [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | host 级 once / interval / cron | 15 | 97 | 2026-10-26 | 56.3 | MIT |
+| [murmur](https://github.com/t0dorakis/murmur) | cron / interval | 32 | 0 | 2026-02-10 | 13.3 | MIT |
+| [Pulse](https://github.com/Hypostas/pulse) | 传感 / 紧急度触发 | 4 | 0 | 2026-07-06 | 11.6 | MIT |
+| [Hermes Bot Mode](https://github.com/NousResearch/Hermes-Bot-Mode) · 归档 | 宿主 cron routines | 671 | 114 | 2026-08-17 | 58.9 | MIT |
 
 
 ### 可扩展 Harness 与持久运行基础
@@ -105,9 +106,9 @@ flowchart LR
 
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Pi](https://github.com/earendil-works/pi) | 需上层调度 / 扩展 | 121,157 | 2,074 | 2026-11-10 | 100.0 | MIT |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 需宿主插件提供主动机制 | 277,744 | 13,703 | 2026-11-04 | 98.4 | MIT |
-| [Letta Code](https://github.com/letta-ai/letta-code) | remote environments / cron | 3,809 | 1,004 | 2026-11-10 | 88.6 | Apache-2.0 |
+| [Pi](https://github.com/earendil-works/pi) | 需上层调度 / 扩展 | 121,336 | 2,084 | 2026-11-11 | 100.0 | MIT |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 需宿主插件提供主动机制 | 278,480 | 13,442 | 2026-11-04 | 98.1 | MIT |
+| [Letta Code](https://github.com/letta-ai/letta-code) | remote environments / cron | 3,814 | 1,004 | 2026-11-11 | 88.6 | Apache-2.0 |
 
 
 ### 电脑与浏览器控制组件
@@ -115,10 +116,10 @@ flowchart LR
 
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Browser Use](https://github.com/browser-use/browser-use) | 按需浏览器任务 | 120,501 | 910 | 2026-11-10 | 99.9 | MIT |
-| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) · ★种子 | 由宿主调用 | 11,445 | 140 | 2026-11-10 | 85.3 | MIT |
-| [Page Agent](https://github.com/alibaba/page-agent) | 由网页或宿主调用 | 29,657 | 18 | 2026-09-06 | 64.5 | MIT |
-| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) · 归档 | 按需电脑 / 浏览器任务 | 39,590 | 8 | 2026-10-09 | 66.6 | Apache-2.0 |
+| [Browser Use](https://github.com/browser-use/browser-use) | 按需浏览器任务 | 120,655 | 952 | 2026-11-11 | 99.9 | MIT |
+| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) · ★种子 | 由宿主调用 | 11,497 | 149 | 2026-11-11 | 85.7 | MIT |
+| [Page Agent](https://github.com/alibaba/page-agent) | 由网页或宿主调用 | 29,662 | 18 | 2026-09-06 | 64.4 | MIT |
+| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) · 归档 | 按需电脑 / 浏览器任务 | 39,594 | 8 | 2026-10-09 | 66.4 | Apache-2.0 |
 
 
 ### 研究实现与评测代码
@@ -126,13 +127,13 @@ flowchart LR
 
 | 项目 | 机制 / 定位 | Stars | 90天提交 | 最近提交 UTC | 维护分 | 许可 |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | 真实电脑任务评测 | 3,258 | 185 | 2026-11-02 | 80.5 | Apache-2.0 |
-| [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) · 许可限制/待核验 | 记忆驱动介入评测 | 12 | 6 | 2026-10-22 | 40.0 | CC-BY-NC-4.0 |
-| [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | 主动性评测 | 77 | 1 | 2026-10-13 | 37.4 | Apache-2.0 |
-| [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | 事件观察 / 任务预判 | 690 | 0 | 2026-05-12 | 26.0 | Apache-2.0 |
-| [PASK](https://github.com/xzf-thu/Pask) | 潜在需求检测 / 保持静默 | 219 | 0 | 2026-04-17 | 21.3 | Apache-2.0 |
-| [KnowU-Bench](https://github.com/ZJU-REAL/KnowU-Bench) | 交互式个性化移动评测 | 82 | 0 | 2026-06-13 | 20.1 | Apache-2.0 |
-| [ProactiveBench (MLLM)](https://github.com/tdemin16/proactivebench) | 多模态主动性评测 | 32 | 0 | 2026-06-22 | 17.4 | MIT |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | 真实电脑任务评测 | 3,258 | 191 | 2026-11-10 | 82.5 | Apache-2.0 |
+| [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) · 许可限制/待核验 | 记忆驱动介入评测 | 12 | 6 | 2026-10-22 | 39.8 | CC-BY-NC-4.0 |
+| [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | 主动性评测 | 77 | 1 | 2026-10-13 | 37.2 | Apache-2.0 |
+| [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | 事件观察 / 任务预判 | 691 | 0 | 2026-05-12 | 26.0 | Apache-2.0 |
+| [PASK](https://github.com/xzf-thu/Pask) | 潜在需求检测 / 保持静默 | 219 | 0 | 2026-04-17 | 21.2 | Apache-2.0 |
+| [KnowU-Bench](https://github.com/ZJU-REAL/KnowU-Bench) | 交互式个性化移动评测 | 82 | 0 | 2026-06-13 | 20.0 | Apache-2.0 |
+| [ProactiveBench (MLLM)](https://github.com/tdemin16/proactivebench) | 多模态主动性评测 | 32 | 0 | 2026-06-22 | 17.3 | MIT |
 | [PARE](https://github.com/deepakn97/pare) | 主动助手 / 用户模拟评测 | 46 | 0 | 2026-05-20 | 17.0 | MIT |
 | [ContextAgent](https://github.com/openaiotlab/ContextAgent) · 许可限制/待核验 | 感知上下文 / 服务预测 | 58 | 0 | 2025-12-07 | 14.8 | 待核验 |
 

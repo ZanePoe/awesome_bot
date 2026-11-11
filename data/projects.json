@@ -577,6 +577,42 @@
     }
   },
   {
+    "repo": "Anil-matcha/suparagent",
+    "name": "Suparagent",
+    "category": "workspace",
+    "scope": "core",
+    "trigger": "scheduled / webhook / manual routines",
+    "description": "集中管理命名 AI coworkers、团队委派、对话、记忆、routines、任务与审批的桌面及自托管工作区。",
+    "boundary": "项目仍处于早期开发，自托管服务和电脑/浏览器能力为实验性；托管版是独立产品，模型及账号需用户自备，部分集成仅支持 Claude 或 Codex。",
+    "reviewed_at": "2026-11-11",
+    "readme_path": "README.md",
+    "evidence": [
+      {
+        "url": "https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L3",
+        "locator": "README.md:3",
+        "note": "官方 README 的 coworker 工作区、记忆、routines 与审批定位；非实机测试"
+      },
+      {
+        "url": "https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L71",
+        "locator": "README.md:71",
+        "note": "官方 README 的团队、记忆、schedule/webhook routines 与审批机制；非实机测试"
+      },
+      {
+        "url": "https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L183",
+        "locator": "README.md:183",
+        "note": "官方 README 的早期开发和实验性能力边界；非实机测试"
+      }
+    ],
+    "seed": false,
+    "evidence_commit": "6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9",
+    "license_review": {
+      "status": "verified",
+      "label": "Apache-2.0",
+      "source": "https://api.github.com/repos/Anil-matcha/suparagent/license",
+      "note": "GitHub licenseInfo 识别；托管服务、第三方引擎、Composio 与模型提供商遵循各自条款"
+    }
+  },
+  {
     "repo": "Fei2411/DS-Bot",
     "name": "DS Bot",
     "category": "extensions",
