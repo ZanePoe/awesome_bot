@@ -1,45 +1,45 @@
 repo,category,scope,license,license_status,stars,commits_30d,commits_90d,last_commit_at,maintenance_status,score,as_of
-openclaw/openclaw,personal,core,MIT,verified,394376,18523,48713,2026-11-12T08:21:39Z,近90天有提交,100.0,2026-11-12T08:23:59+00:00
-NousResearch/hermes-agent,personal,core,MIT,verified,262820,15084,46437,2026-11-12T08:23:46Z,近90天有提交,100.0,2026-11-12T08:23:59+00:00
-earendil-works/pi,harness,adjacent,MIT,verified,121557,945,2110,2026-11-12T08:17:59Z,近90天有提交,100.0,2026-11-12T08:23:59+00:00
-deepseek-ai/deepseek-harness,harness,adjacent,MIT,verified,279317,4402,14257,2026-11-11T02:49:46Z,近90天有提交,99.66,2026-11-12T08:23:59+00:00
-browser-use/browser-use,computer-use,adjacent,MIT,verified,120789,640,940,2026-11-11T00:05:55Z,近90天有提交,99.63,2026-11-12T08:23:59+00:00
-HKUDS/nanobot,personal,core,MIT,verified,50032,418,1329,2026-11-12T08:08:48Z,近90天有提交,97.59,2026-11-12T08:23:59+00:00
-zeroclaw-labs/zeroclaw,personal,core,Apache-2.0,verified,33338,267,1072,2026-11-12T06:12:06Z,近90天有提交,96.16,2026-11-12T08:23:59+00:00
-nanocoai/nanoclaw,personal,core,MIT,verified,31111,138,702,2026-11-11T18:36:13Z,近90天有提交,95.78,2026-11-12T08:23:59+00:00
-milind-soni/OpenMausBot,personal,core,Apache-2.0（enterprise/ 除外）,verified,21432,5450,9712,2026-11-12T05:09:44Z,近90天有提交,94.61,2026-11-12T08:23:59+00:00
-CopilotKit/OpenBot,workspace,core,MIT,verified,11157,552,1086,2026-11-12T01:17:42Z,近90天有提交,92.3,2026-11-12T08:23:59+00:00
-agent0ai/agent-zero,workspace,core,MIT,verified,19836,137,485,2026-11-01T21:10:32Z,近90天有提交,91.46,2026-11-12T08:23:59+00:00
-elie222/rakazo,personal,core,Apache-2.0,verified,8024,2206,3384,2026-11-12T05:57:18Z,近90天有提交,91.21,2026-11-12T08:23:59+00:00
-Fei2411/DS-Bot,extensions,adjacent,Apache-2.0,verified,7082,2130,2306,2026-11-11T15:20:12Z,近90天有提交,90.61,2026-11-12T08:23:59+00:00
-Anil-matcha/suparagent,workspace,core,Apache-2.0,verified,7031,652,691,2026-11-11T15:55:42Z,近90天有提交,90.59,2026-11-12T08:23:59+00:00
-OpenBMB/PilotDeck,workspace,core,AGPL-3.0,verified,4996,488,1082,2026-11-11T02:17:34Z,近90天有提交,89.24,2026-11-12T08:23:59+00:00
-letta-ai/letta-code,harness,core,Apache-2.0,verified,3821,364,1023,2026-11-12T06:55:46Z,近90天有提交,88.64,2026-11-12T08:23:59+00:00
-nano-muse/nanoMuse,personal,core,GPL-3.0,verified,3428,1239,2660,2026-11-12T01:39:25Z,近90天有提交,88.2,2026-11-12T08:23:59+00:00
-CursorTouch/Windows-MCP,computer-use,adjacent,MIT,verified,11542,101,149,2026-11-12T01:11:07Z,近90天有提交,85.63,2026-11-12T08:23:59+00:00
-xlang-ai/OSWorld,research,research,Apache-2.0,verified,3258,168,190,2026-11-10T17:13:17Z,近90天有提交,82.23,2026-11-12T08:23:59+00:00
-CopilotKit/openmuse,workspace,adjacent,MIT,verified,6433,19,144,2026-10-26T15:38:10Z,近90天有提交,79.25,2026-11-12T08:23:59+00:00
-moltis-org/moltis,personal,core,MIT,verified,2953,16,156,2026-10-23T19:29:30Z,近90天有提交,76.35,2026-11-12T08:23:59+00:00
-CopilotKit/OpenDuet,workspace,core,MIT,verified,2044,83,83,2026-11-10T17:02:16Z,近90天有提交,75.98,2026-11-12T08:23:59+00:00
-nearai/ironclaw,personal,core,Apache-2.0,verified,12714,0,170,2026-09-10T18:55:51Z,近90天有提交,74.26,2026-11-12T08:23:59+00:00
-alibaba/page-agent,computer-use,adjacent,MIT,verified,29665,0,18,2026-09-06T07:44:57Z,近90天有提交,64.23,2026-11-12T08:23:59+00:00
-john-walks-slow/dsh-proactive,extensions,core,MIT,verified,15,8,97,2026-10-26T03:02:52Z,近90天有提交,56.09,2026-11-12T08:23:59+00:00
-AFK-surf/Comma,personal,core,AGPL-3.0,verified,593,3,8,2026-10-27T07:15:06Z,近90天有提交,55.48,2026-11-12T08:23:59+00:00
-sipeed/picoclaw,personal,core,MIT,verified,30126,0,1,2026-08-19T09:17:32Z,近90天有提交,49.46,2026-11-12T08:23:59+00:00
-facebookresearch/Memo-Pro-Agent,research,research,CC-BY-NC-4.0,source_available,13,6,6,2026-10-22T00:48:15Z,近90天有提交,39.85,2026-11-12T08:23:59+00:00
-Simplified-Reasoning/Pi-Bench,research,research,Apache-2.0,verified,77,1,1,2026-10-13T08:41:07Z,近90天有提交,36.95,2026-11-12T08:23:59+00:00
-maikunari/mame,personal,core,README 声明 MIT,unverified,0,0,28,2026-08-21T02:01:05Z,近90天有提交,28.87,2026-11-12T08:23:59+00:00
-khoj-ai/khoj,personal,core,AGPL-3.0,verified,38112,0,0,2026-08-02T01:55:40Z,91–365天未提交,44.67,2026-11-12T08:23:59+00:00
-volcengine/MineContext,workspace,adjacent,Apache-2.0,verified,5547,0,0,2026-05-07T13:23:05Z,91–365天未提交,33.02,2026-11-12T08:23:59+00:00
-thunlp/ProactiveAgent,research,research,Apache-2.0,verified,691,0,0,2026-05-12T08:51:02Z,91–365天未提交,25.96,2026-11-12T08:23:59+00:00
-mikeyobrien/rho,personal,core,MIT,verified,377,0,0,2026-05-26T20:53:53Z,91–365天未提交,24.42,2026-11-12T08:23:59+00:00
-xzf-thu/Pask,research,research,Apache-2.0,verified,219,0,0,2026-04-17T16:50:36Z,91–365天未提交,21.2,2026-11-12T08:23:59+00:00
-ZJU-REAL/KnowU-Bench,research,research,Apache-2.0,verified,82,0,0,2026-06-13T07:14:03Z,91–365天未提交,19.97,2026-11-12T08:23:59+00:00
-tdemin16/proactivebench,research,research,MIT,verified,32,0,0,2026-06-22T09:44:04Z,91–365天未提交,17.26,2026-11-12T08:23:59+00:00
-deepakn97/pare,research,research,MIT,verified,46,0,0,2026-05-20T20:25:21Z,91–365天未提交,16.93,2026-11-12T08:23:59+00:00
-openaiotlab/ContextAgent,research,research,待核验,unverified,59,0,0,2025-12-07T15:44:35Z,91–365天未提交,14.8,2026-11-12T08:23:59+00:00
-t0dorakis/murmur,extensions,core,MIT,verified,32,0,0,2026-02-10T17:31:55Z,91–365天未提交,13.33,2026-11-12T08:23:59+00:00
-Hypostas/pulse,extensions,core,MIT,verified,4,0,0,2026-07-06T15:16:26Z,91–365天未提交,11.57,2026-11-12T08:23:59+00:00
-bytedance/UI-TARS-desktop,computer-use,adjacent,Apache-2.0,verified,39598,0,8,2026-10-09T01:29:51Z,归档 / 历史,66.23,2026-11-12T08:23:59+00:00
-NousResearch/Hermes-Bot-Mode,extensions,historical,MIT,verified,670,0,68,2026-08-17T01:32:11Z,归档 / 历史,55.93,2026-11-12T08:23:59+00:00
-letta-ai/lettabot,historical,historical,Apache-2.0,verified,326,0,0,2026-05-03T23:21:29Z,归档 / 历史,23.07,2026-11-12T08:23:59+00:00
+openclaw/openclaw,personal,core,MIT,verified,394414,17924,48708,2026-11-13T07:59:11Z,近90天有提交,100.0,2026-11-13T08:04:54+00:00
+NousResearch/hermes-agent,personal,core,MIT,verified,263051,15341,46715,2026-11-13T08:03:31Z,近90天有提交,100.0,2026-11-13T08:04:54+00:00
+deepseek-ai/deepseek-harness,harness,adjacent,MIT,verified,280095,4716,14667,2026-11-13T07:37:50Z,近90天有提交,99.99,2026-11-13T08:04:54+00:00
+browser-use/browser-use,computer-use,adjacent,MIT,verified,120877,657,957,2026-11-13T06:37:33Z,近90天有提交,99.98,2026-11-13T08:04:54+00:00
+earendil-works/pi,harness,adjacent,MIT,verified,121750,978,2095,2026-11-13T04:53:16Z,近90天有提交,99.96,2026-11-13T08:04:54+00:00
+HKUDS/nanobot,personal,core,MIT,verified,50052,420,1329,2026-11-13T07:29:01Z,近90天有提交,97.59,2026-11-13T08:04:54+00:00
+zeroclaw-labs/zeroclaw,personal,core,Apache-2.0,verified,33344,253,1069,2026-11-12T10:35:52Z,近90天有提交,95.94,2026-11-13T08:04:54+00:00
+nanocoai/nanoclaw,personal,core,MIT,verified,31110,138,700,2026-11-12T14:56:53Z,近90天有提交,95.75,2026-11-13T08:04:54+00:00
+milind-soni/OpenMausBot,personal,core,Apache-2.0（enterprise/ 除外）,verified,21875,5714,10103,2026-11-13T07:31:58Z,近90天有提交,94.71,2026-11-13T08:04:54+00:00
+CopilotKit/OpenBot,workspace,core,MIT,verified,11883,574,1112,2026-11-13T04:20:32Z,近90天有提交,92.56,2026-11-13T08:04:54+00:00
+elie222/rakazo,personal,core,Apache-2.0,verified,8175,2311,3488,2026-11-13T07:59:16Z,近90天有提交,91.3,2026-11-13T08:04:54+00:00
+agent0ai/agent-zero,workspace,core,MIT,verified,19847,98,485,2026-11-01T21:10:32Z,近90天有提交,91.22,2026-11-13T08:04:54+00:00
+Fei2411/DS-Bot,extensions,adjacent,Apache-2.0,verified,7470,2069,2313,2026-11-12T17:04:27Z,近90天有提交,90.81,2026-11-13T08:04:54+00:00
+Anil-matcha/suparagent,workspace,core,Apache-2.0,verified,7050,649,691,2026-11-11T15:55:42Z,近90天有提交,90.33,2026-11-13T08:04:54+00:00
+OpenBMB/PilotDeck,workspace,core,AGPL-3.0,verified,4996,482,1079,2026-11-11T02:17:34Z,近90天有提交,88.97,2026-11-13T08:04:54+00:00
+letta-ai/letta-code,harness,core,Apache-2.0,verified,3828,379,1038,2026-11-13T08:01:15Z,近90天有提交,88.66,2026-11-13T08:04:54+00:00
+nano-muse/nanoMuse,personal,core,GPL-3.0,verified,3447,1164,2668,2026-11-13T06:49:04Z,近90天有提交,88.29,2026-11-13T08:04:54+00:00
+CursorTouch/Windows-MCP,computer-use,adjacent,MIT,verified,11594,106,157,2026-11-12T17:05:59Z,近90天有提交,85.84,2026-11-13T08:04:54+00:00
+xlang-ai/OSWorld,research,research,Apache-2.0,verified,3258,195,217,2026-11-12T16:40:37Z,近90天有提交,83.24,2026-11-13T08:04:54+00:00
+CopilotKit/openmuse,workspace,adjacent,MIT,verified,6456,19,144,2026-10-26T15:38:10Z,近90天有提交,79.04,2026-11-13T08:04:54+00:00
+moltis-org/moltis,personal,core,MIT,verified,2958,16,156,2026-10-23T19:29:30Z,近90天有提交,76.14,2026-11-13T08:04:54+00:00
+CopilotKit/OpenDuet,workspace,core,MIT,verified,2048,83,83,2026-11-10T17:02:16Z,近90天有提交,75.72,2026-11-13T08:04:54+00:00
+nearai/ironclaw,personal,core,Apache-2.0,verified,12713,0,158,2026-09-10T18:55:51Z,近90天有提交,73.71,2026-11-13T08:04:54+00:00
+alibaba/page-agent,computer-use,adjacent,MIT,verified,29673,0,18,2026-09-06T07:44:57Z,近90天有提交,64.1,2026-11-13T08:04:54+00:00
+AFK-surf/Comma,personal,core,AGPL-3.0,verified,599,4,9,2026-11-12T11:08:52Z,近90天有提交,59.95,2026-11-13T08:04:54+00:00
+john-walks-slow/dsh-proactive,extensions,core,MIT,verified,16,2,97,2026-10-26T03:02:52Z,近90天有提交,56.08,2026-11-13T08:04:54+00:00
+sipeed/picoclaw,personal,core,MIT,verified,30130,0,1,2026-08-19T09:17:32Z,近90天有提交,49.35,2026-11-13T08:04:54+00:00
+facebookresearch/Memo-Pro-Agent,research,research,CC-BY-NC-4.0,source_available,14,6,6,2026-10-22T00:48:15Z,近90天有提交,39.88,2026-11-13T08:04:54+00:00
+Simplified-Reasoning/Pi-Bench,research,research,Apache-2.0,verified,77,0,1,2026-10-13T08:41:07Z,近90天有提交,36.76,2026-11-13T08:04:54+00:00
+maikunari/mame,personal,core,README 声明 MIT,unverified,0,0,28,2026-08-21T02:01:05Z,近90天有提交,28.76,2026-11-13T08:04:54+00:00
+khoj-ai/khoj,personal,core,AGPL-3.0,verified,38118,0,0,2026-08-02T01:55:40Z,91–365天未提交,44.59,2026-11-13T08:04:54+00:00
+volcengine/MineContext,workspace,adjacent,Apache-2.0,verified,5549,0,0,2026-05-07T13:23:05Z,91–365天未提交,32.99,2026-11-13T08:04:54+00:00
+thunlp/ProactiveAgent,research,research,Apache-2.0,verified,691,0,0,2026-05-12T08:51:02Z,91–365天未提交,25.92,2026-11-13T08:04:54+00:00
+mikeyobrien/rho,personal,core,MIT,verified,378,0,0,2026-05-26T20:53:53Z,91–365天未提交,24.39,2026-11-13T08:04:54+00:00
+xzf-thu/Pask,research,research,Apache-2.0,verified,219,0,0,2026-04-17T16:50:36Z,91–365天未提交,21.17,2026-11-13T08:04:54+00:00
+ZJU-REAL/KnowU-Bench,research,research,Apache-2.0,verified,82,0,0,2026-06-13T07:14:03Z,91–365天未提交,19.92,2026-11-13T08:04:54+00:00
+tdemin16/proactivebench,research,research,MIT,verified,32,0,0,2026-06-22T09:44:04Z,91–365天未提交,17.2,2026-11-13T08:04:54+00:00
+deepakn97/pare,research,research,MIT,verified,46,0,0,2026-05-20T20:25:21Z,91–365天未提交,16.89,2026-11-13T08:04:54+00:00
+openaiotlab/ContextAgent,research,research,待核验,unverified,59,0,0,2025-12-07T15:44:35Z,91–365天未提交,14.79,2026-11-13T08:04:54+00:00
+t0dorakis/murmur,extensions,core,MIT,verified,32,0,0,2026-02-10T17:31:55Z,91–365天未提交,13.32,2026-11-13T08:04:54+00:00
+Hypostas/pulse,extensions,core,MIT,verified,4,0,0,2026-07-06T15:16:26Z,91–365天未提交,11.51,2026-11-13T08:04:54+00:00
+bytedance/UI-TARS-desktop,computer-use,adjacent,Apache-2.0,verified,39598,0,8,2026-10-09T01:29:51Z,归档 / 历史,66.05,2026-11-13T08:04:54+00:00
+NousResearch/Hermes-Bot-Mode,extensions,historical,MIT,verified,671,0,37,2026-08-17T01:32:11Z,归档 / 历史,52.47,2026-11-13T08:04:54+00:00
+letta-ai/lettabot,historical,historical,Apache-2.0,verified,326,0,0,2026-05-03T23:21:29Z,归档 / 历史,23.03,2026-11-13T08:04:54+00:00
