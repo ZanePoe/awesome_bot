@@ -139,7 +139,7 @@ def validate(projects,papers,snapshot):
         assert p['code_repo'] is None or p['code_repo'] in repos
         datetime.strptime(p['published'],'%Y-%m-%d')
     seeds={p['repo'] for p in projects if p.get('seed')}
-    assert seeds=={'Fei2411/DS-Bot','CursorTouch/Windows-MCP','elie222/rakazo','OpenBMB/PilotDeck','nano-muse/nanoMuse'}
+    assert seeds=={'Fei-Craft/DS-Bot','CursorTouch/Windows-MCP','elie222/rakazo','OpenBMB/PilotDeck','nano-muse/nanoMuse'}
     for f in STATIC: assert (ROOT/f).exists(), 'missing English static document: '+f
     def keys(value,base=''):
         if isinstance(value,dict): return sorted(sum([keys(value[k],base+'/'+k) for k in value],[]))
