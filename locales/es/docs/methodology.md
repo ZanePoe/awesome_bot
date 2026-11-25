@@ -2,7 +2,7 @@
 
 ## Origen de las métricas
 
-`scripts/refresh_metrics.py` usa la API GraphQL de GitHub a través de un `gh` autenticado o de `GH_TOKEN` para leer repositorios públicos. Cada recolección fija un instante UTC y lee todos los proyectos por lotes; solo si todos tienen éxito se reemplaza de forma atómica `data/metrics.json`. Un fallo parcial no escribe ceros donde hay valores desconocidos ni sobrescribe la instantánea completa anterior.
+`scripts/refresh_metrics.py` usa la API GraphQL de GitHub a través de un `gh` autenticado o de `GH_TOKEN` para leer repositorios públicos. Cada recolección fija un instante UTC y lee todos los proyectos por lotes; solo si todos tienen éxito se reemplaza de forma atómica `data/metrics.json`. Un fallo parcial no escribe ceros donde hay valores desconocidos ni sobrescribe la instantánea completa anterior. La única excepción es un repositorio que GitHub ya no resuelve (renombrado o borrado): su registro anterior se conserva y se marca con `missing_upstream` y una marca de tiempo `missing_since`, de modo que un proyecto desaparecido no rompe la actualización diaria. Los límites de tasa, los fallos de transporte y las respuestas parciales de GraphQL siguen interrumpiendo la ejecución y manteniendo intacta la instantánea previa.
 
 - `stars`: el `stargazerCount` en el momento de la recolección.
 - `commits_30d / commits_90d`: el `history.totalCount` del historial alcanzable de la rama por defecto dentro de la ventana UTC correspondiente, incluidos commits de merge y de bots. No se usa el recuento de la primera página como si fuera el total.

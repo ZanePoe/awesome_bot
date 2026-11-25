@@ -2,7 +2,7 @@
 
 ## Metric sources
 
-`scripts/refresh_metrics.py` uses the GitHub GraphQL API through a logged-in `gh` or `GH_TOKEN` against public repositories. One collection uses a fixed UTC moment, reads all projects in batches, and only atomically replaces `data/metrics.json` when every batch succeeds. A partial failure never writes unknown values as zero and never overwrites the previous complete snapshot.
+`scripts/refresh_metrics.py` uses the GitHub GraphQL API through a logged-in `gh` or `GH_TOKEN` against public repositories. One collection uses a fixed UTC moment, reads all projects in batches, and only atomically replaces `data/metrics.json` when every batch succeeds. A partial failure never writes unknown values as zero and never overwrites the previous complete snapshot. The one exception is a repository GitHub can no longer resolve (renamed away or deleted): its previous record is carried forward and marked `missing_upstream` with a `missing_since` timestamp, so a single vanished project cannot break the daily refresh. Rate limits, transport failures and partial GraphQL responses still abort the run and keep the previous snapshot whole.
 
 - `stars`: the `stargazerCount` at collection time.
 - `commits_30d / commits_90d`: `history.totalCount` over the default-branch reachable history inside the matching UTC window, including merge and bot commits. First-page counts are never passed off as complete totals.

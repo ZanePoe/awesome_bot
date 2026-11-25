@@ -2,7 +2,7 @@
 
 ## Source des métriques
 
-`scripts/refresh_metrics.py` interroge l'API GraphQL de GitHub sur les dépôts publics, via un `gh` connecté ou `GH_TOKEN`. Une collecte utilise un instant UTC figé, lit tous les projets par lots et ne remplace `data/metrics.json` de façon atomique qu'en cas de succès complet. Un échec partiel n'écrit zéro à la place d'une valeur inconnue et n'écrase pas l'instantané complet précédent.
+`scripts/refresh_metrics.py` interroge l'API GraphQL de GitHub sur les dépôts publics, via un `gh` connecté ou `GH_TOKEN`. Une collecte utilise un instant UTC figé, lit tous les projets par lots et ne remplace `data/metrics.json` de façon atomique qu'en cas de succès complet. Un échec partiel n'écrit zéro à la place d'une valeur inconnue et n'écrase pas l'instantané complet précédent. Seule exception : un dépôt que GitHub ne résout plus (renommé ou supprimé) conserve son enregistrement précédent, marqué `missing_upstream` avec un horodatage `missing_since`, afin qu'un projet disparu ne bloque pas la mise à jour quotidienne. Les limites de débit, les pannes de transport et les réponses GraphQL partielles interrompent toujours l'exécution et laissent l'instantané précédent intact.
 
 - `stars` : `stargazerCount` au moment du relevé.
 - `commits_30d / commits_90d` : `history.totalCount` sur l'historique atteignable depuis la branche par défaut, dans la fenêtre UTC considérée, commits de fusion et de robots inclus. Le nombre de la seule première page ne tient pas lieu de comptage complet.

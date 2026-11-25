@@ -2,7 +2,7 @@
 
 ## 指标来源
 
-`scripts/refresh_metrics.py` 使用 GitHub GraphQL API，经已登录的 `gh` 或 `GH_TOKEN` 访问公开仓库。一次采集使用固定 UTC 时刻，按批读取全部项目，全部成功才原子替换 `data/metrics.json`。部分失败不会把未知值写成零，也不会覆盖上一份完整快照。
+`scripts/refresh_metrics.py` 使用 GitHub GraphQL API，经已登录的 `gh` 或 `GH_TOKEN` 访问公开仓库。一次采集使用固定 UTC 时刻，按批读取全部项目，全部成功才原子替换 `data/metrics.json`。部分失败不会把未知值写成零，也不会覆盖上一份完整快照。唯一例外是 GitHub 已解析不到的仓库（更名或下架）：沿用上一份记录并标记 `missing_upstream` 与 `missing_since` 时间戳，避免单个消失项目让整轮刷新失败。限流、传输错误与 GraphQL 部分返回仍然中止并保留原快照完整。
 
 - `stars`：采集时的 `stargazerCount`。
 - `commits_30d / commits_90d`：默认分支可达历史在对应 UTC 时间窗口内的 `history.totalCount`，包含 merge 和机器人提交。不用仅第一页的数量冒充完整计数。
