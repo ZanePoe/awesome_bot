@@ -125,13 +125,6 @@
   "license_label": "Apache-2.0",
   "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
  },
- "CopilotKit/openmuse": {
-  "description": "Open-source app with a personal agent interface, browser and workspace.",
-  "trigger": "background task worker; autonomous triggering unverified",
-  "boundary": "A background worker is not autonomous initiation; some connectors and actions are still on the roadmap.",
-  "license_label": "MIT",
-  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
- },
  "CopilotKit/OpenDuet": {
   "description": "Open-source app template for building proactive work assistants.",
   "trigger": "routines / background suggestions",
@@ -152,13 +145,6 @@
   "boundary": "The project is still in early development; self-hosted services and computer/browser capabilities are experimental; the hosted version is a separate product; models and accounts must be provided by the user; some integrations support only Claude or Codex.",
   "license_label": "Apache-2.0",
   "license_note": "Identified via GitHub licenseInfo; the hosted service, third-party engines, Composio and model providers follow their own terms"
- },
- "Fei2411/DS-Bot": {
-  "description": "Extends DeepSeek Harness into a desktop app and plugin with memory, group chat and bot collaboration.",
-  "trigger": "persistent bot / group chat; autonomous wake-up unverified",
-  "boundary": "The homepage does not confirm an independent scheduling mechanism; long-lived sessions must not be equated with proactive initiation.",
-  "license_label": "Apache-2.0",
-  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
  },
  "NousResearch/Hermes-Bot-Mode": {
   "description": "Adds named bots, separate conversations and a periodic-task panel to the Hermes desktop app.",
@@ -304,6 +290,20 @@
   "description": "Formerly provided messaging channels, memory, heartbeat and scheduled tasks as a personal assistant.",
   "trigger": "heartbeat / cron",
   "boundary": "The official README announces it is no longer actively maintained and recommends migrating to Letta Code.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "CopilotKit/openfuse": {
+  "description": "Open-source app with a personal agent interface, browser and workspace.",
+  "trigger": "background task worker; autonomous triggering unverified",
+  "boundary": "A background worker is not autonomous initiation; some connectors and actions are still on the roadmap.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "Fei-Craft/DS-Bot": {
+  "description": "Extends DeepSeek Harness into a desktop app and plugin with memory, group chat and bot collaboration.",
+  "trigger": "persistent bot / group chat; autonomous wake-up unverified",
+  "boundary": "The homepage does not confirm an independent scheduling mechanism; long-lived sessions must not be equated with proactive initiation.",
   "license_label": "Apache-2.0",
   "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
  }

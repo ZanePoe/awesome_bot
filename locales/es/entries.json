@@ -125,13 +125,6 @@
   "license_label": "Apache-2.0",
   "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
  },
- "CopilotKit/openmuse": {
-  "description": "Aplicación de código abierto que ofrece interfaz de agente personal, navegador y espacio de trabajo.",
-  "trigger": "workers de tareas en segundo plano; activación autónoma pendiente de verificación",
-  "boundary": "Un worker en segundo plano no equivale a iniciar por sí solo; parte de los conectores y acciones siguen en el roadmap.",
-  "license_label": "MIT",
-  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
- },
  "CopilotKit/OpenDuet": {
   "description": "Plantilla de aplicación de código abierto para construir asistentes proactivos de trabajo.",
   "trigger": "routines / sugerencias en segundo plano",
@@ -152,13 +145,6 @@
   "boundary": "El proyecto sigue en desarrollo temprano; el servicio autoalojado y las capacidades de ordenador y navegador son experimentales; la versión gestionada es un producto aparte; el usuario aporta modelos y cuentas, y algunas integraciones solo admiten Claude o Codex.",
   "license_label": "Apache-2.0",
   "license_note": "Identificada por GitHub licenseInfo; el servicio gestionado, los motores de terceros, Composio y los proveedores de modelos siguen sus propios términos"
- },
- "Fei2411/DS-Bot": {
-  "description": "Aplicación de escritorio y complementos que amplían DeepSeek Harness con memoria, chats grupales y colaboración entre bots.",
-  "trigger": "bots persistentes / chats grupales; despertar autónomo pendiente de verificación",
-  "boundary": "La página principal no confirma un mecanismo propio de temporización; no se puede equiparar directamente una sesión prolongada con ejecución proactiva.",
-  "license_label": "Apache-2.0",
-  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
  },
  "NousResearch/Hermes-Bot-Mode": {
   "description": "Añade a Hermes de escritorio bots con nombre, conversaciones independientes y un panel de tareas periódicas.",
@@ -304,6 +290,20 @@
   "description": "Asistente personal que ofrecía canales de mensajería, memoria, heartbeat y tareas programadas.",
   "trigger": "heartbeat / cron",
   "boundary": "El README oficial anuncia que ya no se mantiene activamente y recomienda migrar a Letta Code.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "CopilotKit/openfuse": {
+  "description": "Aplicación de código abierto que ofrece interfaz de agente personal, navegador y espacio de trabajo.",
+  "trigger": "workers de tareas en segundo plano; activación autónoma pendiente de verificación",
+  "boundary": "Un worker en segundo plano no equivale a iniciar por sí solo; parte de los conectores y acciones siguen en el roadmap.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "Fei-Craft/DS-Bot": {
+  "description": "Aplicación de escritorio y complementos que amplían DeepSeek Harness con memoria, chats grupales y colaboración entre bots.",
+  "trigger": "bots persistentes / chats grupales; despertar autónomo pendiente de verificación",
+  "boundary": "La página principal no confirma un mecanismo propio de temporización; no se puede equiparar directamente una sesión prolongada con ejecución proactiva.",
   "license_label": "Apache-2.0",
   "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
  }

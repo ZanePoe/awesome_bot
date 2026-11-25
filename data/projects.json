@@ -494,8 +494,8 @@
     }
   },
   {
-    "repo": "CopilotKit/openmuse",
-    "name": "OpenMuse",
+    "repo": "CopilotKit/openfuse",
+    "name": "OpenFuse",
     "category": "workspace",
     "scope": "adjacent",
     "trigger": "后台任务 worker；自主触发待核验",
@@ -505,7 +505,7 @@
     "readme_path": "README.md",
     "evidence": [
       {
-        "url": "https://github.com/CopilotKit/openmuse/blob/a4944f4c471d3dc93b8bfc060b5da309b5216ab2/README.md#L43",
+        "url": "https://github.com/CopilotKit/openfuse/blob/a4944f4c471d3dc93b8bfc060b5da309b5216ab2/README.md#L43",
         "locator": "README.md:43",
         "note": "官方 README 文档核验；非实机测试"
       }
@@ -515,7 +515,7 @@
     "license_review": {
       "status": "verified",
       "label": "MIT",
-      "source": "https://api.github.com/repos/CopilotKit/openmuse/license",
+      "source": "https://api.github.com/repos/CopilotKit/openfuse/license",
       "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
     }
   },
@@ -613,7 +613,7 @@
     }
   },
   {
-    "repo": "Fei2411/DS-Bot",
+    "repo": "Fei-Craft/DS-Bot",
     "name": "DS Bot",
     "category": "extensions",
     "scope": "adjacent",
@@ -624,7 +624,7 @@
     "readme_path": "README.md",
     "evidence": [
       {
-        "url": "https://github.com/Fei2411/DS-Bot/blob/71d344bf193f3f18185f25de3d8e5c483046910a/README.md#L41",
+        "url": "https://github.com/Fei-Craft/DS-Bot/blob/71d344bf193f3f18185f25de3d8e5c483046910a/README.md#L41",
         "locator": "README.md:41",
         "note": "官方 README 文档核验；非实机测试"
       }
@@ -634,7 +634,7 @@
     "license_review": {
       "status": "verified",
       "label": "Apache-2.0",
-      "source": "https://api.github.com/repos/Fei2411/DS-Bot/license",
+      "source": "https://api.github.com/repos/Fei-Craft/DS-Bot/license",
       "note": "GitHub licenseInfo 识别；不推断附属数据或模型权重许可"
     }
   },
