@@ -1,0 +1,85 @@
+{
+  "language": "en",
+  "language_name": "English",
+  "list_separator": ", ",
+  "categories": {
+    "personal": "Resident personal assistants and lightweight runtimes",
+    "workspace": "Workspace and context assistants",
+    "extensions": "Proactive plugins and scheduling extensions",
+    "harness": "Extensible harnesses and persistent runtime bases",
+    "computer-use": "Computer and browser control components",
+    "research": "Research implementations and evaluation code",
+    "historical": "Historical and migration projects"
+  },
+  "paper_categories": {
+    "foundations": "Definitions, mechanisms and foundational research",
+    "systems": "Personal agent systems",
+    "memory": "Long-term memory and latent needs",
+    "benchmarks": "Proactivity evaluation benchmarks",
+    "computer-use": "Computer use and personalized execution",
+    "reliability": "Long-running operation and reliability research"
+  },
+  "scopes": {
+    "core": "proactive mechanism documented",
+    "adjacent": "adjacent capability",
+    "research": "research resource",
+    "historical": "historical reference"
+  },
+  "license_status": {
+    "verified": "Open license verified",
+    "source_available": "Source-available, not OSI open source",
+    "unverified": "Pending verification"
+  },
+  "modes": {
+    "stars": "Star priority",
+    "activity": "90-day commit count priority",
+    "recent": "Most recent default-branch commit priority"
+  },
+  "tiers": [
+    "Commits within the last 90 days",
+    "No commits for 91–365 days",
+    "No commits for over 365 days",
+    "Archived / historical"
+  ],
+  "tags": {
+    "seed": "★Seed",
+    "archived": "Archived",
+    "license": "License caution/pending"
+  },
+  "headers": {
+    "shortlist": ["Project", "Proactive mechanism", "Stars", "90-day commits", "Last commit UTC", "Maintenance score"],
+    "detail": ["Project", "Mechanism / positioning", "Stars", "90-day commits", "Last commit UTC", "Maintenance score", "License"],
+    "papers": ["First submitted", "Paper", "Research question"],
+    "rankings": ["Project", "Category", "Maintenance tier", "Stars", "90-day commits", "Last commit UTC"]
+  },
+  "sections": {
+    "current": "Current snapshot",
+    "shortlist": "Active proactive projects at a glance",
+    "toc": "Categories",
+    "papers": "Papers",
+    "detail_title": "Project notes and evidence",
+    "papers_title": "Paper catalogue",
+    "rankings_title": "Ranking views",
+    "data": "Maintenance and contributing",
+    "thanks": "Acknowledgements and licenses"
+  },
+  "templates": {
+    "current": "Catalogue of **{total} projects / research code repositories and {papers} papers**. Metrics collected: **{as_of} (UTC)**; features manually verified: {reviewed}.\n\nBased only on public documentation and GitHub metadata; no unified hands-on evaluation has been run. Categories and features require manual review, and metrics are refreshed by scripts.",
+    "shortlist_note": "Selected only from projects with a verified open license, a documented proactive mechanism and no archival flag, ordered by maintenance score; adjacent components, pending-license projects and historical projects do not enter this table.",
+    "toc_note": "`★Seed` marks reference projects provided by the user. Every category uses the same ordering rules, and archived projects are automatically pushed to the end. License display follows manual verification and GitHub SPDX identification; an unknown license is never treated as zero or defaulted to MIT.",
+    "projects_note": "Full descriptions, boundaries and evidence are in [project details](docs/projects.md). For separate star, activity and latest-commit views see the [ranking tables](docs/rankings.md).",
+    "papers_note": "Papers are grouped by research question; within a group, entries are sorted by first-submission date, newest first. Paper years, project stars and system capability are different kinds of assessment and are never mixed into one score.",
+    "papers_link": "Paper versions, code links and applicability boundaries are in [paper details](docs/papers.md).",
+    "detail_intro": "Every documented feature was verified against public documentation; nothing was installed, run, or put through a unified capability test. Evidence is pinned to the commit verified at review time, and later metric refreshes do not change feature judgements.",
+    "entry": "- Category: {category}; {scope}.\n- Trigger: {trigger}.\n- Boundary: {boundary}\n- Current maintenance status: {maintenance}; {commits_30d} commits / 30 days, {commits_90d} commits / 90 days.\n- License: [{license}]({license_source}); {license_note}.\n- Feature verified: {reviewed_at}; {sources}.",
+    "source_link": "Source {index}",
+    "papers_intro": "Titles and first-submission dates were verified against the original arXiv abstract pages (2026-11-05). Versions or renames of the same arXiv ID count as one paper. Conference status without independent verification is left as arXiv.",
+    "paper_entry": "- Category: {category}; first submitted: {published}; {publication_note}.\n- Research question: {summary}\n- Reading boundary: {boundary}\n- Resources: {code}.",
+    "paper_code_link": "[Code]({url})",
+    "paper_code_none": "No code link verified in this round",
+    "rankings_intro": "Ranking over full-catalogue metadata; components, research code and assistants only show maintenance metrics and are not interchangeable. Every view first tiers by maintenance status, then sorts by that view's metric in descending order; ties fall back to stars, then repository name, for a stable order.\n\nSnapshot: {as_of}. The formula and field definitions are in [methodology.md](methodology.md).",
+    "data": "- [Definitions, inclusion criteria and categories](docs/taxonomy.md)\n- [Ranking formula and its limits](docs/methodology.md)\n- [Search terms, sources and research coverage](docs/research.md)\n- [Extension paths on existing harnesses](docs/harness-guide.md)\n- [Contributing](CONTRIBUTING.md)\n\n```sh\npython scripts/refresh_metrics.py   # requires a logged-in gh or GH_TOKEN\npython scripts/build.py\npython -m unittest discover -s tests\npython scripts/build.py --check\n```\n\nGitHub Actions refreshes metrics and rankings for listed projects every day. New projects, papers and feature classifications merge only after manual verification; an automated metrics refresh does not mean features or licenses were re-audited.",
+    "thanks": "Discovery entry points referenced [Awesome Proactive Agents](https://github.com/LowEntropyAI/awesome-proactive-agent) and [Awesome Personal Agents](https://github.com/upgundecha/awesome-personal-agents); every item was verified back at its original repository and paper.\n\nOriginal explanations, curated data and maintenance scripts in this repository use the [MIT]({R}LICENSE) license. Linked projects, papers, models and data follow their own licenses.",
+    "records_note": "The [change records]({R}record/) preserve the original text (in Chinese) from the time of each verification, so the source and the wording behind every judgement stay auditable."
+  }
+}

@@ -1,4 +1,4 @@
-"""Render the curated catalogue and transparent metadata rankings without network access."""
+"""Render the curated multilingual catalogue and transparent metadata rankings without network access."""
 from __future__ import annotations
 import argparse
 import csv
@@ -8,26 +8,65 @@ import json
 import math
 from pathlib import Path
 import re
+import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
-CATEGORIES = {
-    'personal': '常驻个人助手与轻量运行时',
-    'workspace': '工作空间与上下文助手',
-    'extensions': '主动插件与调度扩展',
-    'harness': '可扩展 Harness 与持久运行基础',
-    'computer-use': '电脑与浏览器控制组件',
-    'research': '研究实现与评测代码',
-    'historical': '历史与迁移项目',
-}
-PAPER_CATEGORIES = {
-    'foundations': '定义、机制与基础研究',
-    'systems': '个人 Agent 系统',
-    'memory': '长期记忆与潜在需求',
-    'benchmarks': '主动性评测基准',
-    'computer-use': '电脑操作与个性化执行',
-    'reliability': '长期运行与可靠性研究',
-}
-SCOPE = {'core':'主动机制已文档化','adjacent':'相邻能力','research':'研究资源','historical':'历史参考'}
+DEFAULT='en'; MIRRORED=['zh','es','hi','fr']; LOCALES=[DEFAULT,*MIRRORED]
+STATIC=['docs/readme-intro.md','docs/taxonomy.md','docs/methodology.md','docs/research.md','docs/harness-guide.md','CONTRIBUTING.md']
+KEYWORD_FILES=['docs/research.md']
+CJK=re.compile(r'[\u3000-\u303f\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff00-\uffef]')
+
+def ui(locale):
+    return json.loads((ROOT/'locales'/locale/'ui.json').read_text(encoding='utf-8'))
+
+def placeholders(template):
+    return set(re.findall(r'(?<!\{)\{(\w+)\}(?!\})',template))
+
+def entries(locale,projects):
+    """Per-locale wording; Chinese falls back to the canonical reviewed data."""
+    if locale=='zh':
+        return {p['repo']:{'name':p['name'],'description':p['description'],'boundary':p['boundary'],'trigger':p['trigger'],'license_label':p['license_review']['label'],'license_note':p['license_review'].get('note','')} for p in projects}
+    raw=json.loads((ROOT/'locales'/locale/'entries.json').read_text(encoding='utf-8'))
+    out={}
+    for p in projects:
+        t=raw[p['repo']]
+        out[p['repo']]={'name':t.get('name') or p['name'],'description':t['description'],'boundary':t['boundary'],'trigger':t['trigger'],'license_label':t['license_label'],'license_note':t['license_note']}
+    return out
+
+def paper_text(locale,papers):
+    """Per-locale paper wording; Chinese falls back to the canonical reviewed data."""
+    if locale=='zh':
+        return {p['id']:{'title':p['title'],'summary':p['summary'],'boundary':p['boundary'],'publication_note':p['publication_note']} for p in papers}
+    raw=json.loads((ROOT/'locales'/locale/'papers.json').read_text(encoding='utf-8'))
+    return {p['id']:{'title':raw[p['id']]['title'],'summary':raw[p['id']]['summary'],'boundary':raw[p['id']]['boundary'],'publication_note':raw[p['id']]['publication_note']} for p in papers}
+
+def path(locale,name):
+    if locale==DEFAULT: return Path(name)
+    if name=='README.md': return Path(f'locales/{locale}/README.md')
+    return Path(f'locales/{locale}')/name
+
+def prefix(locale,depth=0):
+    """`../` count from a generated file to the repository root; depth 0 is the locale root (README.md), depth 1 the locale's docs/. English sits at the root (0 levels) or root docs/ (1 level); a mirror root is two levels down."""
+    return ('../'*(2+depth)) if locale!=DEFAULT else ('../'*depth)
+
+def anchor(repo): return repo.lower().replace('/','--').replace('_','-').replace('.','-')
+
+def heading_anchor(title):
+    """GitHub's slug for a heading: lowercase, spaces to hyphens, letters/digits/marks/_/- kept."""
+    out=[]
+    for ch in title.strip().lower():
+        if ch==' ':out.append('-')
+        elif ch.isalnum() or ch in '_-' or unicodedata.category(ch) in ('Mn','Mc','Me'):out.append(ch)
+    return ''.join(out)
+
+def switcher(langs,locale):
+    items=[]
+    for code,name in langs:
+        if code==locale: items.append(f'**{name}**')
+        elif code==DEFAULT: items.append(f'[{name}]({"README.md" if locale==DEFAULT else "../../README.md"})')
+        elif locale==DEFAULT: items.append(f'[{name}](locales/{code}/README.md)')
+        else: items.append(f'[{name}](../{code}/README.md)')
+    return '🌐 '+' · '.join(items)
 
 def dt(value):
     return datetime.fromisoformat(value.replace('Z', '+00:00')).astimezone(timezone.utc)
@@ -46,9 +85,6 @@ def tier(project, metric, as_of):
     age=age_days(metric, as_of)
     return 0 if age<=90 else 1 if age<=365 else 2
 
-def status(project, metric, as_of):
-    return ['近90天有提交','91–365天未提交','超过365天未提交','归档 / 历史'][tier(project,metric,as_of)]
-
 def rank(projects, metrics, as_of, mode='balanced'):
     def key(p):
         m=metrics[p['repo']]
@@ -62,20 +98,35 @@ def cell(value):
 def table(headers, rows):
     return '\n'.join(['| '+' | '.join(headers)+' |','| '+' | '.join(['---']*len(headers))+' |']+['| '+' | '.join(cell(v) for v in row)+' |' for row in rows])
 
-def anchor(repo): return repo.lower().replace('/','--').replace('_','-').replace('.','-')
+INLINE=['docs/readme-intro.md']
+GENERATED={'README.md','docs/projects.md','docs/papers.md','docs/rankings.md'}
+def check_links():
+    """Prose links resolve from the file's own directory; the inlined readme intro resolves from the locale root."""
+    bad=[]
+    for locale in LOCALES:
+        base=ROOT if locale==DEFAULT else ROOT/'locales'/locale
+        pending={(base/name).resolve() for name in GENERATED}
+        for rel in STATIC:
+            origin=base if rel in INLINE else base/Path(rel).parent
+            for href in re.findall(r'\]\((?!https?:|#)([^)#]+?)(?:#[^)]*)?\)',(base/rel).read_text(encoding='utf-8')):
+                target=(origin/href).resolve()
+                if target in pending or target.exists():continue
+                bad.append('%s:%s -> %s' % (locale,rel,href))
+    assert not bad,'broken relative links: '+', '.join(bad)
 
 def validate(projects,papers,snapshot):
+    u=ui('zh');repos=[p['repo'] for p in projects]
     assert snapshot['schema_version']==1
     dt(snapshot['as_of'])
-    repos=[p['repo'] for p in projects]
     assert len(repos)==len(set(r.lower() for r in repos)), 'Duplicate repositories'
     assert set(repos)==set(snapshot['repositories']), 'Snapshot/catalogue mismatch'
+    canonical={p['repo']:p['name'] for p in projects}
     for p in projects:
         assert re.fullmatch(r'[\w.-]+/[\w.-]+',p['repo']), p['repo']
-        assert p['category'] in CATEGORIES and p['scope'] in SCOPE
+        assert p['category'] in u['categories'] and p['scope'] in u['scopes']
         assert p['description'] and p['boundary'] and p['trigger'] and p['evidence']
         assert all(e['url'].startswith('https://') for e in p['evidence'])
-        assert p['license_review']['status'] in {'verified','source_available','unverified'}
+        assert p['license_review']['status'] in u['license_status']
         m=snapshot['repositories'][p['repo']]
         assert m['canonical_repo'].lower()==p['repo'].lower(), 'Resolve repository redirect explicitly'
         assert all(isinstance(m[k],int) and m[k]>=0 for k in ['stars','forks','commits_30d','commits_90d'])
@@ -84,77 +135,126 @@ def validate(projects,papers,snapshot):
         assert re.fullmatch(r'[0-9a-f]{40}',m['head_sha'])
     assert len(papers)==len(set(p['id'] for p in papers)), 'Duplicate papers'
     for p in papers:
-        assert p['category'] in PAPER_CATEGORIES and p['url']=='https://arxiv.org/abs/'+p['id']
+        assert p['category'] in u['paper_categories'] and p['url']=='https://arxiv.org/abs/'+p['id']
         assert p['code_repo'] is None or p['code_repo'] in repos
         datetime.strptime(p['published'],'%Y-%m-%d')
     seeds={p['repo'] for p in projects if p.get('seed')}
     assert seeds=={'Fei2411/DS-Bot','CursorTouch/Windows-MCP','elie222/rakazo','OpenBMB/PilotDeck','nano-muse/nanoMuse'}
+    for f in STATIC: assert (ROOT/f).exists(), 'missing English static document: '+f
+    def keys(value,base=''):
+        if isinstance(value,dict): return sorted(sum([keys(value[k],base+'/'+k) for k in value],[]))
+        return [base or '.']
+    shape=keys(u['templates'])
+    pids={p['id'] for p in papers}
+    for locale in MIRRORED:
+        if locale=='zh': continue
+        other=ui(locale)
+        assert set(other)==set(u),'ui.json top-level keys differ for '+locale
+        assert other['language']==locale and other['list_separator'].strip()
+        assert keys(other['templates'])==shape, 'template keys differ for '+locale
+        assert set(other['categories'])==set(u['categories']) and set(other['paper_categories'])==set(u['paper_categories']) and set(other['scopes'])==set(u['scopes']) and set(other['license_status'])==set(u['license_status']) and set(other['modes'])==set(u['modes'])
+        assert len(other['tiers'])==4 and set(other['headers'])==set(u['headers']) and set(other['sections'])==set(u['sections']) and set(other['tags'])==set(u['tags'])
+        for name,tmpl in other['templates'].items():
+            assert placeholders(tmpl)==placeholders(u['templates'][name]),'placeholders differ for %s/%s' % (locale,name)
+        assert not CJK.search(json.dumps({k:v for k,v in other.items() if k in ('categories','paper_categories','scopes','license_status','modes','tiers','headers','sections','tags','templates')},ensure_ascii=False)),'untranslated Chinese remains in '+locale+' ui.json'
+        raw=json.loads((ROOT/'locales'/locale/'entries.json').read_text(encoding='utf-8'))
+        assert set(raw)==set(repos),'entry coverage differs for '+locale
+        for repo,t in raw.items():
+            assert set(t)>={'description','boundary','trigger','license_label','license_note'} and all(str(t[k]).strip() for k in ('description','boundary','trigger','license_label','license_note')),'incomplete entry: %s %s' % (locale,repo)
+            assert not CJK.search(json.dumps(t,ensure_ascii=False)),'untranslated Chinese remains in %s %s' % (locale,repo)
+            if CJK.search(canonical[repo]):
+                assert t.get('name'),'missing localized display name for %s %s' % (locale,repo)
+        pw=json.loads((ROOT/'locales'/locale/'papers.json').read_text(encoding='utf-8'))
+        assert set(pw)==pids,'paper coverage differs for '+locale
+        for pid,t in pw.items():
+            assert set(t)>={'title','summary','boundary','publication_note'} and all(str(t[k]).strip() for k in ('title','summary','boundary','publication_note')),'incomplete paper: %s %s' % (locale,pid)
+            assert not CJK.search(json.dumps(t,ensure_ascii=False)),'untranslated Chinese remains in %s paper %s' % (locale,pid)
+        for f in STATIC: assert (ROOT/'locales'/locale/f).exists(),'missing %s static document: %s' % (locale,f)
+    check_links()
 
-def render(projects,papers,snapshot):
+def render(locale,u,words,pws,projects,papers,snapshot):
     metrics=snapshot['repositories']; as_of=snapshot['as_of']
     reviewed_at=max(p['reviewed_at'] for p in projects)
     ordered=rank(projects,metrics,as_of)
+    R=prefix(locale)
+    cat=u['categories'];pcat=u['paper_categories'];scope=u['scopes'];tags=u['tags'];T=u['templates'];S=u['sections']
     shortlist=[p for p in ordered if p['scope']=='core' and p['license_review']['status']=='verified' and tier(p,metrics[p['repo']],as_of)==0]
-    intro=(ROOT/'docs/readme-intro.md').read_text(encoding='utf-8')
-    readme=[intro, f'\n## 当前快照\n\n收录 **{len(projects)} 个项目 / 研究代码库、{len(papers)} 篇论文**。指标采集：**{as_of}（UTC）**；功能人工核验：{reviewed_at}。\n\n仅依据公开文档和 GitHub 元数据，尚未开展统一运行测评。类别与功能需人工复核，指标由脚本更新。', '\n## 活跃主动项目速览\n\n以下只从已核验开放许可证、主动机制已文档化、未归档项目中选取，按维护分排序；相邻组件、待核验许可和历史项目不进入此表。']
+    intro=(ROOT/('docs/readme-intro.md' if locale==DEFAULT else f'locales/{locale}/docs/readme-intro.md')).read_text(encoding='utf-8')
+    readme=[intro, f'\n## {S["current"]}\n\n'+T['current'].format(total=len(projects),papers=len(papers),as_of=as_of,reviewed=reviewed_at), f'\n## {S["shortlist"]}\n\n'+T['shortlist_note']]
     def compact(p):
-        m=metrics[p['repo']]
-        return [f"[{p['name']}](https://github.com/{p['repo']})",p['trigger'],f"{m['stars']:,}",f"{m['commits_90d']:,}",m['last_commit_at'][:10],f"{score(m,as_of):.1f}"]
-    readme.append(table(['项目','主动机制','Stars','90天提交','最近提交 UTC','维护分'],[compact(p) for p in shortlist[:10]]))
-    readme.append('\n## 分类目录\n\n`★种子` 为用户提供的参考项目。所有分类内部使用相同排序规则，归档项目自动后置。许可显示以人工核验与 GitHub SPDX 识别为依据；未知不会当成零或默认 MIT。')
-    detail=['# 项目说明与证据\n\n每项功能均为公开文档核验；没有安装运行或完成统一能力测试。证据尽量固定到核验时的提交，后续指标刷新不自动修改功能判断。\n']
-    for category,label in CATEGORIES.items():
+        m=metrics[p['repo']];w=words[p['repo']]
+        return [f"[{w['name']}](https://github.com/{p['repo']})",w['trigger'],f"{m['stars']:,}",f"{m['commits_90d']:,}",m['last_commit_at'][:10],f"{score(m,as_of):.1f}"]
+    readme.append(table(u['headers']['shortlist'],[compact(p) for p in shortlist[:10]]))
+    readme.append(f'\n## {S["toc"]}\n\n'+T['toc_note'])
+    detail=[f'# {S["detail_title"]}\n\n'+T['detail_intro']+'\n']
+    for category,label in cat.items():
         group=[p for p in ordered if p['category']==category]
         readme.append(f'\n### {label}\n')
         rows=[]
         for p in group:
-            m=metrics[p['repo']]; licence=p['license_review']['label']; state=status(p,m,as_of)
-            tags=(' · ★种子' if p.get('seed') else '')+(' · 归档' if tier(p,m,as_of)==3 else '')
-            if p['license_review']['status']!='verified':tags+=' · 许可限制/待核验'
-            rows.append([f"[{p['name']}](https://github.com/{p['repo']}){tags}",p['trigger'],f"{m['stars']:,}",f"{m['commits_90d']:,}",m['last_commit_at'][:10],f"{score(m,as_of):.1f}",licence])
-            evidence=' · '.join(f"[来源{i+1}]({e['url']})" for i,e in enumerate(p['evidence']))
-            detail.extend([f'\n<a id="{anchor(p["repo"])}"></a>\n\n## [{p["name"]}](https://github.com/{p["repo"]})',f"\n{p['description']}\n\n- 分类：{label}；{SCOPE[p['scope']]}。\n- 触发方式：{p['trigger']}。\n- 边界：{p['boundary']}\n- 当前维护状态：{state}；{m['commits_30d']} 次 / 30 天，{m['commits_90d']} 次 / 90 天。\n- 许可：[{licence}]({p['license_review']['source']})；{p['license_review']['note']}。\n- 功能核验：{p['reviewed_at']}；{evidence}。"])
-        readme.append(table(['项目','机制 / 定位','Stars','90天提交','最近提交 UTC','维护分','许可'],rows))
-    readme.append('\n完整描述、边界与证据见 [项目详表](docs/projects.md)。按 star、活跃度、最新提交分别查看 [排序表](docs/rankings.md)。\n\n## 论文\n\n论文按问题分类，同类按首次提交日期倒序。论文年份、项目 star 与系统能力不是同一种评价，不混合计算。')
-    paperdoc=['# 论文目录\n\n依据 arXiv 原始摘要页核验标题和首次提交日期（2026-11-05）。同一 arXiv ID 的版本/更名只计一篇。没有独立核验的会议状态保留为 arXiv。\n']
-    for category,label in PAPER_CATEGORIES.items():
+            m=metrics[p['repo']];w=words[p['repo']];licence=w['license_label'];state=u['tiers'][tier(p,m,as_of)]
+            mark=(' · '+tags['seed'] if p.get('seed') else '')+(' · '+tags['archived'] if tier(p,m,as_of)==3 else '')
+            if p['license_review']['status']!='verified':mark+=' · '+tags['license']
+            rows.append([f"[{w['name']}](https://github.com/{p['repo']}){mark}",w['trigger'],f"{m['stars']:,}",f"{m['commits_90d']:,}",m['last_commit_at'][:10],f"{score(m,as_of):.1f}",licence])
+            sources=' · '.join(f"[{T['source_link'].format(index=i+1)}]({e['url']})" for i,e in enumerate(p['evidence']))
+            body=T['entry'].format(category=label,scope=scope[p['scope']],trigger=w['trigger'],boundary=w['boundary'],maintenance=state,commits_30d=m['commits_30d'],commits_90d=m['commits_90d'],license=licence,license_source=p['license_review']['source'],license_note=w['license_note'],reviewed_at=p['reviewed_at'],sources=sources)
+            detail.extend([f'\n<a id="{anchor(p["repo"])}"></a>\n\n## [{w["name"]}](https://github.com/{p["repo"]})',f"\n{w['description']}\n\n"+body])
+        readme.append(table(u['headers']['detail'],rows))
+    readme.append('\n'+T['projects_note']+f'\n\n## {S["papers"]}\n\n'+T['papers_note'])
+    paperdoc=[f'# {S["papers_title"]}\n\n'+T['papers_intro']+'\n']
+    for category,label in pcat.items():
         group=sorted([p for p in papers if p['category']==category],key=lambda p:(p['published'],p['id']),reverse=True)
         rows=[]
         for p in group:
-            rows.append([p['published'],f"[{p['title']}]({p['url']})",p['summary']])
-            code=f"[代码](https://github.com/{p['code_repo']})" if p['code_repo'] else '尚未在本轮核验代码链接'
-            paperdoc.extend([f"\n## [{p['title']}]({p['url']})",f"\n- 类别：{label}；首次提交：{p['published']}；{p['publication_note']}。\n- 研究问题：{p['summary']}\n- 阅读边界：{p['boundary']}\n- 资源：{code}。"])
-        readme.append(f'\n### {label}\n\n'+table(['首次提交','论文','关注问题'],rows))
-    readme.append('\n论文版本、代码关联与适用边界见 [论文详表](docs/papers.md)。\n\n## 维护与贡献\n\n- [定义、纳入标准与分类](docs/taxonomy.md)\n- [排序公式与局限](docs/methodology.md)\n- [检索词、来源与调研覆盖](docs/research.md)\n- [基于现有 Harness 的扩展路线](docs/harness-guide.md)\n- [贡献方式](CONTRIBUTING.md)\n\n```sh\npython scripts/refresh_metrics.py   # 需要 gh 登录或 GH_TOKEN\npython scripts/build.py\npython -m unittest discover -s tests\npython scripts/build.py --check\n```\n\nGitHub Actions 每天更新已收录项目的指标与排序。新增项目、论文和功能分类通过人工核验后合并；自动指标更新不代表功能或许可已重新审计。\n\n## 致谢与许可\n\n检索入口参考 [Awesome Proactive Agents](https://github.com/LowEntropyAI/awesome-proactive-agent) 和 [Awesome Personal Agents](https://github.com/upgundecha/awesome-personal-agents)，条目回到原始仓库及论文核验。\n\n本仓库原创说明、整理数据及维护脚本使用 [MIT](LICENSE)。所链接项目、论文、模型和数据遵循各自许可。')
-    ranking=['# 排序视图\n\n全目录元数据排序；组件、研究与助手仅展示维护指标，不表示可以相互替代。所有视图先按维护状态分层，再按该视图指标降序；同分以 star、仓库名稳定排序。\n\n快照：'+as_of+'。公式与字段口径见 [methodology.md](methodology.md)。\n']
-    for mode,label in [('stars','Star 优先'),('activity','90 天提交数优先'),('recent','默认分支最近提交优先')]:
-        ranking.append('\n## '+label+'\n')
+            pw=pws[p['id']]
+            rows.append([p['published'],f"[{pw['title']}]({p['url']})",pw['summary']])
+            code=T['paper_code_link'].format(url='https://github.com/'+p['code_repo']) if p['code_repo'] else T['paper_code_none']
+            paperdoc.extend([f"\n## [{pw['title']}]({p['url']})","\n"+T['paper_entry'].format(category=label,published=p['published'],publication_note=pw['publication_note'],summary=pw['summary'],boundary=pw['boundary'],code=code)])
+        readme.append(f'\n### {label}\n\n'+table(u['headers']['papers'],rows))
+    readme.append('\n'+T['papers_link']+f'\n\n## {S["data"]}\n\n'+T['data']+f'\n\n## {S["thanks"]}\n\n'+T['thanks'].format(R=R))
+    readme.append(T['records_note'].format(R=R))
+    ranking=[f'# {S["rankings_title"]}\n\n'+T['rankings_intro'].format(as_of=as_of)+'\n']
+    for mode in ['stars','activity','recent']:
+        ranking.append('\n## '+u['modes'][mode]+'\n')
         rows=[]
         for p in rank(projects,metrics,as_of,mode):
-            m=metrics[p['repo']]
-            rows.append([f"[{p['name']}](https://github.com/{p['repo']})",CATEGORIES[p['category']],status(p,m,as_of),f"{m['stars']:,}",m['commits_90d'],m['last_commit_at'][:10]])
-        ranking.append(table(['项目','类别','维护层','Stars','90天提交','最近提交 UTC'],rows))
-    output={'README.md':'\n\n'.join(readme)+'\n','docs/projects.md':'\n'.join(detail)+'\n','docs/papers.md':'\n'.join(paperdoc)+'\n','docs/rankings.md':'\n'.join(ranking)+'\n'}
+            m=metrics[p['repo']];w=words[p['repo']]
+            rows.append([f"[{w['name']}](https://github.com/{p['repo']})",cat[p['category']],u['tiers'][tier(p,m,as_of)],f"{m['stars']:,}",m['commits_90d'],m['last_commit_at'][:10]])
+        ranking.append(table(u['headers']['rankings'],rows))
+    return {'README.md':'\n\n'.join(readme)+'\n','docs/projects.md':'\n'.join(detail)+'\n','docs/papers.md':'\n'.join(paperdoc)+'\n','docs/rankings.md':'\n'.join(ranking)+'\n'}
+
+def csv_snapshot(projects,snapshot):
+    metrics=snapshot['repositories'];as_of=snapshot['as_of']
     buf=io.StringIO(newline=''); writer=csv.writer(buf,lineterminator='\n')
-    writer.writerow(['repo','category','scope','license','license_status','stars','commits_30d','commits_90d','last_commit_at','maintenance_status','score','as_of'])
-    for p in ordered:
+    writer.writerow(['repo','category','scope','license','license_status','stars','commits_30d','commits_90d','last_commit_at','maintenance_tier','score','as_of'])
+    for p in rank(projects,metrics,as_of):
         m=metrics[p['repo']]
-        writer.writerow([p['repo'],p['category'],p['scope'],p['license_review']['label'],p['license_review']['status'],m['stars'],m['commits_30d'],m['commits_90d'],m['last_commit_at'],status(p,m,as_of),score(m,as_of),as_of])
-    output['data/rankings.csv']=buf.getvalue()
-    return output
+        writer.writerow([p['repo'],p['category'],p['scope'],p['license_review']['label'],p['license_review']['status'],m['stars'],m['commits_30d'],m['commits_90d'],m['last_commit_at'],tier(p,m,as_of),score(m,as_of),as_of])
+    return buf.getvalue()
+
+def render_all(projects,papers,snapshot):
+    u={locale:ui(locale) for locale in LOCALES};langs=[(locale,u[locale]['language_name']) for locale in LOCALES];out={}
+    for locale in LOCALES:
+        files=render(locale,u[locale],entries(locale,projects),paper_text(locale,papers),projects,papers,snapshot)
+        for name,content in files.items():
+            out[path(locale,name).as_posix()]=content
+        readme=path(locale,'README.md').as_posix()
+        out[readme]=switcher(langs,locale)+'\n\n'+out[readme]
+    out['data/rankings.csv']=csv_snapshot(projects,snapshot)
+    return out
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--check',action='store_true');args=parser.parse_args()
     read=lambda path:json.loads((ROOT/path).read_text(encoding='utf-8'))
     projects,papers,snapshot=read('data/projects.json'),read('data/papers.json'),read('data/metrics.json')
     validate(projects,papers,snapshot)
-    files=render(projects,papers,snapshot)
+    files=render_all(projects,papers,snapshot)
     for name,content in files.items():
         path=ROOT/name
         if args.check:
             if not path.exists() or path.read_text(encoding='utf-8')!=content:raise SystemExit(f'Generated file is stale: {name}')
         else:
             path.parent.mkdir(parents=True,exist_ok=True);path.write_text(content,encoding='utf-8')
-    print(f'{"Checked" if args.check else "Generated"} {len(files)} files; {len(projects)} projects, {len(papers)} papers')
+    print(f'{"Checked" if args.check else "Generated"} {len(files)} files; {len(projects)} projects, {len(papers)} papers, {len(LOCALES)} locales')
 
 if __name__=='__main__':main()

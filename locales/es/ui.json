@@ -1,0 +1,85 @@
+{
+  "language": "es",
+  "language_name": "Español",
+  "list_separator": ", ",
+  "categories": {
+    "personal": "Asistentes personales siempre activos y runtime ligeros",
+    "workspace": "Asistentes de espacio de trabajo y contexto",
+    "extensions": "Complementos proactivos y extensiones de planificación",
+    "harness": "Harness extensibles y base de ejecución persistente",
+    "computer-use": "Componentes de control de ordenador y navegador",
+    "research": "Implementaciones de investigación y código de evaluación",
+    "historical": "Proyectos históricos y de migración"
+  },
+  "paper_categories": {
+    "foundations": "Definiciones, mecanismos e investigación fundamental",
+    "systems": "Sistemas de agentes personales",
+    "memory": "Memoria a largo plazo y necesidades latentes",
+    "benchmarks": "Benchmarks de proactividad",
+    "computer-use": "Uso del ordenador y ejecución personalizada",
+    "reliability": "Investigación sobre ejecución prolongada y fiabilidad"
+  },
+  "scopes": {
+    "core": "Mecanismo proactivo documentado",
+    "adjacent": "Capacidad adyacente",
+    "research": "Recurso de investigación",
+    "historical": "Referencia histórica"
+  },
+  "license_status": {
+    "verified": "Licencia abierta verificada",
+    "source_available": "Código fuente disponible pero no abierto según OSI",
+    "unverified": "Pendiente de verificación"
+  },
+  "modes": {
+    "stars": "Prioridad a las estrellas",
+    "activity": "Prioridad a los commits de 90 días",
+    "recent": "Prioridad al último commit de la rama por defecto"
+  },
+  "tiers": [
+    "Con commits en los últimos 90 días",
+    "Sin commits desde hace 91–365 días",
+    "Sin commits desde hace más de 365 días",
+    "Archivado / histórico"
+  ],
+  "tags": {
+    "seed": "★Semilla",
+    "archived": "Archivado",
+    "license": "Licencia restringida/pendiente"
+  },
+  "headers": {
+    "shortlist": ["Proyecto", "Mecanismo proactivo", "Estrellas", "Commits 90 d", "Último commit UTC", "Puntuación de mantenimiento"],
+    "detail": ["Proyecto", "Mecanismo / propósito", "Estrellas", "Commits 90 d", "Último commit UTC", "Puntuación de mantenimiento", "Licencia"],
+    "papers": ["Primer envío", "Artículo", "Problema que aborda"],
+    "rankings": ["Proyecto", "Categoría", "Capa de mantenimiento", "Estrellas", "Commits 90 d", "Último commit UTC"]
+  },
+  "sections": {
+    "current": "Instantánea actual",
+    "shortlist": "Vistazo rápido a los proyectos proactivos activos",
+    "toc": "Categorías",
+    "papers": "Artículos",
+    "detail_title": "Descripciones de proyectos y evidencia",
+    "papers_title": "Catálogo de artículos",
+    "rankings_title": "Vistas de ordenación",
+    "data": "Mantenimiento y contribución",
+    "thanks": "Agradecimientos y licencias"
+  },
+  "templates": {
+    "current": "Catálogo con **{total} proyectos o repositorios de investigación y {papers} artículos**. Recolección de métricas: **{as_of} (UTC)**; verificación manual de funciones: {reviewed}.\n\nSolo se usan documentación pública y metadatos de GitHub; aún no se han realizado pruebas de ejecución uniformes. Las categorías y las funciones requieren revisión humana; las métricas las actualizan los scripts.",
+    "shortlist_note": "Aquí solo entran proyectos no archivados, con licencia abierta verificada y mecanismo proactivo documentado, ordenados por puntuación de mantenimiento; los componentes adyacentes, las licencias pendientes de verificación y los proyectos históricos no aparecen en esta tabla.",
+    "toc_note": "`★Semilla` marca los proyectos de referencia aportados por el usuario. Dentro de todas las categorías se aplica la misma regla de ordenación y los proyectos archivados van automáticamente al final. La licencia mostrada se basa en la verificación manual y en la identificación SPDX de GitHub; lo desconocido no se toma como cero ni como MIT por defecto.",
+    "projects_note": "Las descripciones completas, los límites y la evidencia están en [la ficha detallada de proyectos](docs/projects.md). Para ver las [tablas de ordenación](docs/rankings.md) por estrellas, actividad y último commit, consulta los enlaces correspondientes.",
+    "papers_note": "Los artículos se agrupan por problema y, dentro de cada grupo, se ordenan de forma descendente por fecha del primer envío. El año del artículo, las estrellas de un proyecto y la capacidad del sistema no son el mismo tipo de evaluación y no se combinan.",
+    "papers_link": "Las versiones de los artículos, su código asociado y los límites de aplicación están en [la ficha detallada de artículos](docs/papers.md).",
+    "detail_intro": "Cada función se verificó en documentación pública; no se instaló ni ejecutó nada, y no se han completado pruebas de capacidad uniformes. La evidencia se fija, en lo posible, al commit vigente en el momento de la verificación; las actualizaciones posteriores de métricas no modifican automáticamente los juicios sobre las funciones.",
+    "entry": "- Categoría: {category}; {scope}.\n- Modo de activación: {trigger}.\n- Límites: {boundary}\n- Estado de mantenimiento actual: {maintenance}; {commits_30d} commits / 30 días, {commits_90d} commits / 90 días.\n- Licencia: [{license}]({license_source}); {license_note}.\n- Verificación de funciones: {reviewed_at}; {sources}.",
+    "source_link": "Fuente {index}",
+    "papers_intro": "Los títulos y las fechas del primer envío se verificaron en las páginas de resumen originales de arXiv (2026-11-05). Las versiones o cambios de nombre de un mismo ID de arXiv cuentan como un solo artículo. Cuando el estado de conferencia no se ha verificado de forma independiente, se deja como arXiv.",
+    "paper_entry": "- Categoría: {category}; primer envío: {published}; {publication_note}.\n- Pregunta de investigación: {summary}\n- Límites de lectura: {boundary}\n- Recursos: {code}.",
+    "paper_code_link": "[Código]({url})",
+    "paper_code_none": "Sin enlace de código verificado en esta ronda",
+    "rankings_intro": "Ordenación por metadatos de todo el catálogo; componentes, investigación y asistentes solo muestran métricas de mantenimiento, lo que no significa que sean intercambiables entre sí. Todas las vistas se estratifican primero por estado de mantenimiento y luego se ordenan de forma descendente por la métrica de cada vista; los empates se resuelven de forma estable por estrellas y nombre del repositorio.\n\nInstantánea: {as_of}. La fórmula y el significado de los campos están en [methodology.md](methodology.md).",
+    "data": "- [Definiciones, criterios de inclusión y clasificación](docs/taxonomy.md)\n- [Fórmula de ordenación y limitaciones](docs/methodology.md)\n- [Términos de búsqueda, fuentes y cobertura de la investigación](docs/research.md)\n- [Rutas de extensión sobre harness existentes](docs/harness-guide.md)\n- [Cómo contribuir](CONTRIBUTING.md)\n\n```sh\npython scripts/refresh_metrics.py   # requiere gh autenticado o GH_TOKEN\npython scripts/build.py\npython -m unittest discover -s tests\npython scripts/build.py --check\n```\n\nGitHub Actions actualiza cada día las métricas y las ordenaciones de los proyectos incluidos. Los nuevos proyectos, artículos y clasificaciones de funciones se fusionan tras verificación manual; la actualización automática de métricas no significa que las funciones o las licencias se hayan reauditado.",
+    "thanks": "El punto de partida de la búsqueda tomó como referencia [Awesome Proactive Agents](https://github.com/LowEntropyAI/awesome-proactive-agent) y [Awesome Personal Agents](https://github.com/upgundecha/awesome-personal-agents), y cada entrada se verificó contra el repositorio o el artículo originales.\n\nLa documentación original, los datos organizados y los scripts de mantenimiento de este repositorio están bajo [MIT]({R}LICENSE). Los proyectos, artículos, modelos y datos enlazados siguen sus propias licencias.",
+    "records_note": "[El registro de cambios]({R}record/) conserva el texto original (en chino) vigente en cada verificación, para poder auditar el origen de cada juicio y su redacción de entonces."
+  }
+}

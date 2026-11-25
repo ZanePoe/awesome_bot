@@ -1,22 +1,22 @@
 # awesome_bot
 
-**主动式 Agent、个人 Bot、Harness 扩展与相关论文的中文精选目录。**
+**A curated directory of proactive agents, personal bots, harness extensions and related papers.**
 
-Curated proactive agents, personal bots, harness extensions, computer-use components, and research papers. Chinese-first, evidence-linked, with reproducible GitHub maintenance rankings.
+Curated proactive agents, personal bots, harness extensions, computer-use components, and research papers — evidence-linked, with reproducible GitHub maintenance rankings.
 
-这里关注的 Agent 会在用户没有发来新消息时，依据时间、环境变化、持续目标或记忆主动开始有用的工作，通过工具与数字环境交互，并在合适的时候向人反馈。能否保持静默、暂停或等待人的决定，也是主动性的一部分。
+The agents covered here start useful work on their own — driven by time, environment changes, standing goals or memory — even when the user has sent no new message; they interact with the digital environment through tools and report back at the right moment. Knowing when to stay silent, pause or wait for a human decision is also part of proactivity.
 
-本清单同时收集完整产品、把现有 Agent 改造成主动助手的扩展，以及必要的执行组件。**定时执行、上下文主动判断、电脑操作是不同能力，不互相替代。**
+This list collects complete products, extensions that turn existing agents into proactive assistants, and the execution components they need. **Scheduled execution, contextual proactive judgement and computer use are different capabilities and do not substitute for each other.**
 
-[项目分类](#分类目录) · [论文](#论文) · [排序视图](docs/rankings.md) · [扩展路线](docs/harness-guide.md) · [检索过程](docs/research.md) · [贡献](CONTRIBUTING.md)
+[Categories](#categories) · [Papers](#papers) · [Rankings](docs/rankings.md) · [Extension paths](docs/harness-guide.md) · [Search process](docs/research.md) · [Contributing](CONTRIBUTING.md)
 
 ```mermaid
 flowchart LR
-    T[定时 / 事件 / 持续目标] --> D[结合记忆判断是否行动]
-    D --> A[工具执行：电脑 / 浏览器 / API]
-    A --> O[观察结果并更新状态]
+    T[schedule / events / standing goals] --> D[decide whether to act, with memory]
+    D --> A[tool execution: computer / browser / API]
+    A --> O[observe results and update state]
     O --> D
-    D --> H[通知 / 询问 / 保持静默]
+    D --> H[notify / ask / stay silent]
 ```
 
-这是本目录采用的工作定义，不是对所有项目统一实现架构的断言。首版为精选起点，欢迎补充遗漏，不宣称穷尽所有项目。
+This is the working definition adopted by the directory, not an assertion that all projects share one implementation architecture. The first release is a curated starting point; additions for anything missed are welcome, and no claim of exhaustiveness is made.

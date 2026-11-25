@@ -1,13 +1,13 @@
-# 贡献指南
+# Contributing
 
-欢迎补充项目、论文和证据更正。低 star 不是拒绝理由。
+Additions of projects, papers and evidence corrections are welcome. A low star count is not a reason to reject.
 
-1. 在 `data/projects.json` 或 `data/papers.json` 增加条目；不要直接改生成的 README 表格。
-2. 提供 canonical GitHub 地址或论文原始页面，至少一个能证明所述机制的来源，以及核验日期。
-3. 说明是完整助手、扩展、Harness、控制组件或研究代码；触发方式必须具体。未确认的能力写“待核验”，roadmap 不能当成已实现功能。
-4. 检查许可证。缺少许可证全文可先进入候选/研究项；含非商业限制的源码不得标为已核验开放许可证。
-5. 重命名按 GitHub canonical repo 更新；同一论文按 arXiv ID 去重，旧名字可以写入备注。
-6. 运行下面的命令并提交生成结果。新增仓库时需要重新获取完整指标快照。
+1. Add the entry in `data/projects.json` or `data/papers.json`; never edit the generated README tables directly.
+2. Provide the canonical GitHub URL or the paper's original page, at least one source proving the stated mechanism, and the verification date.
+3. Say whether it is a complete assistant, an extension, a harness, a control component or research code; the trigger must be concrete. Write "pending verification" for unconfirmed capabilities, and never present a roadmap as an implemented feature.
+4. Check the license. Missing full license text may still enter as a candidate/research entry; source code with non-commercial restrictions must not be labelled as a verified open license.
+5. On renames, update to the GitHub canonical repository; deduplicate the same paper by arXiv ID, and old names can go in notes.
+6. Run the commands below and commit the generated results. A newly added repository requires a fresh full metrics snapshot.
 
 ```sh
 python scripts/refresh_metrics.py
@@ -16,6 +16,15 @@ python -m unittest discover -s tests
 python scripts/build.py --check
 ```
 
-更新功能说明时固定证据提交 SHA；自动更新 star 不应顺带把旧功能判断标成刚核验。分类方法见 `docs/taxonomy.md`，排序方法见 `docs/methodology.md`。
+When updating feature descriptions, pin the evidence commit SHA; an automatic star refresh must not relabel old feature judgements as freshly verified. Classification is documented in `docs/taxonomy.md` and ranking in `docs/methodology.md`.
 
-禁止把私有搜索服务地址、令牌、内部文章正文、签名下载链接或个人数据提交到本仓库。
+Never commit private search-service addresses, tokens, internal article text, signed download links or personal data to this repository.
+
+## Localisation files
+
+- `data/projects.json` is the canonical Chinese review data: facts are changed here once and only here.
+- Wording in the other languages comes from `locales/<lang>/entries.json` (`description`, `trigger`, `boundary`, `license_label`, `license_note`) and `locales/<lang>/ui.json`; `zh` falls back directly to `data/projects.json`, so there is no `locales/zh/entries.json`.
+- When adding a project or rewriting its positioning, boundary or license conclusion, complete the en/es/hi/fr locales in the same PR, otherwise `python scripts/build.py --check` and `python -m unittest discover -s tests -v` fail.
+- Static documents: English lives in the root `docs/` and `CONTRIBUTING.md`; other languages use the same relative paths under `locales/<lang>/`. Relative links inside a mirror resolve from that file's own directory, so from `locales/<lang>/docs/` a link to repository-root `data/`, `scripts/`, `research/`, `LICENSE` or `record/` is written as `../../../`, while from `locales/<lang>/CONTRIBUTING.md` it is `../../`; `docs/readme-intro.md` is the exception — it is inlined into the README and resolves from the language root.
+- `record/` and `research/` keep the original wording used at writing time as an audit trail; they are not machine translated.
+- Generated files (`README.md`, `docs/projects.md`, `docs/rankings.md`, `data/rankings.csv`, and the same-named files in each language mirror) are never hand-edited; they are produced by `python scripts/build.py`.

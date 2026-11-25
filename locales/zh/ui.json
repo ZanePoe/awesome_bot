@@ -1,0 +1,85 @@
+{
+  "language": "zh",
+  "language_name": "简体中文",
+  "list_separator": "、",
+  "categories": {
+    "personal": "常驻个人助手与轻量运行时",
+    "workspace": "工作空间与上下文助手",
+    "extensions": "主动插件与调度扩展",
+    "harness": "可扩展 Harness 与持久运行基础",
+    "computer-use": "电脑与浏览器控制组件",
+    "research": "研究实现与评测代码",
+    "historical": "历史与迁移项目"
+  },
+  "paper_categories": {
+    "foundations": "定义、机制与基础研究",
+    "systems": "个人 Agent 系统",
+    "memory": "长期记忆与潜在需求",
+    "benchmarks": "主动性评测基准",
+    "computer-use": "电脑操作与个性化执行",
+    "reliability": "长期运行与可靠性研究"
+  },
+  "scopes": {
+    "core": "主动机制已文档化",
+    "adjacent": "相邻能力",
+    "research": "研究资源",
+    "historical": "历史参考"
+  },
+  "license_status": {
+    "verified": "已核验开放许可证",
+    "source_available": "源码可见但非 OSI 开源",
+    "unverified": "待核验"
+  },
+  "modes": {
+    "stars": "Star 优先",
+    "activity": "90 天提交数优先",
+    "recent": "默认分支最近提交优先"
+  },
+  "tiers": [
+    "近90天有提交",
+    "91–365天未提交",
+    "超过365天未提交",
+    "归档 / 历史"
+  ],
+  "tags": {
+    "seed": "★种子",
+    "archived": "归档",
+    "license": "许可限制/待核验"
+  },
+  "headers": {
+    "shortlist": ["项目", "主动机制", "Stars", "90天提交", "最近提交 UTC", "维护分"],
+    "detail": ["项目", "机制 / 定位", "Stars", "90天提交", "最近提交 UTC", "维护分", "许可"],
+    "papers": ["首次提交", "论文", "关注问题"],
+    "rankings": ["项目", "类别", "维护层", "Stars", "90天提交", "最近提交 UTC"]
+  },
+  "sections": {
+    "current": "当前快照",
+    "shortlist": "活跃主动项目速览",
+    "toc": "分类目录",
+    "papers": "论文",
+    "detail_title": "项目说明与证据",
+    "papers_title": "论文目录",
+    "rankings_title": "排序视图",
+    "data": "维护与贡献",
+    "thanks": "致谢与许可"
+  },
+  "templates": {
+    "current": "收录 **{total} 个项目 / 研究代码库、{papers} 篇论文**。指标采集：**{as_of}（UTC）**；功能人工核验：{reviewed}。\n\n仅依据公开文档和 GitHub 元数据，尚未开展统一运行测评。类别与功能需人工复核，指标由脚本更新。",
+    "shortlist_note": "以下只从已核验开放许可证、主动机制已文档化、未归档项目中选取，按维护分排序；相邻组件、待核验许可和历史项目不进入此表。",
+    "toc_note": "`★种子` 为用户提供的参考项目。所有分类内部使用相同排序规则，归档项目自动后置。许可显示以人工核验与 GitHub SPDX 识别为依据；未知不会当成零或默认 MIT。",
+    "projects_note": "完整描述、边界与证据见 [项目详表](docs/projects.md)。按 star、活跃度、最新提交分别查看 [排序表](docs/rankings.md)。",
+    "papers_note": "论文按问题分类，同类按首次提交日期倒序。论文年份、项目 star 与系统能力不是同一种评价，不混合计算。",
+    "papers_link": "论文版本、代码关联与适用边界见 [论文详表](docs/papers.md)。",
+    "detail_intro": "每项功能均为公开文档核验；没有安装运行或完成统一能力测试。证据尽量固定到核验时的提交，后续指标刷新不自动修改功能判断。",
+    "entry": "- 分类：{category}；{scope}。\n- 触发方式：{trigger}。\n- 边界：{boundary}\n- 当前维护状态：{maintenance}；{commits_30d} 次 / 30 天，{commits_90d} 次 / 90 天。\n- 许可：[{license}]({license_source})；{license_note}。\n- 功能核验：{reviewed_at}；{sources}。",
+    "source_link": "来源{index}",
+    "papers_intro": "依据 arXiv 原始摘要页核验标题和首次提交日期（2026-11-05）。同一 arXiv ID 的版本/更名只计一篇。没有独立核验的会议状态保留为 arXiv。",
+    "paper_entry": "- 类别：{category}；首次提交：{published}；{publication_note}。\n- 研究问题：{summary}\n- 阅读边界：{boundary}\n- 资源：{code}。",
+    "paper_code_link": "[代码]({url})",
+    "paper_code_none": "尚未在本轮核验代码链接",
+    "rankings_intro": "全目录元数据排序；组件、研究与助手仅展示维护指标，不表示可以相互替代。所有视图先按维护状态分层，再按该视图指标降序；同分以 star、仓库名稳定排序。\n\n快照：{as_of}。公式与字段口径见 [methodology.md](methodology.md)。",
+    "data": "- [定义、纳入标准与分类](docs/taxonomy.md)\n- [排序公式与局限](docs/methodology.md)\n- [检索词、来源与调研覆盖](docs/research.md)\n- [基于现有 Harness 的扩展路线](docs/harness-guide.md)\n- [贡献方式](CONTRIBUTING.md)\n\n```sh\npython scripts/refresh_metrics.py   # 需要 gh 登录或 GH_TOKEN\npython scripts/build.py\npython -m unittest discover -s tests\npython scripts/build.py --check\n```\n\nGitHub Actions 每天更新已收录项目的指标与排序。新增项目、论文和功能分类通过人工核验后合并；自动指标更新不代表功能或许可已重新审计。",
+    "thanks": "检索入口参考 [Awesome Proactive Agents](https://github.com/LowEntropyAI/awesome-proactive-agent) 和 [Awesome Personal Agents](https://github.com/upgundecha/awesome-personal-agents)，条目回到原始仓库及论文核验。\n\n本仓库原创说明、整理数据及维护脚本使用 [MIT]({R}LICENSE)。所链接项目、论文、模型和数据遵循各自许可。",
+    "records_note": "[变更记录]({R}record/) 保留核验当时的原文（中文），用于审计每条判断的来源和当时的措辞。"
+  }
+}

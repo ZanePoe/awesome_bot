@@ -1,0 +1,85 @@
+{
+  "language": "fr",
+  "language_name": "Français",
+  "list_separator": ", ",
+  "categories": {
+    "personal": "Assistants personnels always-on et runtimes légers",
+    "workspace": "Assistants d'espace de travail et de contexte",
+    "extensions": "Plugins proactifs et extensions d'ordonnancement",
+    "harness": "Harness extensibles et socles d'exécution persistants",
+    "computer-use": "Composants de contrôle ordinateur et navigateur",
+    "research": "Implémentations de recherche et code d'évaluation",
+    "historical": "Projets historiques et migrations"
+  },
+  "paper_categories": {
+    "foundations": "Définitions, mécanismes et recherche fondamentale",
+    "systems": "Systèmes d'agents personnels",
+    "memory": "Mémoire de long terme et besoins latents",
+    "benchmarks": "Benchmarks de la proactivité",
+    "computer-use": "Contrôle de l'ordinateur et exécution personnalisée",
+    "reliability": "Fonctionnement de longue durée et fiabilité"
+  },
+  "scopes": {
+    "core": "Mécanisme proactif documenté",
+    "adjacent": "Capacités adjacentes",
+    "research": "Ressource de recherche",
+    "historical": "Référence historique"
+  },
+  "license_status": {
+    "verified": "Licence ouverte vérifiée",
+    "source_available": "Code source visible mais non open source OSI",
+    "unverified": "À vérifier"
+  },
+  "modes": {
+    "stars": "Priorité aux étoiles",
+    "activity": "Priorité aux commits sur 90 jours",
+    "recent": "Priorité au dernier commit de la branche par défaut"
+  },
+  "tiers": [
+    "Commits sur les 90 derniers jours",
+    "Aucun commit depuis 91–365 jours",
+    "Aucun commit depuis plus de 365 jours",
+    "Archivé / historique"
+  ],
+  "tags": {
+    "seed": "★référence utilisateur",
+    "archived": "Archivé",
+    "license": "Licence restrictive/à vérifier"
+  },
+  "headers": {
+    "shortlist": ["Projet", "Mécanisme proactif", "Étoiles", "Commits 90 j", "Dernier commit UTC", "Score de maintenance"],
+    "detail": ["Projet", "Mécanisme / positionnement", "Étoiles", "Commits 90 j", "Dernier commit UTC", "Score de maintenance", "Licence"],
+    "papers": ["Première soumission", "Article", "Question traitée"],
+    "rankings": ["Projet", "Catégorie", "Palier de maintenance", "Étoiles", "Commits 90 j", "Dernier commit UTC"]
+  },
+  "sections": {
+    "current": "Instantané actuel",
+    "shortlist": "Aperçu des projets proactifs actifs",
+    "toc": "Catégories",
+    "papers": "Publications",
+    "detail_title": "Fiches projets et preuves",
+    "papers_title": "Catalogue des publications",
+    "rankings_title": "Vues de classement",
+    "data": "Maintenance et contribution",
+    "thanks": "Remerciements et licences"
+  },
+  "templates": {
+    "current": "**{total} projets ou dépôts de recherche et {papers} articles** référencés. Relevé des métriques : **{as_of} (UTC)** ; vérification fonctionnelle manuelle : {reviewed}.\n\nListe établie uniquement à partir de la documentation publique et des métadonnées GitHub ; aucun banc d'essai commun n'a encore été mené. Les catégories et les fonctions demandent une relecture humaine, les métriques sont rafraîchies par script.",
+    "shortlist_note": "Sélection restreinte aux projets non archivés, à licence ouverte vérifiée et au mécanisme proactif documenté, classés par score de maintenance ; les composants adjacents, les licences à vérifier et les projets historiques n'entrent pas dans ce tableau.",
+    "toc_note": "`★référence utilisateur` signale un projet fourni par l'utilisateur. Les mêmes règles d'ordre s'appliquent dans chaque catégorie, les projets archivés passent automatiquement après. Les licences affichées reposent sur une vérification humaine et sur l'identification SPDX de GitHub ; une valeur inconnue n'est tenue ni pour zéro ni pour MIT par défaut.",
+    "projects_note": "Descriptions complètes, limites et preuves dans [le détail des projets](docs/projects.md). Classements par étoiles, activité et dernier commit dans [les tables de classement](docs/rankings.md).",
+    "papers_note": "Les articles sont regroupés par question traitée, puis classés par date de première soumission décroissante dans chaque groupe. L'année d'un article, les étoiles d'un projet et les capacités d'un système ne sont pas le même jugement et ne se combinent pas.",
+    "papers_link": "Versions, liens de code et périmètres d'application des articles dans [le détail des publications](docs/papers.md).",
+    "detail_intro": "Chaque fonction provient d'une documentation publique vérifiée ; rien n'a été installé ni soumis à un test de capacités commun dans ce dépôt. Les preuves sont figées autant que possible au commit de la vérification, et un rafraîchissement des métriques ne modifie pas les conclusions fonctionnelles.",
+    "entry": "- Catégorie : {category} ; {scope}.\n- Déclenchement : {trigger}.\n- Limites : {boundary}\n- État de maintenance actuel : {maintenance} ; {commits_30d} commits sur 30 jours, {commits_90d} commits sur 90 jours.\n- Licence : [{license}]({license_source}) ; {license_note}.\n- Vérification fonctionnelle : {reviewed_at} ; {sources}.",
+    "source_link": "Source{index}",
+    "papers_intro": "Titres et dates de première soumission vérifiés sur les pages de résumé arXiv d'origine (2026-11-05). Les versions et renommages d'un même identifiant arXiv comptent pour un seul article. Un statut de conférence sans vérification séparée reste indiqué comme arXiv.",
+    "paper_entry": "- Catégorie : {category} ; première soumission : {published} ; {publication_note}.\n- Question étudiée : {summary}\n- Limites de lecture : {boundary}\n- Ressource : {code}.",
+    "paper_code_link": "[Code]({url})",
+    "paper_code_none": "Lien de code non vérifié lors de cette passe",
+    "rankings_intro": "Classement par métadonnées de tout le catalogue ; composants, recherche et assistants n'y affichent que des indicateurs de maintenance, ce qui ne les rend pas interchangeables. Chaque vue stratifie d'abord par état de maintenance, puis trie par ordre décroissant de l'indicateur considéré ; à égalité, les étoiles puis le nom du dépôt départagent.\n\nInstantané : {as_of}. Formules et définitions des champs dans [methodology.md](methodology.md).",
+    "data": "- [Définitions, critères d'inclusion et taxonomie](docs/taxonomy.md)\n- [Formule de classement et limites](docs/methodology.md)\n- [Mots-clés de recherche, sources et couverture](docs/research.md)\n- [Feuille de route d'extension sur un harness existant](docs/harness-guide.md)\n- [Contribuer](CONTRIBUTING.md)\n\n```sh\npython scripts/refresh_metrics.py   # gh connecté ou GH_TOKEN requis\npython scripts/build.py\npython -m unittest discover -s tests\npython scripts/build.py --check\n```\n\nGitHub Actions rafraîchit chaque jour les métriques et les classements des projets référencés. Les nouveaux projets, articles et classements fonctionnels passent par une vérification humaine avant fusion ; un rafraîchissement automatique des métriques ne relance pas l'audit des fonctions ni des licences.",
+    "thanks": "La découverte est partie des index [Awesome Proactive Agents](https://github.com/LowEntropyAI/awesome-proactive-agent) et [Awesome Personal Agents](https://github.com/upgundecha/awesome-personal-agents) ; chaque entrée a été revérifiée sur le dépôt ou l'article d'origine.\n\nLes textes originaux, les données organisées et les scripts de maintenance de ce dépôt sont sous [licence MIT]({R}LICENSE). Les projets, articles, modèles et données liés suivent leurs propres licences.",
+    "records_note": "[Le journal des modifications]({R}record/) conserve le texte d'origine (en chinois) tel qu'il était au moment de la vérification, afin d'auditer la source et la formulation de chaque décision."
+  }
+}

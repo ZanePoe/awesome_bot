@@ -1,0 +1,310 @@
+{
+ "openclaw/openclaw": {
+  "description": "Resident personal assistant that connects messaging channels, memory and tools.",
+  "trigger": "scheduled / heartbeat / events",
+  "boundary": "Background execution depends on the gateway; permissions for each platform and tool must be configured separately.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "NousResearch/hermes-agent": {
+  "description": "Personal agent with persistent memory, skill accumulation and scheduled delivery across channels.",
+  "trigger": "scheduled / session heartbeat",
+  "boundary": "Features are documented by the official docs; no hands-on testing was done for this list.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "HKUDS/nanobot": {
+  "description": "Lightweight Python personal agent supporting files, memory, MCP and long-term goals.",
+  "trigger": "scheduled / local triggers",
+  "boundary": "After a restart the background service does not replay missed scheduled tasks; see the official recovery notes.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "nanocoai/nanoclaw": {
+  "description": "Assistant operated through messaging channels; runs agents inside containers and executes periodic tasks.",
+  "trigger": "scheduled / script gates",
+  "boundary": "The execution environment is a container, which does not establish arbitrary host-desktop control.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "sipeed/picoclaw": {
+  "description": "Go personal assistant for low-resource devices, with file, execution and scheduling tools.",
+  "trigger": "scheduled",
+  "boundary": "A low-resource runtime does not mean the invoked models or browser are equally low-cost.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "zeroclaw-labs/zeroclaw": {
+  "description": "Rust agent runtime supporting background services, tools and event-triggered flows.",
+  "trigger": "cron / webhook / MQTT",
+  "boundary": "The scope of computer control depends on the configured tools and execution environment.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "nearai/ironclaw": {
+  "description": "Rust personal assistant that runs background tasks through routines and heartbeat.",
+  "trigger": "scheduled / events / heartbeat",
+  "boundary": "Tool isolation is a design feature, not a claim that this list has audited its security.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "moltis-org/moltis": {
+  "description": "Personal agent service integrating memory, voice, messaging, browser and scheduling.",
+  "trigger": "cron",
+  "boundary": "Models and the needed integrations must be configured by the user.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "khoj-ai/khoj": {
+  "description": "Personal knowledge assistant with document and web research plus scheduled automations.",
+  "trigger": "scheduled automations",
+  "boundary": "Focused on knowledge and information work, not a general desktop controller.",
+  "license_label": "AGPL-3.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "nano-muse/nanoMuse": {
+  "description": "Personal agent across phone and computer, combining memory, background goals and device operation.",
+  "trigger": "goal checks / routines",
+  "boundary": "Device capabilities and background-run conditions vary by platform; the paper and the software are listed as separate entries.",
+  "license_label": "GPL-3.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "elie222/rakazo": {
+  "description": "Self-hostable persistent bot and team computer workspace with user-chosen models and sandboxes.",
+  "trigger": "routines",
+  "boundary": "Private computer, team computer and container capabilities differ by configuration.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "AFK-surf/Comma": {
+  "description": "Combines persistent task state with cross-device work, waking the agent through a monitoring loop.",
+  "trigger": "routines / event loops",
+  "boundary": "The cloud runtime environment and local device connections are separate components.",
+  "license_label": "AGPL-3.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "mikeyobrien/rho": {
+  "description": "Pi-based resident personal operations assistant with persistent memory and periodic proactive checks.",
+  "trigger": "heartbeat",
+  "boundary": "It is an application layer above Pi; Android and desktop run it differently.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "maikunari/mame": {
+  "description": "Lightweight resident assistant with persistent memory and messaging channels that can orchestrate coding agents.",
+  "trigger": "cron / heartbeat",
+  "boundary": "Best treated as a small implementation reference; the maintenance score does not indicate maturity.",
+  "license_label": "README declares MIT",
+  "license_note": "License full text not found; kept as a candidate and excluded from the open-license shortlist"
+ },
+ "milind-soni/OpenMausBot": {
+  "description": "Local-first multi-bot chat app where each bot can use its own model, thread memory, computer and connected apps.",
+  "trigger": "schedules / webhooks / app events",
+  "boundary": "Bots depend on local CLIs such as Claude, Codex or Grok, or compatible model providers; the cloud desktop, Composio and enterprise features carry separate service or license boundaries.",
+  "license_label": "Apache-2.0 (except enterprise/)",
+  "license_note": "Apache-2.0 open-source edition once enterprise/ is removed; enterprise/ is separately source-available, production use requires a license key, and redistribution or hosting for third parties is prohibited"
+ },
+ "OpenBMB/PilotDeck": {
+  "description": "Isolates files, memory and skills per workspace, with background task discovery and file delivery.",
+  "trigger": "always-on task discovery",
+  "boundary": "The benchmarks in the README are author-reported; this repository does not fold them into cross-project capability rankings.",
+  "license_label": "AGPL-3.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "agent0ai/agent-zero": {
+  "description": "Agent that runs tools, projects and periodic monitoring tasks inside a computer execution environment.",
+  "trigger": "scheduled operations",
+  "boundary": "Bounded by the configured execution environment; it does not control all host resources by default.",
+  "license_label": "MIT",
+  "license_note": "Root LICENSE file verified manually"
+ },
+ "volcengine/MineContext": {
+  "description": "Proactive information assistant that turns screen context into insights, to-dos and daily/weekly summaries.",
+  "trigger": "context observation / proactive push",
+  "boundary": "Proactive suggestions are documented; that does not establish autonomous operation of all apps.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "CopilotKit/openmuse": {
+  "description": "Open-source app with a personal agent interface, browser and workspace.",
+  "trigger": "background task worker; autonomous triggering unverified",
+  "boundary": "A background worker is not autonomous initiation; some connectors and actions are still on the roadmap.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "CopilotKit/OpenDuet": {
+  "description": "Open-source app template for building proactive work assistants.",
+  "trigger": "routines / background suggestions",
+  "boundary": "The template needs its dependencies and models configured; it is not a deployed hosted service.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "CopilotKit/OpenBot": {
+  "description": "Self-hosted AI coworker platform giving AG-UI agents a dedicated browser, file workspace, tool permissions, audit logs and scheduled tasks.",
+  "trigger": "scheduled routines / user-initiated",
+  "boundary": "OpenBot handles the computer environment, policy, auditing and scheduling; agent capability comes from the connected AG-UI endpoint, and persistent sessions and memory depend on CopilotKit Intelligence.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; deployment and license terms of CopilotKit Intelligence count separately"
+ },
+ "Anil-matcha/suparagent": {
+  "description": "Desktop and self-hosted workspace centralizing named AI coworkers, team delegation, conversations, memory, routines, tasks and approvals.",
+  "trigger": "scheduled / webhook / manual routines",
+  "boundary": "The project is still in early development; self-hosted services and computer/browser capabilities are experimental; the hosted version is a separate product; models and accounts must be provided by the user; some integrations support only Claude or Codex.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; the hosted service, third-party engines, Composio and model providers follow their own terms"
+ },
+ "Fei2411/DS-Bot": {
+  "description": "Extends DeepSeek Harness into a desktop app and plugin with memory, group chat and bot collaboration.",
+  "trigger": "persistent bot / group chat; autonomous wake-up unverified",
+  "boundary": "The homepage does not confirm an independent scheduling mechanism; long-lived sessions must not be equated with proactive initiation.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "NousResearch/Hermes-Bot-Mode": {
+  "description": "Adds named bots, separate conversations and a periodic-task panel to the Hermes desktop app.",
+  "trigger": "host cron routines",
+  "boundary": "Archived on GitHub; kept as a reference for the Hermes bot UI and cron integration, not recommended as an active plugin.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "john-walks-slow/dsh-proactive": {
+  "description": "Adds proactive wake-ups to DeepSeek Harness that can still fire after a session cools down.",
+  "trigger": "host-level once / interval / cron",
+  "boundary": "Depends on the host running and on version compatibility; includes do-not-disturb and notification-budget settings.",
+  "license_label": "MIT",
+  "license_note": "Plugin subdirectory LICENSE verified manually"
+ },
+ "t0dorakis/murmur": {
+  "description": "Lightweight scheduling daemon that periodically starts CLI sessions such as Claude, Codex and Pi.",
+  "trigger": "cron / interval",
+  "boundary": "Message delivery and business actions are performed by the prompt and the invoked agent.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "Hypostas/pulse": {
+  "description": "Extension daemon that wakes OpenClaw based on changes, goals and urgency.",
+  "trigger": "sensing / urgency-triggered",
+  "boundary": "Depends on the OpenClaw webhook; the author's autonomy claims are not conclusions tested by this repository.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "earendil-works/pi": {
+  "description": "Extensible agent harness for building resident assistants via SDK, RPC and plugins.",
+  "trigger": "needs upstream scheduling / extensions",
+  "boundary": "The old address badlogic/pi-mono now redirects; can be paired with rho or murmur.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "deepseek-ai/deepseek-harness": {
+  "description": "Agent execution base with a plugin architecture, suited to attaching bots and proactive wake-up plugins.",
+  "trigger": "needs host plugins to provide the proactive mechanism",
+  "boundary": "Developer preview; plugin compatibility needs verification.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "letta-ai/letta-code": {
+  "description": "Agents with persistent memory that form a resident assistant through remote environments and channels.",
+  "trigger": "remote environments / cron",
+  "boundary": "Official migration target for LettaBot; needs remote environments plus scheduling configuration.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "CursorTouch/Windows-MCP": {
+  "description": "MCP service exposing Windows computer-operation capabilities to agents.",
+  "trigger": "invoked by the host",
+  "boundary": "The control component is not itself a resident personal assistant; models, memory and triggers must be attached externally.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "browser-use/browser-use": {
+  "description": "Gives agents web-page understanding and browser execution.",
+  "trigger": "on-demand browser tasks",
+  "boundary": "Primarily browser-scoped; does not establish proactive scheduling or full desktop control.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "bytedance/UI-TARS-desktop": {
+  "description": "Agent applications and related tooling for GUI and browser operation.",
+  "trigger": "on-demand computer / browser tasks",
+  "boundary": "Automated computer-task execution and unprompted proactive initiation are two different dimensions.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "alibaba/page-agent": {
+  "description": "JavaScript agent that controls the interface in natural language inside a web page.",
+  "trigger": "invoked by the page or host",
+  "boundary": "A page-control layer; it has no full resident-assistant lifecycle.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "thunlp/ProactiveAgent": {
+  "description": "Proactive task-prediction method with its dataset and evaluation code.",
+  "trigger": "event observation / task prediction",
+  "boundary": "A research implementation, not an out-of-the-box general personal assistant.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "openaiotlab/ContextAgent": {
+  "description": "Research on judging proactive service and tool invocation from open-world sensory perception.",
+  "trigger": "sensory context / service prediction",
+  "boundary": "Research data and tool scenarios cannot be generalized directly to arbitrary desktops.",
+  "license_label": "Pending verification",
+  "license_note": "LICENSE not found; listed as a research resource only, no grant inferred"
+ },
+ "xzf-thu/Pask": {
+  "description": "Research on proactive assistance combining long-term memory, continuous context and latency constraints.",
+  "trigger": "latent need detection / staying silent",
+  "boundary": "A technical report with research code; practical maturity needs separate validation.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "Simplified-Reasoning/Pi-Bench": {
+  "description": "Evaluates hidden-need recognition and proactive assistance in long multi-turn workflows.",
+  "trigger": "proactivity evaluation",
+  "boundary": "This is a benchmark; unrelated to the Pi harness.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "tdemin16/proactivebench": {
+  "description": "Research benchmark evaluating how multimodal models proactively gather useful information.",
+  "trigger": "multimodal proactivity evaluation",
+  "boundary": "Distinct from the identically named benchmark used by ProactiveAgent; the official paper page notes ECCV 2026.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "xlang-ai/OSWorld": {
+  "description": "Evaluates multimodal agent execution in real computer environments.",
+  "trigger": "real-computer task evaluation",
+  "boundary": "Measures task execution; on its own it does not measure proactive initiation or interruption timing.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "deepakn97/pare": {
+  "description": "Evaluates proactive assistants by simulating active users and a stateful digital environment.",
+  "trigger": "proactive assistant / user-simulation evaluation",
+  "boundary": "Simulated users do not equal long-term results with real users.",
+  "license_label": "MIT",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "ZJU-REAL/KnowU-Bench": {
+  "description": "Evaluates mobile agents on eliciting preferences, proactive intervention and asking for consent.",
+  "trigger": "interactive personalized mobile evaluation",
+  "boundary": "Focused on mobile GUI and personal preferences, not an all-platform runtime.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ },
+ "facebookresearch/Memo-Pro-Agent": {
+  "description": "Research on deciding whether to intervene proactively by retrieving evidence from long-term personal memory.",
+  "trigger": "memory-driven intervention evaluation",
+  "boundary": "Early paper name was ProPerAgent; deduplicated under the same arXiv ID.",
+  "license_label": "CC-BY-NC-4.0",
+  "license_note": "Non-commercial license; listed as research source code only"
+ },
+ "letta-ai/lettabot": {
+  "description": "Formerly provided messaging channels, memory, heartbeat and scheduled tasks as a personal assistant.",
+  "trigger": "heartbeat / cron",
+  "boundary": "The official README announces it is no longer actively maintained and recommends migrating to Letta Code.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identified via GitHub licenseInfo; licenses of attached data or model weights are not inferred"
+ }
+}

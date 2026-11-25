@@ -1,0 +1,104 @@
+{
+  "2410.12361": {
+    "title": "Proactive Agent: Shifting LLM Agents from Reactive Responses to Active Assistance",
+    "summary": "Anticipe les tâches de l'utilisateur à partir des événements du bureau et étudie l'assistance proactive sans consigne explicite.",
+    "boundary": "Implémentation de recherche et benchmark, pas un produit d'assistant always-on abouti.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2505.14668": {
+    "title": "ContextAgent: Context-Aware Proactive LLM Agents with Open-World Sensory Perceptions",
+    "summary": "Exploite le contexte perceptif d'appareils portables et le profil historique pour prédire quand proposer un service et appeler des outils.",
+    "boundary": "L'évaluation de la perception et de la prédiction de service n'équivaut pas à un contrôle autonome de tout le bureau.",
+    "publication_note": "NeurIPS 2025 (indiqué sur la page de l'article)"
+  },
+  "2602.04482": {
+    "title": "ProAgentBench: Evaluating LLM Agents for Proactive Assistance with Real-World Data",
+    "summary": "Évalue le moment et le contenu de l'assistance proactive à partir de journaux de flux de travail réels.",
+    "boundary": "Porte sur la décision d'assister, pas sur la fiabilité du système dans son ensemble.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2603.08013": {
+    "title": "PIRA-Bench: A Transition from Reactive GUI Agents to GUI-based Proactive Intent Recommendation Agents",
+    "summary": "Recommande des intentions latentes à partir de captures successives de l'interface et du contexte de l'utilisateur.",
+    "boundary": "Recommander une intention et achever réellement la tâche recommandée doivent être évalués séparément.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2605.14678": {
+    "title": "π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows",
+    "summary": "Évalue l'identification de besoins cachés et l'assistance proactive dans des flux de travail multi-tours de long terme.",
+    "boundary": "Le taux de réussite des tâches et la proactivité sont des métriques distinctes.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2604.08000": {
+    "title": "PASK: Toward Intent-Aware Proactive Agents with Long-Term Memory",
+    "summary": "Combine mémoire de long terme, contexte temps réel et contraintes de latence pour détecter les besoins latents et choisir entre aider ou se taire.",
+    "boundary": "Les auteurs le présentent comme un rapport technique et une recherche en cours.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2610.08699": {
+    "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
+    "summary": "Présente l'architecture logicielle, la mémoire et la conception d'interaction continue de l'agent personnel multi-appareils.",
+    "boundary": "Article de système ; les affirmations d'antériorité des auteurs ne sont pas prises pour des faits vérifiés.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2610.22671": {
+    "title": "MemoProAgent: Toward Memory-Driven Proactive Assistance",
+    "summary": "Étudie la récupération, dans la mémoire personnelle de long terme, des éléments justifiant une intervention, la mémoire participant à la décision de parler ou non.",
+    "boundary": "Titre de la version la plus récente : MemoProAgent ; l'ancien nom ProPerAgent n'est pas listé deux fois.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2606.16748": {
+    "title": "MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents",
+    "summary": "Évalue des assistants capables d'agir sur l'ordinateur dans un environnement numérique doté de données personnelles et de sessions connectées.",
+    "boundary": "Évaluation de l'exécution personnalisée ; elle ne remplace pas celle du moment des interventions proactives.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2609.37267": {
+    "title": "Foundations of Proactive Agents: Principles, Technical Layers, and Proactivity-Gym",
+    "summary": "Discute les couches techniques et le coût pour l'utilisateur des agents proactifs, et introduit Proactivity-Gym.",
+    "boundary": "Cadre conceptuel et environnement d'évaluation, pas un palmarès de qualité produit.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2603.19466": {
+    "title": "ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models",
+    "summary": "Évalue la capacité des modèles multimodaux à obtenir spontanément des informations supplémentaires pour mener à bien une tâche visuelle.",
+    "boundary": "Distinct du benchmark homonyme de ProactiveAgent ; la page de l'article indique actuellement ECCV 2026.",
+    "publication_note": "ECCV 2026 (indiqué sur la page de l'article)"
+  },
+  "2603.23064": {
+    "title": "Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory Pollution",
+    "summary": "Étudie la pollution silencieuse de la mémoire provoquée par un heartbeat d'arrière-plan exposé à du contenu non fiable.",
+    "boundary": "L'évaluation est bornée par des versions ; les conclusions antérieures au correctif ne s'appliquent pas à toutes les versions actuelles.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2605.13471": {
+    "title": "Sleeper Channels and Provenance Gates: Persistent Prompt Injection in Always-on Autonomous AI Agents",
+    "summary": "Analyse les chemins d'injection indirecte de prompts persistant à travers mémoire, compétences, ordonnancement et système de fichiers.",
+    "boundary": "Recherche sur l'architecture et les menaces, pas une notation de sécurité générale applicable aux produits actuels.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2404.07972": {
+    "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "summary": "Fournit un benchmark d'exécution de tâches ouvertes dans de véritables environnements informatiques.",
+    "boundary": "Mesure surtout l'exécution ; ne prouve pas qu'un agent découvre des tâches de sa propre initiative.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2304.03442": {
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "summary": "Étudie la construction d'agents simulés capables de vivre et d'interagir de façon autonome grâce à la mémoire, la réflexion et la planification.",
+    "boundary": "Recherche fondamentale sur les mondes simulés, pas un assistant informatique personnel.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2604.08455": {
+    "title": "KnowU-Bench: Towards Interactive, Proactive, and Personalized Mobile Agent Evaluation",
+    "summary": "Évalue la façon dont un agent mobile recueille les préférences par l'interaction, intervient de sa propre initiative, demande l'accord ou reste silencieux.",
+    "boundary": "Scénarios d'interface mobile et de préférences personnelles ; les flux de travail de bureau restent à tester séparément.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  },
+  "2604.00842": {
+    "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+    "summary": "Étudie les assistants proactifs dans un environnement simulé d'applications à état et d'utilisateurs actifs.",
+    "boundary": "Les résultats obtenus sur des utilisateurs simulés ne remplacent pas directement une évaluation auprès de vrais utilisateurs sur la durée.",
+    "publication_note": "arXiv ; statut de conférence non vérifié séparément"
+  }
+}

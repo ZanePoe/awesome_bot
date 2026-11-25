@@ -1,0 +1,104 @@
+{
+ "2410.12361": {
+  "title": "Proactive Agent: Shifting LLM Agents from Reactive Responses to Active Assistance",
+  "summary": "डेस्कटॉप इवेंट्स से उपयोगकर्ता के कार्य का पूर्वानुमान और बिना स्पष्ट निर्देश के प्रैएक्टिव सहायता का शोध।",
+  "boundary": "रिसर्च इम्प्लीमेंटेशन और benchmark; परिपक्व सदैव-चालू असिस्टेंट उत्पाद नहीं।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2505.14668": {
+  "title": "ContextAgent: Context-Aware Proactive LLM Agents with Open-World Sensory Perceptions",
+  "summary": "वियरेबल डिवाइस की सेंसिंग कंटेक्स्ट और ऐतिहासिक प्रोफ़ाइल से अनुमान लगाता है कि सेवा कब देनी है और कौन-से टूल बुलाए जाने हैं।",
+  "boundary": "सेंसिंग और सेवा-पूर्वानुमान का आकलन पूरी डेस्कटॉप स्वतः-नियंत्रण के बराबर नहीं है।",
+  "publication_note": "NeurIPS 2025 (पेपर पेज पर चिह्नित)"
+ },
+ "2602.04482": {
+  "title": "ProAgentBench: Evaluating LLM Agents for Proactive Assistance with Real-World Data",
+  "summary": "असली वर्कफ़्लो लॉग से प्रैएक्टिव सहायता के समय और सामग्री का आकलन।",
+  "boundary": "ध्यान प्रैएक्टिव सहायता-निर्णय पर है; सिस्टम-स्तरीय रिलायबिलिटी टेस्ट के बराबर नहीं।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2603.08013": {
+  "title": "PIRA-Bench: A Transition from Reactive GUI Agents to GUI-based Proactive Intent Recommendation Agents",
+  "summary": "निरंतर GUI स्क्रीनशॉट और उपयोगकर्ता कंटेक्स्ट से संभावित इरादे का सुझाव।",
+  "boundary": "इरादा-सुझाव और सुझाए कार्य की वास्तविक पूर्ति को अलग-अलग आँकना चाहिए।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2605.14678": {
+  "title": "π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows",
+  "summary": "बहु-चरणीय दीर्घकालिक वर्कफ़्लो में छिपी आवश्यकता पहचान और प्रैएक्टिव सहायता का आकलन।",
+  "boundary": "कार्य-पूर्णता दर और प्रैएक्टिवनेस अलग-अलग मीट्रिक हैं।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2604.08000": {
+  "title": "PASK: Toward Intent-Aware Proactive Agents with Long-Term Memory",
+  "summary": "दीर्घकालिक स्मृति, लाइव कंटेक्स्ट और latency बाधाओं को जोड़कर संभावित आवश्यकता पहचानती है, फिर सहायता या मौन चुनती है।",
+  "boundary": "लेखक ने तकनीकी रिपोर्ट और जारी शोध चिह्नित किया है।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2610.08699": {
+  "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
+  "summary": "क्रॉस-डिवाइस पर्सनल Agent का सॉफ़्टवेयर आर्किटेक्चर, स्मृति और निरंतर इंटरैक्शन डिज़ाइन प्रस्तुत करता है।",
+  "boundary": "सिस्टम पेपर; लेखकों के प्राथमिकता-कथन को सत्यापित तथ्य नहीं माना जाता।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2610.22671": {
+  "title": "MemoProAgent: Toward Memory-Driven Proactive Assistance",
+  "summary": "दीर्घकालिक व्यक्तिगत स्मृति से हस्तक्षेप-प्रमाण खोज का शोध, ताकि बोलने के निर्णय में स्मृति भाग ले।",
+  "boundary": "वर्तम संस्करण का शीर्षक MemoProAgent है; पुराने नाम ProPerAgent को दोबारा नहीं गिना गया।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2606.16748": {
+  "title": "MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents",
+  "summary": "व्यक्तिगत डेटा और लॉगिन स्थिति वाले डिजिटल वातावरण में कंप्यूटर-संचालन असिस्टेंट का आकलन।",
+  "boundary": "पर्सनलाइज़्ड एक्ज़ीक्यूशन का आकलन; प्रैएक्टिव हस्तक्षेप-समय के आकलन का स्थान नहीं ले सकता।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2609.37267": {
+  "title": "Foundations of Proactive Agents: Principles, Technical Layers, and Proactivity-Gym",
+  "summary": "प्रैएक्टिव Agent के तकनीकी लेयर और उपयोगकर्ता-लागत पर चर्चा, तथा Proactivity-Gym का प्रस्ताव।",
+  "boundary": "अवधारणात्मक फ्रेमवर्क और इवैल्यूएशन वातावरण; उत्पाद-गुणवत्ता की लीडरबोर्ड नहीं।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2603.19466": {
+  "title": "ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models",
+  "summary": "दृश्य कार्य पूरा करने के लिए मल्टीमोडल मॉडलों द्वारा अतिरिक्त सूचना का प्रैएक्टिव संग्रह मापता है।",
+  "boundary": "ProactiveAgent के समान-नाम वाले benchmark से अलग; पेपर पेज पर वर्तमान में ECCV 2026 चिह्नित है।",
+  "publication_note": "ECCV 2026 (पेपर पेज पर चिह्नित)"
+ },
+ "2603.23064": {
+  "title": "Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory Pollution",
+  "summary": "बैकग्राउंड heartbeat के अविश्वसनीय सामग्री से संपर्क के बाद होने वाली मौन स्मृति-दूषण का शोध।",
+  "boundary": "आकलन में संस्करण-सीमा है; फिक्स-पूर्व निष्कर्षों को सभी वर्तमान संस्करणों पर लागू नहीं किया जा सकता।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2605.13471": {
+  "title": "Sleeper Channels and Provenance Gates: Persistent Prompt Injection in Always-on Autonomous AI Agents",
+  "summary": "स्मृति, स्किल, शेड्यूलिंग और फ़ाइल सिस्टम में टिके रहने वाली अप्रत्यक्ष prompt injection पथों का विश्लेषण।",
+  "boundary": "आर्किटेक्चर और थ्रेट रिसर्च; वर्तमान उत्पादों की सार्वभौमिक सुरक्षा-रेटिंग नहीं।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2404.07972": {
+  "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+  "summary": "असली कंप्यूटर वातावरण में खुले-समापन कार्यों के निष्पादन का benchmark देता है।",
+  "boundary": "मुख्यतः निष्पादन क्षमता मापता है; Agent के स्वतः टास्क खोजने का सबूत नहीं देता।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2304.03442": {
+  "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+  "summary": "स्मृति, प्रतिबिम्बन और योजना से स्वतः जीवन-जीने वाले सिमुलेटेड Agent बनाने का शोध।",
+  "boundary": "सिमुलेटेड दुनिया का बुनियादी शोध; व्यक्तिगत कंप्यूटर असिस्टेंट नहीं।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2604.08455": {
+  "title": "KnowU-Bench: Towards Interactive, Proactive, and Personalized Mobile Agent Evaluation",
+  "summary": "मोबाइल Agent द्वारा इंटरैक्शन से पसंद हासिल करना, प्रैएक्टिव हस्तक्षेप, अनुमति माँगना या मौन रहना मापता है।",
+  "boundary": "मोबाइल GUI और व्यक्तिगत पसंद के परिदृश्य; डेस्कटॉप वर्कफ़्लोज़ अलग से जाँचने होंगे।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ },
+ "2604.00842": {
+  "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+  "summary": "stateful ऐप और सक्रिय उपयोगकर्ताओं के सिमुलेशन वातावरण से प्रैएक्टिव असिस्टेंट का शोध।",
+  "boundary": "सिमुलेटेड उपयोगकर्ता के परिणाम वास्तविक दीर्घकालिक उपयोगकर्ता-मूल्यांकन का सीधा विकल्प नहीं।",
+  "publication_note": "arXiv; कॉन्फ़्रेंस स्थिति का स्वतंत्र सत्यापन नहीं"
+ }
+}

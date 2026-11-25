@@ -1,0 +1,310 @@
+{
+ "openclaw/openclaw": {
+  "description": "Asistente personal siempre activo que conecta canales de mensajería, memoria y herramientas.",
+  "trigger": "programación / heartbeat / eventos",
+  "boundary": "La ejecución en segundo plano depende de la gateway; los permisos de cada plataforma y herramienta deben configurarse por separado.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "NousResearch/hermes-agent": {
+  "description": "Agente personal con memoria persistente, acumulación de habilidades y entrega programada a través de canales.",
+  "trigger": "programación / heartbeat de sesión",
+  "boundary": "Las funciones se documentan según la documentación oficial; no se han evaluado en ejecución real en este catálogo.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "HKUDS/nanobot": {
+  "description": "Agente personal ligero en Python con archivos, memoria, MCP y objetivos a largo plazo.",
+  "trigger": "programación / disparadores locales",
+  "boundary": "Al reiniciar el servicio en segundo plano no se recuperan las tareas programadas perdidas; consulta la nota oficial de recuperación.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "nanocoai/nanoclaw": {
+  "description": "Asistente operado desde canales de mensajería que ejecuta agentes en contenedores y tareas periódicas.",
+  "trigger": "programación / script gates",
+  "boundary": "El entorno de ejecución es un contenedor; de ahí no puede concluirse ninguna capacidad general de operar el escritorio del anfitrión.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "sipeed/picoclaw": {
+  "description": "Asistente personal en Go para dispositivos con recursos limitados, con herramientas de archivos, ejecución y planificación.",
+  "trigger": "programación",
+  "boundary": "Un runtime de bajos recursos no implica que los modelos invocados ni el navegador sean igual de económicos.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "zeroclaw-labs/zeroclaw": {
+  "description": "Runtime de agentes en Rust con servicios en segundo plano, herramientas y flujos activados por eventos.",
+  "trigger": "cron / webhook / MQTT",
+  "boundary": "El alcance del control del ordenador depende de las herramientas y del entorno de ejecución configurados.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "nearai/ironclaw": {
+  "description": "Asistente personal en Rust que ejecuta tareas en segundo plano mediante routines y heartbeat.",
+  "trigger": "programación / eventos / heartbeat",
+  "boundary": "El aislamiento de herramientas es un rasgo de diseño y no equivale a que este catálogo haya auditado su seguridad.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "moltis-org/moltis": {
+  "description": "Servicio de agente personal que integra memoria, voz, mensajería, navegador y planificación.",
+  "trigger": "cron",
+  "boundary": "Requiere configurar por tu cuenta los modelos y las integraciones necesarias.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "khoj-ai/khoj": {
+  "description": "Asistente de conocimiento personal con investigación en documentos y web, y automatizaciones programadas.",
+  "trigger": "scheduled automations",
+  "boundary": "Se centra en el trabajo con conocimiento e información; no es un controlador de escritorio de propósito general.",
+  "license_label": "AGPL-3.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "nano-muse/nanoMuse": {
+  "description": "Agente personal entre móvil y ordenador que combina memoria, objetivos en segundo plano y operación del dispositivo.",
+  "trigger": "revisión de objetivos / routines",
+  "boundary": "Las capacidades del dispositivo y las condiciones de ejecución en segundo plano varían según la plataforma; el artículo y el software se listan por separado.",
+  "license_label": "GPL-3.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "elie222/rakazo": {
+  "description": "Bots persistentes y espacio de trabajo informático de equipo, autoalojable, con modelos a elección y sandbox.",
+  "trigger": "routines",
+  "boundary": "Las capacidades del ordenador privado, del ordenador de equipo y del contenedor se distinguen según la configuración.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "AFK-surf/Comma": {
+  "description": "Combina estado de tareas continuo y trabajo entre dispositivos, y despierta al agente mediante bucles de supervisión.",
+  "trigger": "routines / event loops",
+  "boundary": "El entorno de ejecución en la nube y la conexión a los dispositivos locales son componentes distintos.",
+  "license_label": "AGPL-3.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "mikeyobrien/rho": {
+  "description": "Asistente personal operativo siempre activo basado en Pi, con memoria persistente y comprobaciones proactivas periódicas.",
+  "trigger": "heartbeat",
+  "boundary": "Es una aplicación de nivel superior sobre Pi; la forma de ejecutarse difiere entre Android y escritorio.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "maikunari/mame": {
+  "description": "Asistente ligero siempre activo con memoria persistente y canales de mensajería; puede orquestar agentes de programación.",
+  "trigger": "cron / heartbeat",
+  "boundary": "Sirve como referencia de implementación pequeña; la puntuación de mantenimiento del proyecto no representa madurez.",
+  "license_label": "MIT declarada en el README",
+  "license_note": "No se encontró el texto completo de la licencia; candidato, no entra en la lista de recomendación de código abierto"
+ },
+ "milind-soni/OpenMausBot": {
+  "description": "Aplicación de chat local-first con múltiples bots, donde cada bot puede usar modelo propio, memoria por hilo, ordenador y aplicaciones conectadas.",
+  "trigger": "schedules / webhooks / app events",
+  "boundary": "Los bots dependen de CLIs locales como Claude, Codex o Grok, o de proveedores de modelos compatibles; el escritorio en la nube, Composio y las funciones enterprise tienen límites propios de servicio o de licencia.",
+  "license_label": "Apache-2.0 (excepto enterprise/)",
+  "license_note": "Sin enterprise/ es la versión de código abierto Apache-2.0; enterprise/ tiene una licencia source-available aparte, requiere clave de licencia para producción y prohíbe redistribuir o alojar en servicios de terceros"
+ },
+ "OpenBMB/PilotDeck": {
+  "description": "Aísla archivos, memoria y habilidades por espacio de trabajo; descubre tareas en segundo plano y entrega archivos.",
+  "trigger": "descubrimiento always-on de tareas",
+  "boundary": "Los benchmarks del README son autoinformados por los autores; este repositorio no los incluye en clasificaciones de capacidad entre proyectos.",
+  "license_label": "AGPL-3.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "agent0ai/agent-zero": {
+  "description": "Agente que ejecuta herramientas, proyectos y tareas de supervisión periódica en un entorno informático propio.",
+  "trigger": "scheduled operations",
+  "boundary": "Su límite es el entorno de ejecución configurado; no controla todos los recursos del anfitrión de forma predeterminada.",
+  "license_label": "MIT",
+  "license_note": "LICENSE de la raíz verificada manualmente"
+ },
+ "volcengine/MineContext": {
+  "description": "Asistente informativo proactivo que genera ideas, tareas pendientes y resúmenes diarios y semanales a partir del contexto de pantalla.",
+  "trigger": "observación de contexto / envío proactivo",
+  "boundary": "Las sugerencias proactivas están documentadas; de ahí no se sigue que pueda operar todas las aplicaciones de forma autónoma.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "CopilotKit/openmuse": {
+  "description": "Aplicación de código abierto que ofrece interfaz de agente personal, navegador y espacio de trabajo.",
+  "trigger": "workers de tareas en segundo plano; activación autónoma pendiente de verificación",
+  "boundary": "Un worker en segundo plano no equivale a iniciar por sí solo; parte de los conectores y acciones siguen en el roadmap.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "CopilotKit/OpenDuet": {
+  "description": "Plantilla de aplicación de código abierto para construir asistentes proactivos de trabajo.",
+  "trigger": "routines / sugerencias en segundo plano",
+  "boundary": "La plantilla requiere configurar dependencias y modelos; no es un servicio gestionado ya desplegado.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "CopilotKit/OpenBot": {
+  "description": "Plataforma autoalojada de colegas de IA que aporta a los agentes AG-UI navegador independiente, espacio de archivos, permisos de herramientas, registro de auditoría y tareas programadas.",
+  "trigger": "routines programadas / inicio manual",
+  "boundary": "OpenBot gestiona el entorno informático, las políticas, la auditoría y la planificación; la capacidad del agente la proporciona el endpoint AG-UI conectado, y las sesiones persistentes y la memoria dependen de CopilotKit Intelligence.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; las condiciones de despliegue y licencia de CopilotKit Intelligence se cuentan aparte"
+ },
+ "Anil-matcha/suparagent": {
+  "description": "Escritorio y espacio de trabajo autoalojado para administrar de forma centralizada colegas de IA con nombre, delegación en equipo, conversaciones, memoria, routines, tareas y aprobaciones.",
+  "trigger": "scheduled / webhook / manual routines",
+  "boundary": "El proyecto sigue en desarrollo temprano; el servicio autoalojado y las capacidades de ordenador y navegador son experimentales; la versión gestionada es un producto aparte; el usuario aporta modelos y cuentas, y algunas integraciones solo admiten Claude o Codex.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; el servicio gestionado, los motores de terceros, Composio y los proveedores de modelos siguen sus propios términos"
+ },
+ "Fei2411/DS-Bot": {
+  "description": "Aplicación de escritorio y complementos que amplían DeepSeek Harness con memoria, chats grupales y colaboración entre bots.",
+  "trigger": "bots persistentes / chats grupales; despertar autónomo pendiente de verificación",
+  "boundary": "La página principal no confirma un mecanismo propio de temporización; no se puede equiparar directamente una sesión prolongada con ejecución proactiva.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "NousResearch/Hermes-Bot-Mode": {
+  "description": "Añade a Hermes de escritorio bots con nombre, conversaciones independientes y un panel de tareas periódicas.",
+  "trigger": "routines cron del anfitrión",
+  "boundary": "Archivado en GitHub; se conserva como referencia de la interfaz de bots de Hermes y de su integración con cron, no como complemento activo recomendado.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "john-walks-slow/dsh-proactive": {
+  "description": "Añade a DeepSeek Harness despertares proactivos que pueden seguir disparándose después del enfriamiento de la sesión.",
+  "trigger": "once / interval / cron a nivel del anfitrión",
+  "boundary": "Depende de la ejecución del anfitrión y de la compatibilidad de versiones; incluye configuración de no molestar y de presupuesto de notificaciones.",
+  "license_label": "MIT",
+  "license_note": "LICENSE del subdirectorio del complemento verificada manualmente"
+ },
+ "t0dorakis/murmur": {
+  "description": "Demonio de planificación ligero que inicia periódicamente sesiones de CLIs como Claude, Codex o Pi.",
+  "trigger": "cron / interval",
+  "boundary": "La entrega de mensajes y las operaciones de negocio las realizan las indicaciones proporcionadas y el agente invocado.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "Hypostas/pulse": {
+  "description": "Demonio de extensión para OpenClaw que despierta según cambios, objetivos y urgencia.",
+  "trigger": "sensores / disparo por urgencia",
+  "boundary": "Depende del webhook de OpenClaw; las afirmaciones de autonomía del autor no son conclusiones medidas por este repositorio.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "earendil-works/pi": {
+  "description": "Harness de agentes extensible con el que construir asistentes siempre activos mediante SDK, RPC y complementos.",
+  "trigger": "requiere planificación de nivel superior / extensiones",
+  "boundary": "La antigua ruta badlogic/pi-mono ya redirige; puede combinarse con rho o murmur.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "deepseek-ai/deepseek-harness": {
+  "description": "Base de ejecución de agentes con arquitectura de complementos, adecuada para conectar bots y complementos de despertar proactivo.",
+  "trigger": "el mecanismo proactivo lo debe aportar un complemento del anfitrión",
+  "boundary": "developer preview; hay que verificar la compatibilidad de los complementos.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "letta-ai/letta-code": {
+  "description": "Agente con memoria persistente que, mediante entornos remotos y channels, puede formar un asistente siempre activo.",
+  "trigger": "remote environments / cron",
+  "boundary": "Destino oficial de migración de LettaBot; requiere combinar entornos remotos con configuración de planificación.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "CursorTouch/Windows-MCP": {
+  "description": "Servicio MCP que expone a los agentes capacidades de operar un Windows.",
+  "trigger": "invocado por el anfitrión",
+  "boundary": "El componente de control no es en sí un asistente personal siempre activo; necesita modelos, memoria y disparadores externos.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "browser-use/browser-use": {
+  "description": "Aporta a los agentes comprensión de páginas web y ejecución en el navegador.",
+  "trigger": "tareas de navegador bajo demanda",
+  "boundary": "Actúa principalmente en el navegador; no demuestra planificación proactiva ni control de todo el escritorio.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "bytedance/UI-TARS-desktop": {
+  "description": "Aplicación de agente y herramientas relacionadas para operar GUIs y navegadores.",
+  "trigger": "tareas de ordenador / navegador bajo demanda",
+  "boundary": "Automatizar tareas de ordenador e iniciar trabajo sin indicación humana son dos dimensiones distintas.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "alibaba/page-agent": {
+  "description": "Agente JavaScript que controla la interfaz en lenguaje natural desde dentro de la página web.",
+  "trigger": "invocado por la página o el anfitrión",
+  "boundary": "Es una capa de control dentro de la web; no dispone del ciclo de vida completo de un asistente siempre activo.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "thunlp/ProactiveAgent": {
+  "description": "Método de predicción proactiva de tareas, junto con sus datos y su código de evaluación.",
+  "trigger": "observación de eventos / anticipación de tareas",
+  "boundary": "Es una implementación de investigación, no un asistente personal general listo para usar.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "openaiotlab/ContextAgent": {
+  "description": "Investiga cómo usar información de percepción de mundo abierto para decidir el servicio proactivo y la invocación de herramientas.",
+  "trigger": "percepción de contexto / predicción de servicio",
+  "boundary": "Los datos de investigación y los escenarios de herramientas no se pueden generalizar directamente a cualquier escritorio.",
+  "license_label": "Pendiente de verificación",
+  "license_note": "No se encontró LICENSE; solo como recurso de investigación, sin inferir autorización"
+ },
+ "xzf-thu/Pask": {
+  "description": "Investiga la asistencia proactiva que combina memoria a largo plazo, contexto continuo y restricciones de latencia.",
+  "trigger": "detección de necesidades latentes / mantenerse en silencio",
+  "boundary": "Informe técnico y código de investigación; la madurez práctica debe verificarse aparte.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "Simplified-Reasoning/Pi-Bench": {
+  "description": "Evalúa la identificación de necesidades ocultas y la asistencia proactiva en flujos de trabajo largos y de múltiples turnos.",
+  "trigger": "evaluación de proactividad",
+  "boundary": "Es un benchmark; no guarda relación con el harness Pi.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "tdemin16/proactivebench": {
+  "description": "Benchmark de investigación que evalúa cómo los modelos multimodales obtienen proactivamente información útil.",
+  "trigger": "evaluación de proactividad multimodal",
+  "boundary": "Distinguirlo del benchmark homónimo utilizado por ProactiveAgent; la página oficial del artículo indica ECCV 2026.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "xlang-ai/OSWorld": {
+  "description": "Evalúa la capacidad de ejecución de agentes multimodales en entornos informáticos reales.",
+  "trigger": "evaluación con tareas reales de ordenador",
+  "boundary": "Mide la ejecución de tareas; por sí sola no mide la iniciativa espontánea ni el momento de interrumpir.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "deepakn97/pare": {
+  "description": "Evalúa asistentes proactivos simulando usuarios activos y entornos digitales con estado.",
+  "trigger": "evaluación de asistente proactivo / usuario simulado",
+  "boundary": "Los usuarios simulados no equivalen al resultado del uso prolongado por usuarios reales.",
+  "license_label": "MIT",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "ZJU-REAL/KnowU-Bench": {
+  "description": "Evalúa en agentes móviles la obtención de preferencias, la intervención proactiva y la solicitud de consentimiento.",
+  "trigger": "evaluación móvil interactiva y personalizada",
+  "boundary": "Se centra en GUIs móviles y preferencias personales; no es un runtime para todas las plataformas.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ },
+ "facebookresearch/Memo-Pro-Agent": {
+  "description": "Investiga cómo buscar evidencia en la memoria personal de largo plazo para decidir si intervenir de forma proactiva.",
+  "trigger": "evaluación de intervención guiada por memoria",
+  "boundary": "Nombre inicial del artículo: ProPerAgent; deduplicado por el mismo ID de arXiv.",
+  "license_label": "CC-BY-NC-4.0",
+  "license_note": "Licencia no comercial; listado solo como código de investigación"
+ },
+ "letta-ai/lettabot": {
+  "description": "Asistente personal que ofrecía canales de mensajería, memoria, heartbeat y tareas programadas.",
+  "trigger": "heartbeat / cron",
+  "boundary": "El README oficial anuncia que ya no se mantiene activamente y recomienda migrar a Letta Code.",
+  "license_label": "Apache-2.0",
+  "license_note": "Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos"
+ }
+}

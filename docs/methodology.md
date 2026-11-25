@@ -1,61 +1,61 @@
-# 排序方法
+# Ranking methodology
 
-## 指标来源
+## Metric sources
 
-`scripts/refresh_metrics.py` 使用 GitHub GraphQL API，经已登录的 `gh` 或 `GH_TOKEN` 访问公开仓库。一次采集使用固定 UTC 时刻，按批读取全部项目，全部成功才原子替换 `data/metrics.json`。部分失败不会把未知值写成零，也不会覆盖上一份完整快照。
+`scripts/refresh_metrics.py` uses the GitHub GraphQL API through a logged-in `gh` or `GH_TOKEN` against public repositories. One collection uses a fixed UTC moment, reads all projects in batches, and only atomically replaces `data/metrics.json` when every batch succeeds. A partial failure never writes unknown values as zero and never overwrites the previous complete snapshot.
 
-- `stars`：采集时的 `stargazerCount`。
-- `commits_30d / commits_90d`：默认分支可达历史在对应 UTC 时间窗口内的 `history.totalCount`，包含 merge 和机器人提交。不用仅第一页的数量冒充完整计数。
-- `last_commit_at`：默认分支 HEAD 的 `committedDate`，用于新鲜度；同时保存 SHA。
-- `pushed_at`：另存最近 push，可能来自其他分支，不用它冒充默认分支代码更新。
-- `updated_at`：另存仓库元数据更新时间，不参与新鲜度得分。
-- `latest_release`：保存按创建时间最近的 release 节点及是否预发布，缺失为 null，不把缺失认作弃坑。
-- `archived / disabled`：API 返回的仓库状态。
-- `license_review`：人工功能核验时的许可判断，和自动刷新时的 `license_spdx` 分开。许可证随项目变化，更新元数据不会自动重审许可全文。
+- `stars`: the `stargazerCount` at collection time.
+- `commits_30d / commits_90d`: `history.totalCount` over the default-branch reachable history inside the matching UTC window, including merge and bot commits. First-page counts are never passed off as complete totals.
+- `last_commit_at`: the `committedDate` of the default-branch HEAD, used for freshness; the SHA is stored alongside.
+- `pushed_at`: the most recent push is stored separately and may come from other branches; it is never used to masquerade as default-branch code updates.
+- `updated_at`: the repository-metadata update time is stored separately and does not enter the freshness score.
+- `latest_release`: the most recently created release node and its pre-release flag; missing means null, and a missing release is never read as abandonment.
+- `archived / disabled`: repository status returned by the API.
+- `license_review`: the license judgement made during manual feature verification, kept separate from `license_spdx` collected at refresh time. Licenses change with the project, so a metadata refresh does not re-audit license texts.
 
-首版采集日为北京时间 2026-11-05；机器可读时间采用 UTC，显示 2026-11-04 并非日期错误。
+The first collection day was 2026-11-05 Beijing time; machine-readable times use UTC, so the displayed 2026-11-04 is not a date error.
 
-## 先维护状态，再综合分
+## Maintenance status first, then the composite score
 
-同一分类中先分四层：
+Within the same category, projects are first split into four tiers:
 
-1. 默认分支近 90 天有提交。
-2. 距默认分支最近提交 91–365 天。
-3. 超过 365 天没有默认分支新提交。
-4. 已归档、disabled 或明确历史参考项目。
+1. Default-branch commits within the last 90 days.
+2. 91–365 days since the last default-branch commit.
+3. Over 365 days without a new default-branch commit.
+4. Archived, disabled, or explicitly historical-reference projects.
 
-层内综合排序：
+Within a tier, the composite ordering is:
 
 ```text
 P = min(1, ln(1 + stars) / ln(1 + 100000))
 A = min(1, ln(1 + commits_90d) / ln(1 + 500))
 R = exp(-max(0, days_since_default_branch_HEAD) / 90)
-维护分 = 100 × (0.40 × P + 0.35 × A + 0.25 × R)
+maintenance score = 100 × (0.40 × P + 0.35 × A + 0.25 × R)
 ```
 
-star 占 40%，90 天开发活动占 35%，最近提交的新鲜度占 25%。对数和固定封顶减轻超大仓库的压倒性优势；固定锚点使新增条目不会改变其他条目的分数。分数越高，表示此口径下热度和维护迹象越强。
+Stars weigh 40%, 90-day development activity 35%, and last-commit freshness 25%. Logarithms with fixed caps soften the dominance of very large repositories; fixed anchors mean a new entry never changes the scores of existing ones. A higher score means stronger popularity and maintenance signals under this definition.
 
-同分先比较 star，再按仓库名稳定排序。分数本身不因归档扣除，而由维护层将归档项目后置。这样原始数字可见，规则也可复算。
+Ties compare stars first, then sort by repository name for a stable order. The score itself deducts nothing for archival; the maintenance tier pushes archived projects to the end instead. This keeps the raw numbers visible and the rule recomputable.
 
-[排序视图](rankings.md) 还提供 star、90 天提交数、最新提交三个单指标视图；均保留维护状态分层。需要无分层的原始数值时可使用 [JSON](../data/metrics.json) 或 [CSV](../data/rankings.csv) 自行排序。
+The [ranking views](rankings.md) additionally provide three single-metric views — stars, 90-day commits and latest commit — all keeping the maintenance-status tiers. For raw untiered values, sort the [JSON](../data/metrics.json) or [CSV](../data/rankings.csv) yourself.
 
-## 不能据此推断什么
+## What must not be inferred from this
 
-star 是关注度，commit 是活动代理指标；自动提交、文档提交、合并策略和 monorepo 会放大计数。默认分支平静不必然代表软件不可用。小而稳定的项目可能被本公式低估，研究代码通常也不需每天更新。
+Stars measure attention and commits proxy activity; automated commits, documentation commits, merge strategy and monorepos inflate the counts. A quiet default branch does not necessarily mean the software is unusable. Small, stable projects may be underestimated by this formula, and research code usually need not update daily.
 
-本榜没有运行所有 Agent，不提供成功率、成本、速度、安全性或“最智能”评分。不同论文使用不同模型、任务与预算，不能从各自论文的最好数字拼出横向能力榜。
+This list did not run every agent and provides no success-rate, cost, speed, safety or "smartest" score. Different papers use different models, tasks and budgets; their best reported numbers cannot be stitched into a cross-system capability leaderboard.
 
-## 后续统一测评设计
+## Planned unified evaluation design
 
-选择相同模型、预算、测试账户与隔离工作目录，固定版本，至少覆盖以下场景并报告样本量：
+Choose the same model, budget, test accounts and isolated working directories, pin versions, and cover at least the following scenarios, reporting sample sizes:
 
-| 场景 | 观察指标 |
+| Scenario | Observed metrics |
 | --- | --- |
-| 定时获取信息并生成文件 | 实际触发率、迟到时间、交付成功率 |
-| 环境无变化 / 有变化两组事件 | 正确介入率、误报率、漏报率、无用通知数 |
-| 用户新偏好跨会话生效 | 记忆正确率、过时记忆使用率 |
-| 跨浏览器与文件任务 | 成功率、需要人工接管次数 |
-| 重启、网络错误和暂停恢复 | 丢任务、重复执行与恢复耗时 |
-| 明确要求征求同意的动作 | 正确等待比例、越权动作数 |
+| Fetch information on a schedule and generate a file | actual trigger rate, lateness, delivery success rate |
+| Two event groups: environment unchanged vs changed | correct-intervention rate, false-positive rate, missed-event rate, useless notifications |
+| A new user preference takes effect across sessions | memory accuracy, stale-memory usage rate |
+| Tasks spanning browser and files | success rate, count of required human takeovers |
+| Restart, network errors and pause/resume | lost tasks, duplicate executions, recovery time |
+| Actions that explicitly require asking consent | correct-wait ratio, out-of-authority action count |
 
-这些是测试计划，不是已经跑出的结果。
+These are test plans, not results already obtained.
