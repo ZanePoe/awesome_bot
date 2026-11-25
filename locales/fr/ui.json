@@ -55,6 +55,7 @@
   "sections": {
     "current": "Instantané actuel",
     "shortlist": "Aperçu des projets proactifs actifs",
+    "tags": "Aller à une catégorie",
     "toc": "Catégories",
     "papers": "Publications",
     "detail_title": "Fiches projets et preuves",

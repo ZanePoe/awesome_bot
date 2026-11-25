@@ -49,6 +49,17 @@ class LocaleTests(unittest.TestCase):
             for anchor in re.findall(r'\]\(#([^)]+)\)', text):
                 self.assertIn(anchor, headings, f'{name} anchor #{anchor}')
 
+    def test_tag_navigation_covers_every_category(self):
+        for locale in build.LOCALES:
+            u = build.ui(locale)
+            text = self.out[build.path(locale, 'README.md').as_posix()]
+            nav = text.split('## ' + u['sections']['tags'] + '\n\n', 1)[1].split('\n\n', 2)
+            labels = list(u['categories'].values())
+            plabels = list(u['paper_categories'].values())
+            self.assertEqual(nav[0].split(' · '), [f'[{x}](#{build.heading_anchor(x)})' for x in labels], locale)
+            self.assertEqual(nav[1], '**' + u['sections']['papers'] + '** · ' + ' · '.join(f'[{x}](#{build.heading_anchor(x)})' for x in plabels), locale)
+            self.assertEqual(len(re.findall(r'^### ', text, re.M)), len(labels) + len(plabels), locale)
+
     def test_project_anchor_ids_are_language_invariant(self):
         for locale in build.LOCALES:
             text = self.out[build.path(locale, 'docs/projects.md').as_posix()]

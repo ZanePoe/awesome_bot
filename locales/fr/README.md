@@ -25,6 +25,13 @@ C'est la définition de travail adoptée par ce catalogue, non une affirmation s
 
 
 
+## Aller à une catégorie
+
+[Assistants personnels always-on et runtimes légers](#assistants-personnels-always-on-et-runtimes-légers) · [Assistants d'espace de travail et de contexte](#assistants-despace-de-travail-et-de-contexte) · [Plugins proactifs et extensions d'ordonnancement](#plugins-proactifs-et-extensions-dordonnancement) · [Harness extensibles et socles d'exécution persistants](#harness-extensibles-et-socles-dexécution-persistants) · [Composants de contrôle ordinateur et navigateur](#composants-de-contrôle-ordinateur-et-navigateur) · [Implémentations de recherche et code d'évaluation](#implémentations-de-recherche-et-code-dévaluation) · [Projets historiques et migrations](#projets-historiques-et-migrations)
+
+**Publications** · [Définitions, mécanismes et recherche fondamentale](#définitions-mécanismes-et-recherche-fondamentale) · [Systèmes d'agents personnels](#systèmes-dagents-personnels) · [Mémoire de long terme et besoins latents](#mémoire-de-long-terme-et-besoins-latents) · [Benchmarks de la proactivité](#benchmarks-de-la-proactivité) · [Contrôle de l'ordinateur et exécution personnalisée](#contrôle-de-lordinateur-et-exécution-personnalisée) · [Fonctionnement de longue durée et fiabilité](#fonctionnement-de-longue-durée-et-fiabilité)
+
+
 ## Instantané actuel
 
 **44 projets ou dépôts de recherche et 17 articles** référencés. Relevé des métriques : **2026-11-13T08:04:54+00:00 (UTC)** ; vérification fonctionnelle manuelle : 2026-11-11.

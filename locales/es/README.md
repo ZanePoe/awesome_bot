@@ -25,6 +25,13 @@ Esta es la definición de trabajo que adopta el catálogo, no una afirmación de
 
 
 
+## Ir a una categoría
+
+[Asistentes personales siempre activos y runtime ligeros](#asistentes-personales-siempre-activos-y-runtime-ligeros) · [Asistentes de espacio de trabajo y contexto](#asistentes-de-espacio-de-trabajo-y-contexto) · [Complementos proactivos y extensiones de planificación](#complementos-proactivos-y-extensiones-de-planificación) · [Harness extensibles y base de ejecución persistente](#harness-extensibles-y-base-de-ejecución-persistente) · [Componentes de control de ordenador y navegador](#componentes-de-control-de-ordenador-y-navegador) · [Implementaciones de investigación y código de evaluación](#implementaciones-de-investigación-y-código-de-evaluación) · [Proyectos históricos y de migración](#proyectos-históricos-y-de-migración)
+
+**Artículos** · [Definiciones, mecanismos e investigación fundamental](#definiciones-mecanismos-e-investigación-fundamental) · [Sistemas de agentes personales](#sistemas-de-agentes-personales) · [Memoria a largo plazo y necesidades latentes](#memoria-a-largo-plazo-y-necesidades-latentes) · [Benchmarks de proactividad](#benchmarks-de-proactividad) · [Uso del ordenador y ejecución personalizada](#uso-del-ordenador-y-ejecución-personalizada) · [Investigación sobre ejecución prolongada y fiabilidad](#investigación-sobre-ejecución-prolongada-y-fiabilidad)
+
+
 ## Instantánea actual
 
 Catálogo con **44 proyectos o repositorios de investigación y 17 artículos**. Recolección de métricas: **2026-11-13T08:04:54+00:00 (UTC)**; verificación manual de funciones: 2026-11-11.

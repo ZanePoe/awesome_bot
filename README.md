@@ -25,6 +25,13 @@ This is the working definition adopted by the directory, not an assertion that a
 
 
 
+## Jump to a category
+
+[Resident personal assistants and lightweight runtimes](#resident-personal-assistants-and-lightweight-runtimes) · [Workspace and context assistants](#workspace-and-context-assistants) · [Proactive plugins and scheduling extensions](#proactive-plugins-and-scheduling-extensions) · [Extensible harnesses and persistent runtime bases](#extensible-harnesses-and-persistent-runtime-bases) · [Computer and browser control components](#computer-and-browser-control-components) · [Research implementations and evaluation code](#research-implementations-and-evaluation-code) · [Historical and migration projects](#historical-and-migration-projects)
+
+**Papers** · [Definitions, mechanisms and foundational research](#definitions-mechanisms-and-foundational-research) · [Personal agent systems](#personal-agent-systems) · [Long-term memory and latent needs](#long-term-memory-and-latent-needs) · [Proactivity evaluation benchmarks](#proactivity-evaluation-benchmarks) · [Computer use and personalized execution](#computer-use-and-personalized-execution) · [Long-running operation and reliability research](#long-running-operation-and-reliability-research)
+
+
 ## Current snapshot
 
 Catalogue of **44 projects / research code repositories and 17 papers**. Metrics collected: **2026-11-13T08:04:54+00:00 (UTC)**; features manually verified: 2026-11-11.

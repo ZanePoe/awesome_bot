@@ -8,7 +8,6 @@ import json
 import math
 from pathlib import Path
 import re
-import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT='en'; MIRRORED=['zh','es','hi','fr']; LOCALES=[DEFAULT,*MIRRORED]
@@ -52,11 +51,12 @@ def prefix(locale,depth=0):
 def anchor(repo): return repo.lower().replace('/','--').replace('_','-').replace('.','-')
 
 def heading_anchor(title):
-    """GitHub's slug for a heading: lowercase, spaces to hyphens, letters/digits/marks/_/- kept."""
+    """GitHub's github-slugger rule: lowercase, drop ASCII punctuation and U+2000-206F/U+2E00-2E7F, spaces to hyphens. Other scripts (CJK punctuation included, Devanagari marks included) survive."""
+    drop=set('\\\'!"#$%&()*+,./:;<=>?@[]^`{|}~')
     out=[]
     for ch in title.strip().lower():
-        if ch==' ':out.append('-')
-        elif ch.isalnum() or ch in '_-' or unicodedata.category(ch) in ('Mn','Mc','Me'):out.append(ch)
+        if ch in drop or '\u2000'<=ch<='\u206f' or '\u2e00'<=ch<='\u2e7f':continue
+        out.append('-' if ch==' ' else ch)
     return ''.join(out)
 
 def switcher(langs,locale):
@@ -180,7 +180,8 @@ def render(locale,u,words,pws,projects,papers,snapshot):
     cat=u['categories'];pcat=u['paper_categories'];scope=u['scopes'];tags=u['tags'];T=u['templates'];S=u['sections']
     shortlist=[p for p in ordered if p['scope']=='core' and p['license_review']['status']=='verified' and tier(p,metrics[p['repo']],as_of)==0]
     intro=(ROOT/('docs/readme-intro.md' if locale==DEFAULT else f'locales/{locale}/docs/readme-intro.md')).read_text(encoding='utf-8')
-    readme=[intro, f'\n## {S["current"]}\n\n'+T['current'].format(total=len(projects),papers=len(papers),as_of=as_of,reviewed=reviewed_at), f'\n## {S["shortlist"]}\n\n'+T['shortlist_note']]
+    nav='\n## '+S['tags']+'\n\n'+' · '.join(f'[{x}](#{heading_anchor(x)})' for x in cat.values())+'\n\n'+'**'+S['papers']+'** · '+' · '.join(f'[{x}](#{heading_anchor(x)})' for x in pcat.values())
+    readme=[intro,nav, f'\n## {S["current"]}\n\n'+T['current'].format(total=len(projects),papers=len(papers),as_of=as_of,reviewed=reviewed_at), f'\n## {S["shortlist"]}\n\n'+T['shortlist_note']]
     def compact(p):
         m=metrics[p['repo']];w=words[p['repo']]
         return [f"[{w['name']}](https://github.com/{p['repo']})",w['trigger'],f"{m['stars']:,}",f"{m['commits_90d']:,}",m['last_commit_at'][:10],f"{score(m,as_of):.1f}"]

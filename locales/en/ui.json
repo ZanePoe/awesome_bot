@@ -55,6 +55,7 @@
   "sections": {
     "current": "Current snapshot",
     "shortlist": "Active proactive projects at a glance",
+    "tags": "Jump to a category",
     "toc": "Categories",
     "papers": "Papers",
     "detail_title": "Project notes and evidence",
