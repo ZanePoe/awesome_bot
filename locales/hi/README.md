@@ -34,7 +34,7 @@ flowchart LR
 
 ## वर्तमान स्नैपशॉट
 
-संग्रह में **44 प्रोजेक्ट / रिसर्च कोडबेस और 17 शोध-पत्र**। मीट्रिक संग्रह: **2026-11-25T11:19:55+00:00 (UTC)**; फ़ंक्शन का मानवीय सत्यापन: 2026-11-11।
+संग्रह में **44 प्रोजेक्ट / रिसर्च कोडबेस और 17 शोध-पत्र**। मीट्रिक संग्रह: **2026-11-26T09:37:27+00:00 (UTC)**; फ़ंक्शन का मानवीय सत्यापन: 2026-11-11।
 
 केवल सार्वजनिक डॉक्यूमेंटेशन और GitHub मेटाडेटा पर आधारित; अब तक कोई एकीकृत रन-मूल्यांकन नहीं किया गया है। श्रेणियाँ और फ़ंक्शन मानवीय पुनःसमीक्षा माँगते हैं, मीट्रिक स्क्रिप्ट से अपडेट होते हैं।
 
@@ -45,16 +45,16 @@ flowchart LR
 
 | प्रोजेक्ट | प्रैएक्टिव तंत्र | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर |
 | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | शेड्यूल / heartbeat / इवेंट | 395,178 | 48,666 | 2026-11-25 | 100.0 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | शेड्यूल / सेशन heartbeat | 266,002 | 50,705 | 2026-11-25 | 100.0 |
-| [nanobot](https://github.com/HKUDS/nanobot) | शेड्यूल / लोकल ट्रिगर | 50,314 | 1,226 | 2026-11-25 | 97.6 |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,609 | 1,063 | 2026-11-25 | 96.2 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | शेड्यूल / script gates | 31,159 | 531 | 2026-11-24 | 95.8 |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 27,710 | 12,676 | 2026-11-25 | 95.5 |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | शेड्यूल routines / मैन्युअल आरंभ | 13,473 | 1,428 | 2026-11-25 | 93.0 |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,980 | 444 | 2026-11-20 | 92.5 |
-| [Rakazo](https://github.com/elie222/rakazo) | routines | 9,744 | 4,669 | 2026-11-25 | 91.9 |
-| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,170 | 789 | 2026-11-25 | 90.8 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | शेड्यूल / heartbeat / इवेंट | 395,257 | 48,572 | 2026-11-26 | 100.0 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | शेड्यूल / सेशन heartbeat | 266,213 | 50,744 | 2026-11-26 | 100.0 |
+| [nanobot](https://github.com/HKUDS/nanobot) | शेड्यूल / लोकल ट्रिगर | 50,355 | 1,220 | 2026-11-26 | 97.5 |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,628 | 1,073 | 2026-11-26 | 96.2 |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 27,967 | 12,973 | 2026-11-26 | 95.6 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | शेड्यूल / script gates | 31,167 | 525 | 2026-11-24 | 95.5 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | शेड्यूल routines / मैन्युअल आरंभ | 13,565 | 1,449 | 2026-11-26 | 93.0 |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,995 | 438 | 2026-11-20 | 92.1 |
+| [Rakazo](https://github.com/elie222/rakazo) | routines | 9,823 | 4,666 | 2026-11-26 | 91.9 |
+| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,172 | 817 | 2026-11-26 | 90.8 |
 
 
 ## श्रेणियाँ
@@ -67,21 +67,21 @@ flowchart LR
 
 | प्रोजेक्ट | तंत्र / स्थिति | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर | लाइसेंस |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | शेड्यूल / heartbeat / इवेंट | 395,178 | 48,666 | 2026-11-25 | 100.0 | MIT |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | शेड्यूल / सेशन heartbeat | 266,002 | 50,705 | 2026-11-25 | 100.0 | MIT |
-| [nanobot](https://github.com/HKUDS/nanobot) | शेड्यूल / लोकल ट्रिगर | 50,314 | 1,226 | 2026-11-25 | 97.6 | MIT |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,609 | 1,063 | 2026-11-25 | 96.2 | Apache-2.0 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | शेड्यूल / script gates | 31,159 | 531 | 2026-11-24 | 95.8 | MIT |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 27,710 | 12,676 | 2026-11-25 | 95.5 | Apache-2.0 (enterprise/ छोड़कर) |
-| [Rakazo](https://github.com/elie222/rakazo) · ★बीज | routines | 9,744 | 4,669 | 2026-11-25 | 91.9 | Apache-2.0 |
-| [nanoMuse](https://github.com/nano-muse/nanoMuse) · ★बीज | लक्ष्य निरीक्षण / routines | 3,702 | 2,765 | 2026-11-25 | 88.5 | GPL-3.0 |
-| [Moltis](https://github.com/moltis-org/moltis) | cron | 2,988 | 51 | 2026-10-23 | 67.4 | MIT |
-| [IronClaw](https://github.com/nearai/ironclaw) | शेड्यूल / इवेंट / heartbeat | 12,721 | 57 | 2026-09-10 | 66.5 | Apache-2.0 |
-| [Comma](https://github.com/AFK-surf/Comma) | routines / event loops | 637 | 10 | 2026-11-17 | 58.9 | AGPL-3.0 |
-| [PicoClaw](https://github.com/sipeed/picoclaw) | शेड्यूल | 30,160 | 0 | 2026-08-19 | 44.2 | MIT |
-| [Khoj](https://github.com/khoj-ai/khoj) | scheduled automations | 38,238 | 0 | 2026-08-02 | 43.6 | AGPL-3.0 |
-| [rho](https://github.com/mikeyobrien/rho) | heartbeat | 379 | 0 | 2026-05-26 | 23.9 | MIT |
-| [Mame](https://github.com/maikunari/mame) · लाइसेंस सीमा/असत्यापित | cron / heartbeat | 0 | 0 | 2026-08-21 | 8.6 | README में MIT घोषित |
+| [OpenClaw](https://github.com/openclaw/openclaw) | शेड्यूल / heartbeat / इवेंट | 395,257 | 48,572 | 2026-11-26 | 100.0 | MIT |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | शेड्यूल / सेशन heartbeat | 266,213 | 50,744 | 2026-11-26 | 100.0 | MIT |
+| [nanobot](https://github.com/HKUDS/nanobot) | शेड्यूल / लोकल ट्रिगर | 50,355 | 1,220 | 2026-11-26 | 97.5 | MIT |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,628 | 1,073 | 2026-11-26 | 96.2 | Apache-2.0 |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 27,967 | 12,973 | 2026-11-26 | 95.6 | Apache-2.0 (enterprise/ छोड़कर) |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | शेड्यूल / script gates | 31,167 | 525 | 2026-11-24 | 95.5 | MIT |
+| [Rakazo](https://github.com/elie222/rakazo) · ★बीज | routines | 9,823 | 4,666 | 2026-11-26 | 91.9 | Apache-2.0 |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) · ★बीज | लक्ष्य निरीक्षण / routines | 3,720 | 2,767 | 2026-11-25 | 88.3 | GPL-3.0 |
+| [Moltis](https://github.com/moltis-org/moltis) | cron | 2,988 | 49 | 2026-10-23 | 67.0 | MIT |
+| [IronClaw](https://github.com/nearai/ironclaw) | शेड्यूल / इवेंट / heartbeat | 12,720 | 44 | 2026-09-10 | 64.9 | Apache-2.0 |
+| [Comma](https://github.com/AFK-surf/Comma) | routines / event loops | 652 | 10 | 2026-11-17 | 58.7 | AGPL-3.0 |
+| [PicoClaw](https://github.com/sipeed/picoclaw) | शेड्यूल | 30,170 | 0 | 2026-08-19 | 44.2 | MIT |
+| [Khoj](https://github.com/khoj-ai/khoj) | scheduled automations | 38,258 | 0 | 2026-08-02 | 43.5 | AGPL-3.0 |
+| [rho](https://github.com/mikeyobrien/rho) | heartbeat | 378 | 0 | 2026-05-26 | 23.9 | MIT |
+| [Mame](https://github.com/maikunari/mame) · लाइसेंस सीमा/असत्यापित | cron / heartbeat | 0 | 0 | 2026-08-21 | 8.5 | README में MIT घोषित |
 
 
 ### वर्कस्पेस और कंटेक्स्ट असिस्टेंट
@@ -89,13 +89,13 @@ flowchart LR
 
 | प्रोजेक्ट | तंत्र / स्थिति | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर | लाइसेंस |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | शेड्यूल routines / मैन्युअल आरंभ | 13,473 | 1,428 | 2026-11-25 | 93.0 | MIT |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,980 | 444 | 2026-11-20 | 92.5 | MIT |
-| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,170 | 789 | 2026-11-25 | 90.8 | Apache-2.0 |
-| [PilotDeck](https://github.com/OpenBMB/PilotDeck) · ★बीज | always-on टास्क खोज | 5,030 | 956 | 2026-11-24 | 89.3 | AGPL-3.0 |
-| [OpenFuse](https://github.com/CopilotKit/openfuse) | बैकग्राउंड टास्क worker; स्वतः ट्रिगर असत्यापित | 6,586 | 146 | 2026-11-17 | 81.6 | MIT |
-| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | routines / बैकग्राउंड सुझाव | 2,150 | 92 | 2026-11-24 | 76.9 | MIT |
-| [MineContext](https://github.com/volcengine/MineContext) | कंटेक्स्ट अवलोकन / प्रैएक्टिव पुश | 5,556 | 0 | 2026-05-07 | 32.6 | Apache-2.0 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | शेड्यूल routines / मैन्युअल आरंभ | 13,565 | 1,449 | 2026-11-26 | 93.0 | MIT |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 19,995 | 438 | 2026-11-20 | 92.1 | MIT |
+| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,172 | 817 | 2026-11-26 | 90.8 | Apache-2.0 |
+| [PilotDeck](https://github.com/OpenBMB/PilotDeck) · ★बीज | always-on टास्क खोज | 5,033 | 960 | 2026-11-25 | 89.4 | AGPL-3.0 |
+| [OpenFuse](https://github.com/CopilotKit/openfuse) | बैकग्राउंड टास्क worker; स्वतः ट्रिगर असत्यापित | 6,590 | 147 | 2026-11-25 | 83.5 | MIT |
+| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | routines / बैकग्राउंड सुझाव | 2,158 | 92 | 2026-11-24 | 76.6 | MIT |
+| [MineContext](https://github.com/volcengine/MineContext) | कंटेक्स्ट अवलोकन / प्रैएक्टिव पुश | 5,559 | 0 | 2026-05-07 | 32.6 | Apache-2.0 |
 
 
 ### प्रैएक्टिव प्लगइन और शेड्यूलिंग एक्सटेंशन
@@ -103,11 +103,11 @@ flowchart LR
 
 | प्रोजेक्ट | तंत्र / स्थिति | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर | लाइसेंस |
 | --- | --- | --- | --- | --- | --- | --- |
-| [DS Bot](https://github.com/Fei-Craft/DS-Bot) · ★बीज | निरंतर Bot / ग्रुप चैट; स्वतः जागरण असत्यापित | 8,913 | 3,858 | 2026-11-22 | 90.8 | Apache-2.0 |
-| [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | होस्ट-स्तरीय once / interval / cron | 17 | 97 | 2026-10-26 | 53.7 | MIT |
+| [DS Bot](https://github.com/Fei-Craft/DS-Bot) · ★बीज | निरंतर Bot / ग्रुप चैट; स्वतः जागरण असत्यापित | 8,977 | 3,858 | 2026-11-22 | 90.5 | Apache-2.0 |
+| [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | होस्ट-स्तरीय once / interval / cron | 17 | 97 | 2026-10-26 | 53.5 | MIT |
 | [murmur](https://github.com/t0dorakis/murmur) | cron / interval | 32 | 0 | 2026-02-10 | 13.2 | MIT |
-| [Pulse](https://github.com/Hypostas/pulse) | सेंसिंग / आपातता-ट्रिगर | 4 | 0 | 2026-07-06 | 10.8 | MIT |
-| [Hermes Bot Mode](https://github.com/NousResearch/Hermes-Bot-Mode) · संग्रहित | होस्ट cron routines | 674 | 0 | 2026-08-17 | 30.8 | MIT |
+| [Pulse](https://github.com/Hypostas/pulse) | सेंसिंग / आपातता-ट्रिगर | 4 | 0 | 2026-07-06 | 10.7 | MIT |
+| [Hermes Bot Mode](https://github.com/NousResearch/Hermes-Bot-Mode) · संग्रहित | होस्ट cron routines | 672 | 0 | 2026-08-17 | 30.7 | MIT |
 
 
 ### एक्सटेंसिबल Harness और निरंतर संचालन आधार
@@ -115,9 +115,9 @@ flowchart LR
 
 | प्रोजेक्ट | तंत्र / स्थिति | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर | लाइसेंस |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Pi](https://github.com/earendil-works/pi) | ऊपरी शेड्यूलर / एक्सटेंशन चाहिए | 123,801 | 2,091 | 2026-11-25 | 100.0 | MIT |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | प्रैएक्टिव तंत्र होस्ट प्लगइन से आना चाहिए | 286,833 | 14,571 | 2026-11-22 | 99.2 | MIT |
-| [Letta Code](https://github.com/letta-ai/letta-code) | remote environments / cron | 3,914 | 978 | 2026-11-24 | 88.6 | Apache-2.0 |
+| [Pi](https://github.com/earendil-works/pi) | ऊपरी शेड्यूलर / एक्सटेंशन चाहिए | 123,973 | 2,364 | 2026-11-26 | 100.0 | MIT |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | प्रैएक्टिव तंत्र होस्ट प्लगइन से आना चाहिए | 287,312 | 14,426 | 2026-11-22 | 98.9 | MIT |
+| [Letta Code](https://github.com/letta-ai/letta-code) | remote environments / cron | 3,918 | 978 | 2026-11-26 | 88.7 | Apache-2.0 |
 
 
 ### कंप्यूटर और ब्राउज़र कंट्रोल घटक
@@ -125,10 +125,10 @@ flowchart LR
 
 | प्रोजेक्ट | तंत्र / स्थिति | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर | लाइसेंस |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Browser Use](https://github.com/browser-use/browser-use) | मांग पर ब्राउज़र कार्य | 122,001 | 979 | 2026-11-24 | 99.9 | MIT |
-| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) · ★बीज | होस्ट द्वारा कॉल | 12,130 | 177 | 2026-11-25 | 86.8 | MIT |
-| [Page Agent](https://github.com/alibaba/page-agent) | वेबपेज या होस्ट द्वारा कॉल | 29,755 | 40 | 2026-11-18 | 79.8 | MIT |
-| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) · संग्रहित | मांग पर कंप्यूटर / ब्राउज़र कार्य | 39,589 | 8 | 2026-10-09 | 63.9 | Apache-2.0 |
+| [Browser Use](https://github.com/browser-use/browser-use) | मांग पर ब्राउज़र कार्य | 122,112 | 954 | 2026-11-24 | 99.6 | MIT |
+| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) · ★बीज | होस्ट द्वारा कॉल | 12,157 | 180 | 2026-11-26 | 86.9 | MIT |
+| [Page Agent](https://github.com/alibaba/page-agent) | वेबपेज या होस्ट द्वारा कॉल | 29,767 | 40 | 2026-11-18 | 79.6 | MIT |
+| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) · संग्रहित | मांग पर कंप्यूटर / ब्राउज़र कार्य | 39,595 | 8 | 2026-10-09 | 63.8 | Apache-2.0 |
 
 
 ### रिसर्च इम्प्लीमेंटेशन और इवैल्यूएशन कोड
@@ -136,14 +136,14 @@ flowchart LR
 
 | प्रोजेक्ट | तंत्र / स्थिति | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर | लाइसेंस |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | असली कंप्यूटर-टास्क इवैल्यूएशन | 3,278 | 213 | 2026-11-23 | 82.7 | Apache-2.0 |
-| [KnowU-Bench](https://github.com/ZJU-REAL/KnowU-Bench) | इंटरैक्टिव पर्सनलाइज़्ड मोबाइल इवैल्यूएशन | 83 | 1 | 2026-11-13 | 41.3 | Apache-2.0 |
-| [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) · लाइसेंस सीमा/असत्यापित | स्मृति-संचालित हस्तक्षेप इवैल्यूएशन | 16 | 6 | 2026-10-22 | 37.9 | CC-BY-NC-4.0 |
-| [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | प्रैएक्टिवनेस इवैल्यूएशन | 78 | 1 | 2026-10-13 | 34.6 | Apache-2.0 |
-| [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | इवेंट अवलोकन / टास्क पूर्वानुमान | 697 | 0 | 2026-05-12 | 25.6 | Apache-2.0 |
-| [PASK](https://github.com/xzf-thu/Pask) | संभावित आवश्यकता पहचान / चुप रहना | 219 | 0 | 2026-04-17 | 20.9 | Apache-2.0 |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | असली कंप्यूटर-टास्क इवैल्यूएशन | 3,278 | 213 | 2026-11-23 | 82.4 | Apache-2.0 |
+| [KnowU-Bench](https://github.com/ZJU-REAL/KnowU-Bench) | इंटरैक्टिव पर्सनलाइज़्ड मोबाइल इवैल्यूएशन | 83 | 1 | 2026-11-13 | 41.0 | Apache-2.0 |
+| [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) · लाइसेंस सीमा/असत्यापित | स्मृति-संचालित हस्तक्षेप इवैल्यूएशन | 16 | 6 | 2026-10-22 | 37.7 | CC-BY-NC-4.0 |
+| [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | प्रैएक्टिवनेस इवैल्यूएशन | 78 | 1 | 2026-10-13 | 34.4 | Apache-2.0 |
+| [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | इवेंट अवलोकन / टास्क पूर्वानुमान | 697 | 0 | 2026-05-12 | 25.5 | Apache-2.0 |
+| [PASK](https://github.com/xzf-thu/Pask) | संभावित आवश्यकता पहचान / चुप रहना | 219 | 0 | 2026-04-17 | 20.8 | Apache-2.0 |
 | [PARE](https://github.com/deepakn97/pare) | प्रैएक्टिव असिस्टेंट / उपयोगकर्ता सिमुलेशन इवैल्यूएशन | 50 | 0 | 2026-05-20 | 16.7 | MIT |
-| [ProactiveBench (MLLM)](https://github.com/tdemin16/proactivebench) | मल्टीमोडल प्रैएक्टिवनेस इवैल्यूएशन | 32 | 0 | 2026-06-22 | 16.6 | MIT |
+| [ProactiveBench (MLLM)](https://github.com/tdemin16/proactivebench) | मल्टीमोडल प्रैएक्टिवनेस इवैल्यूएशन | 32 | 0 | 2026-06-22 | 16.5 | MIT |
 | [ContextAgent](https://github.com/openaiotlab/ContextAgent) · लाइसेंस सीमा/असत्यापित | सेंसिंग कंटेक्स्ट / सेवा पूर्वानुमान | 59 | 0 | 2025-12-07 | 14.7 | असत्यापित |
 
 
@@ -152,7 +152,7 @@ flowchart LR
 
 | प्रोजेक्ट | तंत्र / स्थिति | Stars | 90-दिन कमिट | नवीनतम कमिट UTC | मेंटेनेंस स्कोर | लाइसेंस |
 | --- | --- | --- | --- | --- | --- | --- |
-| [LettaBot](https://github.com/letta-ai/lettabot) · संग्रहित | heartbeat / cron | 328 | 0 | 2026-05-03 | 22.7 | Apache-2.0 |
+| [LettaBot](https://github.com/letta-ai/lettabot) · संग्रहित | heartbeat / cron | 327 | 0 | 2026-05-03 | 22.6 | Apache-2.0 |
 
 
 पूरे विवरण, सीमाएँ और प्रमाण [प्रोजेक्ट विवरण तालिका](docs/projects.md) में हैं। star, गतिविधि और नवीनतम कमिट के अलग-अलग दृश्य [रैंकिंग तालिका](docs/rankings.md) में देखें।
