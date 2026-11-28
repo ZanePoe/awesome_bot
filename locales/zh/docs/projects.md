@@ -12,7 +12,7 @@
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：定时 / heartbeat / 事件。
 - 边界：后台执行依赖 gateway；各平台和工具权限需单独配置。
-- 当前维护状态：近90天有提交；11407 次 / 30 天，48489 次 / 90 天。
+- 当前维护状态：近90天有提交；11560 次 / 30 天，48600 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/openclaw/openclaw/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/openclaw/openclaw/blob/8cb658e39b6dbe1bbe03746bf2a468a898c15da2/README.md#L18) · [来源2](https://docs.openclaw.ai/gateway/heartbeat) · [来源3](https://docs.openclaw.ai/gateway/heartbeat)。
 
@@ -25,7 +25,7 @@
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：定时 / 会话 heartbeat。
 - 边界：功能依据官方文档，未在本清单中实机测评。
-- 当前维护状态：近90天有提交；17193 次 / 30 天，50910 次 / 90 天。
+- 当前维护状态：近90天有提交；16886 次 / 30 天，50934 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/NousResearch/hermes-agent/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/NousResearch/hermes-agent/blob/cad0aaaf0d77ffa4899ebf0d3db8bae7a6b5147f/README.md#L27)。
 
@@ -38,7 +38,7 @@
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：定时 / 本地触发器。
 - 边界：后台服务重启后不补跑错过的定时任务，见官方恢复说明。
-- 当前维护状态：近90天有提交；291 次 / 30 天，1224 次 / 90 天。
+- 当前维护状态：近90天有提交；281 次 / 30 天，1212 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/HKUDS/nanobot/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/HKUDS/nanobot/blob/ce3aa50e70f6550d7be19f73f2cfa2ba6fb66880/README.md#L63)。
 
@@ -51,7 +51,7 @@ Rust Agent 运行时，支持后台服务、工具及事件触发流程。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：cron / webhook / MQTT。
 - 边界：电脑操作范围取决于已配置的工具与执行环境。
-- 当前维护状态：近90天有提交；303 次 / 30 天，1061 次 / 90 天。
+- 当前维护状态：近90天有提交；303 次 / 30 天，1045 次 / 90 天。
 - 许可：[Apache-2.0](https://api.github.com/repos/zeroclaw-labs/zeroclaw/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/zeroclaw-labs/zeroclaw/blob/683d10139bc200ab8db768fcb4515f79404846ac/README.md#L83)。
 
@@ -64,7 +64,7 @@ Rust Agent 运行时，支持后台服务、工具及事件触发流程。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：定时 / script gates。
 - 边界：执行环境为容器，不能据此声称拥有任意宿主桌面操作能力。
-- 当前维护状态：近90天有提交；157 次 / 30 天，527 次 / 90 天。
+- 当前维护状态：近90天有提交；157 次 / 30 天，505 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/nanocoai/nanoclaw/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/nanocoai/nanoclaw/blob/f7440e85f8b2a75b17fc9a08f0cc6aacf723a1e2/README.md#L65)。
 
@@ -77,7 +77,7 @@ Rust Agent 运行时，支持后台服务、工具及事件触发流程。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：schedules / webhooks / app events。
 - 边界：Bot 运行依赖本机的 Claude、Codex、Grok 等 CLI 或兼容模型提供商；云桌面、Composio 和 enterprise 功能具有独立服务或许可边界。
-- 当前维护状态：近90天有提交；6718 次 / 30 天，13062 次 / 90 天。
+- 当前维护状态：近90天有提交；6883 次 / 30 天，13341 次 / 90 天。
 - 许可：[Apache-2.0（enterprise/ 除外）](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L519)；删除 enterprise/ 后为 Apache-2.0 开源版；enterprise/ 为独立 source-available 许可，生产启用需许可证密钥且禁止再分发或向第三方托管。
 - 功能核验：2026-11-06；[来源1](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L73) · [来源2](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L413) · [来源3](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L519)。
 
@@ -90,7 +90,7 @@ Rust Agent 运行时，支持后台服务、工具及事件触发流程。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：routines。
 - 边界：私有电脑、团队电脑与容器能力按配置区分。
-- 当前维护状态：近90天有提交；3061 次 / 30 天，4709 次 / 90 天。
+- 当前维护状态：近90天有提交；2977 次 / 30 天，4731 次 / 90 天。
 - 许可：[Apache-2.0](https://api.github.com/repos/elie222/rakazo/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/elie222/rakazo/blob/ed67158935a95b6153aad6c9cd874c6cc8d2413d/README.md#L24)。
 
@@ -103,7 +103,7 @@ Rust Agent 运行时，支持后台服务、工具及事件触发流程。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：目标巡检 / routines。
 - 边界：设备能力和后台运行条件因平台而异；论文与软件各列一项。
-- 当前维护状态：近90天有提交；826 次 / 30 天，2799 次 / 90 天。
+- 当前维护状态：近90天有提交；808 次 / 30 天，2804 次 / 90 天。
 - 许可：[GPL-3.0](https://api.github.com/repos/nano-muse/nanoMuse/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/nano-muse/nanoMuse/blob/57f5c5abed2d66fa19ab8fc39fd52eb365e4f14d/README.md#L80)。
 
@@ -142,7 +142,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：常驻个人助手与轻量运行时；主动机制已文档化。
 - 触发方式：routines / event loops。
 - 边界：云端运行环境和本地设备连接是不同组件。
-- 当前维护状态：近90天有提交；2 次 / 30 天，10 次 / 90 天。
+- 当前维护状态：近90天有提交；4 次 / 30 天，12 次 / 90 天。
 - 许可：[AGPL-3.0](https://api.github.com/repos/AFK-surf/Comma/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/AFK-surf/Comma/blob/66ab3dc92475005aea9afd123df36a28e4ef86ab/README.md#L64)。
 
@@ -207,7 +207,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：工作空间与上下文助手；主动机制已文档化。
 - 触发方式：定时 routines / 人工发起。
 - 边界：OpenBot 负责电脑环境、策略、审计和调度；Agent 能力由接入的 AG-UI endpoint 提供，持久会话与记忆依赖 CopilotKit Intelligence。
-- 当前维护状态：近90天有提交；1093 次 / 30 天，1501 次 / 90 天。
+- 当前维护状态：近90天有提交；1114 次 / 30 天，1536 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/CopilotKit/OpenBot/license)；GitHub licenseInfo 识别；CopilotKit Intelligence 的部署与许可证条件另计。
 - 功能核验：2026-11-05；[来源1](https://github.com/CopilotKit/OpenBot/blob/5b94b6aa881fb7829abd4c931489415c28815122/README.md#L251) · [来源2](https://github.com/CopilotKit/OpenBot/blob/5b94b6aa881fb7829abd4c931489415c28815122/README.md#L52)。
 
@@ -220,7 +220,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：工作空间与上下文助手；主动机制已文档化。
 - 触发方式：scheduled operations。
 - 边界：以所配置的执行环境为边界，并非默认控制宿主所有资源。
-- 当前维护状态：近90天有提交；97 次 / 30 天，438 次 / 90 天。
+- 当前维护状态：近90天有提交；94 次 / 30 天，438 次 / 90 天。
 - 许可：[MIT](https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/LICENSE)；根目录 LICENSE 人工核验。
 - 功能核验：2026-11-05；[来源1](https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md#L259)。
 
@@ -233,7 +233,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：工作空间与上下文助手；主动机制已文档化。
 - 触发方式：scheduled / webhook / manual routines。
 - 边界：项目仍处于早期开发，自托管服务和电脑/浏览器能力为实验性；托管版是独立产品，模型及账号需用户自备，部分集成仅支持 Claude 或 Codex。
-- 当前维护状态：近90天有提交；462 次 / 30 天，878 次 / 90 天。
+- 当前维护状态：近90天有提交；464 次 / 30 天，898 次 / 90 天。
 - 许可：[Apache-2.0](https://api.github.com/repos/Anil-matcha/suparagent/license)；GitHub licenseInfo 识别；托管服务、第三方引擎、Composio 与模型提供商遵循各自条款。
 - 功能核验：2026-11-11；[来源1](https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L3) · [来源2](https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L71) · [来源3](https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L183)。
 
@@ -246,7 +246,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：工作空间与上下文助手；主动机制已文档化。
 - 触发方式：always-on 任务发现。
 - 边界：README 的 benchmark 属作者自报，本仓库不将其纳入跨项目能力排名。
-- 当前维护状态：近90天有提交；453 次 / 30 天，960 次 / 90 天。
+- 当前维护状态：近90天有提交；415 次 / 30 天，960 次 / 90 天。
 - 许可：[AGPL-3.0](https://api.github.com/repos/OpenBMB/PilotDeck/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/OpenBMB/PilotDeck/blob/2865f05b1722c7473ea8a9dda317a92fb8c92dd8/README.md#L97)。
 
@@ -272,7 +272,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：工作空间与上下文助手；主动机制已文档化。
 - 触发方式：routines / 后台建议。
 - 边界：模板需配置依赖和模型；不是已部署的托管服务。
-- 当前维护状态：近90天有提交；22 次 / 30 天，92 次 / 90 天。
+- 当前维护状态：近90天有提交；19 次 / 30 天，92 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/CopilotKit/OpenDuet/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/CopilotKit/OpenDuet/blob/f52288fff5ccdbd3de428d573d9f026fce5ff480/README.md#L5)。
 
@@ -298,7 +298,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：主动插件与调度扩展；相邻能力。
 - 触发方式：持久 Bot / 群聊；自主唤醒待核验。
 - 边界：首页未确认独立定时机制；不可把长期会话直接等同主动运行。
-- 当前维护状态：近90天有提交；4046 次 / 30 天，5173 次 / 90 天。
+- 当前维护状态：近90天有提交；4108 次 / 30 天，5260 次 / 90 天。
 - 许可：[Apache-2.0](https://api.github.com/repos/Fei-Craft/DS-Bot/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/Fei-Craft/DS-Bot/blob/71d344bf193f3f18185f25de3d8e5c483046910a/README.md#L41)。
 
@@ -311,7 +311,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：主动插件与调度扩展；主动机制已文档化。
 - 触发方式：host 级 once / interval / cron。
 - 边界：依赖宿主运行与版本兼容；包含免打扰和通知预算配置。
-- 当前维护状态：近90天有提交；0 次 / 30 天，97 次 / 90 天。
+- 当前维护状态：近90天有提交；0 次 / 30 天，95 次 / 90 天。
 - 许可：[MIT](https://github.com/john-walks-slow/dsh-proactive/blob/cae01f36b8aa6af2979ef138e9f8b2b62e6af0f9/packages/dsh-proactive/LICENSE)；插件子目录 LICENSE 人工核验。
 - 功能核验：2026-11-05；[来源1](https://github.com/john-walks-slow/dsh-proactive/blob/cae01f36b8aa6af2979ef138e9f8b2b62e6af0f9/README.md#L1)。
 
@@ -363,7 +363,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：可扩展 Harness 与持久运行基础；相邻能力。
 - 触发方式：需上层调度 / 扩展。
 - 边界：旧地址 badlogic/pi-mono 已重定向；可结合 rho 或 murmur。
-- 当前维护状态：近90天有提交；1798 次 / 30 天，2798 次 / 90 天。
+- 当前维护状态：近90天有提交；1777 次 / 30 天，2855 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/earendil-works/pi/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/earendil-works/pi/blob/fcebc099565d8f30c15b321ff6a1af5f34d89400/README.md#L15)。
 
@@ -376,7 +376,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：可扩展 Harness 与持久运行基础；相邻能力。
 - 触发方式：需宿主插件提供主动机制。
 - 边界：developer preview；插件兼容性需要核验。
-- 当前维护状态：近90天有提交；3604 次 / 30 天，14321 次 / 90 天。
+- 当前维护状态：近90天有提交；3443 次 / 30 天，14280 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/deepseek-ai/deepseek-harness/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/deepseek-ai/deepseek-harness/blob/fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159/README.md#L7)。
 
@@ -389,7 +389,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：可扩展 Harness 与持久运行基础；主动机制已文档化。
 - 触发方式：remote environments / cron。
 - 边界：LettaBot 官方迁移目标；需要结合远程环境与调度配置。
-- 当前维护状态：近90天有提交；346 次 / 30 天，966 次 / 90 天。
+- 当前维护状态：近90天有提交；308 次 / 30 天，970 次 / 90 天。
 - 许可：[Apache-2.0](https://api.github.com/repos/letta-ai/letta-code/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/letta-ai/letta-code/blob/e6d6cc27ef1111da80e919dc1cef179613894b66/README.md#L29) · [来源2](https://docs.letta.com/letta-code/scheduling) · [来源3](https://docs.letta.com/letta-code/scheduling)。
 
@@ -402,7 +402,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：电脑与浏览器控制组件；相邻能力。
 - 触发方式：按需浏览器任务。
 - 边界：主要作用于浏览器；不证明具备主动调度或整个桌面控制。
-- 当前维护状态：近90天有提交；661 次 / 30 天，954 次 / 90 天。
+- 当前维护状态：近90天有提交；661 次 / 30 天，947 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/browser-use/browser-use/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/browser-use/browser-use/blob/b49a68e4060acb226da8f784194fef301c53a6d7/README.md#L1)。
 
@@ -415,7 +415,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：电脑与浏览器控制组件；相邻能力。
 - 触发方式：由宿主调用。
 - 边界：控制组件本身不是常驻个人助手，需外接模型、记忆与触发器。
-- 当前维护状态：近90天有提交；115 次 / 30 天，184 次 / 90 天。
+- 当前维护状态：近90天有提交；114 次 / 30 天，185 次 / 90 天。
 - 许可：[MIT](https://api.github.com/repos/CursorTouch/Windows-MCP/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/CursorTouch/Windows-MCP/blob/9ab92bca2772dfb53ae3ed4feb98dac22c5b3dea/README.md#L25)。
 
@@ -454,7 +454,7 @@ Rust 个人助手，通过 routines 与 heartbeat 执行后台任务。
 - 分类：研究实现与评测代码；研究资源。
 - 触发方式：真实电脑任务评测。
 - 边界：衡量任务执行，不能单独衡量主动发起与打扰时机。
-- 当前维护状态：近90天有提交；69 次 / 30 天，213 次 / 90 天。
+- 当前维护状态：近90天有提交；64 次 / 30 天，212 次 / 90 天。
 - 许可：[Apache-2.0](https://api.github.com/repos/xlang-ai/OSWorld/license)；GitHub licenseInfo 识别；不推断附属数据或模型权重许可。
 - 功能核验：2026-11-05；[来源1](https://github.com/xlang-ai/OSWorld/blob/8903ebeb0efdf74331bd7dc37ed91ccbbff22317/README.md#L294)。
 

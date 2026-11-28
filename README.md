@@ -34,7 +34,7 @@ This is the working definition adopted by the directory, not an assertion that a
 
 ## Current snapshot
 
-Catalogue of **44 projects / research code repositories and 17 papers**. Metrics collected: **2026-11-27T09:43:04+00:00 (UTC)**; features manually verified: 2026-11-11.
+Catalogue of **44 projects / research code repositories and 17 papers**. Metrics collected: **2026-11-28T08:56:37+00:00 (UTC)**; features manually verified: 2026-11-11.
 
 Based only on public documentation and GitHub metadata; no unified hands-on evaluation has been run. Categories and features require manual review, and metrics are refreshed by scripts.
 
@@ -45,16 +45,16 @@ Selected only from projects with a verified open license, a documented proactive
 
 | Project | Proactive mechanism | Stars | 90-day commits | Last commit UTC | Maintenance score |
 | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | scheduled / heartbeat / events | 395,317 | 48,489 | 2026-11-27 | 100.0 |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | scheduled / session heartbeat | 266,508 | 50,910 | 2026-11-27 | 100.0 |
-| [nanobot](https://github.com/HKUDS/nanobot) | scheduled / local triggers | 50,385 | 1,224 | 2026-11-27 | 97.6 |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,641 | 1,061 | 2026-11-26 | 96.1 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | scheduled / script gates | 31,173 | 527 | 2026-11-27 | 96.0 |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 28,342 | 13,062 | 2026-11-27 | 95.6 |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | scheduled routines / user-initiated | 13,718 | 1,501 | 2026-11-27 | 93.1 |
-| [Rakazo](https://github.com/elie222/rakazo) | routines | 9,941 | 4,709 | 2026-11-27 | 92.0 |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 20,007 | 438 | 2026-11-20 | 91.9 |
-| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,177 | 878 | 2026-11-27 | 90.8 |
+| [OpenClaw](https://github.com/openclaw/openclaw) | scheduled / heartbeat / events | 395,366 | 48,600 | 2026-11-28 | 100.0 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | scheduled / session heartbeat | 266,650 | 50,934 | 2026-11-28 | 100.0 |
+| [nanobot](https://github.com/HKUDS/nanobot) | scheduled / local triggers | 50,409 | 1,212 | 2026-11-27 | 97.4 |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,642 | 1,045 | 2026-11-26 | 95.8 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | scheduled / script gates | 31,173 | 505 | 2026-11-27 | 95.7 |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 28,652 | 13,341 | 2026-11-27 | 95.5 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | scheduled routines / user-initiated | 13,846 | 1,536 | 2026-11-28 | 93.1 |
+| [Rakazo](https://github.com/elie222/rakazo) | routines | 10,052 | 4,731 | 2026-11-28 | 92.0 |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 20,018 | 438 | 2026-11-20 | 91.6 |
+| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,198 | 898 | 2026-11-28 | 90.8 |
 
 
 ## Categories
@@ -67,21 +67,21 @@ Selected only from projects with a verified open license, a documented proactive
 
 | Project | Mechanism / positioning | Stars | 90-day commits | Last commit UTC | Maintenance score | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OpenClaw](https://github.com/openclaw/openclaw) | scheduled / heartbeat / events | 395,317 | 48,489 | 2026-11-27 | 100.0 | MIT |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | scheduled / session heartbeat | 266,508 | 50,910 | 2026-11-27 | 100.0 | MIT |
-| [nanobot](https://github.com/HKUDS/nanobot) | scheduled / local triggers | 50,385 | 1,224 | 2026-11-27 | 97.6 | MIT |
-| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,641 | 1,061 | 2026-11-26 | 96.1 | Apache-2.0 |
-| [NanoClaw](https://github.com/nanocoai/nanoclaw) | scheduled / script gates | 31,173 | 527 | 2026-11-27 | 96.0 | MIT |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 28,342 | 13,062 | 2026-11-27 | 95.6 | Apache-2.0 (except enterprise/) |
-| [Rakazo](https://github.com/elie222/rakazo) · ★Seed | routines | 9,941 | 4,709 | 2026-11-27 | 92.0 | Apache-2.0 |
-| [nanoMuse](https://github.com/nano-muse/nanoMuse) · ★Seed | goal checks / routines | 3,735 | 2,799 | 2026-11-27 | 88.5 | GPL-3.0 |
-| [Moltis](https://github.com/moltis-org/moltis) | cron | 2,989 | 49 | 2026-10-23 | 66.8 | MIT |
-| [IronClaw](https://github.com/nearai/ironclaw) | scheduled / events / heartbeat | 12,720 | 32 | 2026-09-10 | 63.1 | Apache-2.0 |
-| [Comma](https://github.com/AFK-surf/Comma) | routines / event loops | 707 | 10 | 2026-11-17 | 58.7 | AGPL-3.0 |
-| [PicoClaw](https://github.com/sipeed/picoclaw) | scheduled | 30,173 | 0 | 2026-08-19 | 44.1 | MIT |
-| [Khoj](https://github.com/khoj-ai/khoj) | scheduled automations | 38,266 | 0 | 2026-08-02 | 43.5 | AGPL-3.0 |
-| [rho](https://github.com/mikeyobrien/rho) | heartbeat | 378 | 0 | 2026-05-26 | 23.9 | MIT |
-| [Mame](https://github.com/maikunari/mame) · License caution/pending | cron / heartbeat | 0 | 0 | 2026-08-21 | 8.4 | README declares MIT |
+| [OpenClaw](https://github.com/openclaw/openclaw) | scheduled / heartbeat / events | 395,366 | 48,600 | 2026-11-28 | 100.0 | MIT |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | scheduled / session heartbeat | 266,650 | 50,934 | 2026-11-28 | 100.0 | MIT |
+| [nanobot](https://github.com/HKUDS/nanobot) | scheduled / local triggers | 50,409 | 1,212 | 2026-11-27 | 97.4 | MIT |
+| [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | cron / webhook / MQTT | 33,642 | 1,045 | 2026-11-26 | 95.8 | Apache-2.0 |
+| [NanoClaw](https://github.com/nanocoai/nanoclaw) | scheduled / script gates | 31,173 | 505 | 2026-11-27 | 95.7 | MIT |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | schedules / webhooks / app events | 28,652 | 13,341 | 2026-11-27 | 95.5 | Apache-2.0 (except enterprise/) |
+| [Rakazo](https://github.com/elie222/rakazo) · ★Seed | routines | 10,052 | 4,731 | 2026-11-28 | 92.0 | Apache-2.0 |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) · ★Seed | goal checks / routines | 3,765 | 2,804 | 2026-11-27 | 88.4 | GPL-3.0 |
+| [Moltis](https://github.com/moltis-org/moltis) | cron | 2,989 | 49 | 2026-10-23 | 66.7 | MIT |
+| [IronClaw](https://github.com/nearai/ironclaw) | scheduled / events / heartbeat | 12,721 | 32 | 2026-09-10 | 63.0 | Apache-2.0 |
+| [Comma](https://github.com/AFK-surf/Comma) | routines / event loops | 726 | 12 | 2026-11-27 | 62.2 | AGPL-3.0 |
+| [PicoClaw](https://github.com/sipeed/picoclaw) | scheduled | 30,177 | 0 | 2026-08-19 | 44.0 | MIT |
+| [Khoj](https://github.com/khoj-ai/khoj) | scheduled automations | 38,273 | 0 | 2026-08-02 | 43.4 | AGPL-3.0 |
+| [rho](https://github.com/mikeyobrien/rho) | heartbeat | 378 | 0 | 2026-05-26 | 23.8 | MIT |
+| [Mame](https://github.com/maikunari/mame) · License caution/pending | cron / heartbeat | 0 | 0 | 2026-08-21 | 8.3 | README declares MIT |
 
 
 ### Workspace and context assistants
@@ -89,13 +89,13 @@ Selected only from projects with a verified open license, a documented proactive
 
 | Project | Mechanism / positioning | Stars | 90-day commits | Last commit UTC | Maintenance score | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OpenBot](https://github.com/CopilotKit/OpenBot) | scheduled routines / user-initiated | 13,718 | 1,501 | 2026-11-27 | 93.1 | MIT |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 20,007 | 438 | 2026-11-20 | 91.9 | MIT |
-| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,177 | 878 | 2026-11-27 | 90.8 | Apache-2.0 |
-| [PilotDeck](https://github.com/OpenBMB/PilotDeck) · ★Seed | always-on task discovery | 5,038 | 960 | 2026-11-25 | 89.1 | AGPL-3.0 |
-| [OpenFuse](https://github.com/CopilotKit/openfuse) | background task worker; autonomous triggering unverified | 6,599 | 147 | 2026-11-25 | 83.2 | MIT |
-| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | routines / background suggestions | 2,164 | 92 | 2026-11-24 | 76.4 | MIT |
-| [MineContext](https://github.com/volcengine/MineContext) | context observation / proactive push | 5,559 | 0 | 2026-05-07 | 32.6 | Apache-2.0 |
+| [OpenBot](https://github.com/CopilotKit/OpenBot) | scheduled routines / user-initiated | 13,846 | 1,536 | 2026-11-28 | 93.1 | MIT |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | scheduled operations | 20,018 | 438 | 2026-11-20 | 91.6 | MIT |
+| [Suparagent](https://github.com/Anil-matcha/suparagent) | scheduled / webhook / manual routines | 7,198 | 898 | 2026-11-28 | 90.8 | Apache-2.0 |
+| [PilotDeck](https://github.com/OpenBMB/PilotDeck) · ★Seed | always-on task discovery | 5,040 | 960 | 2026-11-25 | 88.8 | AGPL-3.0 |
+| [OpenFuse](https://github.com/CopilotKit/openfuse) | background task worker; autonomous triggering unverified | 6,606 | 147 | 2026-11-25 | 83.0 | MIT |
+| [OpenDuet](https://github.com/CopilotKit/OpenDuet) | routines / background suggestions | 2,165 | 92 | 2026-11-24 | 76.1 | MIT |
+| [MineContext](https://github.com/volcengine/MineContext) | context observation / proactive push | 5,559 | 0 | 2026-05-07 | 32.5 | Apache-2.0 |
 
 
 ### Proactive plugins and scheduling extensions
@@ -103,10 +103,10 @@ Selected only from projects with a verified open license, a documented proactive
 
 | Project | Mechanism / positioning | Stars | 90-day commits | Last commit UTC | Maintenance score | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| [DS Bot](https://github.com/Fei-Craft/DS-Bot) · ★Seed | persistent bot / group chat; autonomous wake-up unverified | 9,098 | 5,173 | 2026-11-27 | 91.7 | Apache-2.0 |
-| [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | host-level once / interval / cron | 18 | 97 | 2026-10-26 | 53.5 | MIT |
-| [murmur](https://github.com/t0dorakis/murmur) | cron / interval | 32 | 0 | 2026-02-10 | 13.2 | MIT |
-| [Pulse](https://github.com/Hypostas/pulse) | sensing / urgency-triggered | 4 | 0 | 2026-07-06 | 10.7 | MIT |
+| [DS Bot](https://github.com/Fei-Craft/DS-Bot) · ★Seed | persistent bot / group chat; autonomous wake-up unverified | 9,189 | 5,260 | 2026-11-28 | 91.7 | Apache-2.0 |
+| [dsh-proactive](https://github.com/john-walks-slow/dsh-proactive) | host-level once / interval / cron | 18 | 95 | 2026-10-26 | 53.2 | MIT |
+| [murmur](https://github.com/t0dorakis/murmur) | cron / interval | 32 | 0 | 2026-02-10 | 13.1 | MIT |
+| [Pulse](https://github.com/Hypostas/pulse) | sensing / urgency-triggered | 4 | 0 | 2026-07-06 | 10.6 | MIT |
 | [Hermes Bot Mode](https://github.com/NousResearch/Hermes-Bot-Mode) · Archived | host cron routines | 672 | 0 | 2026-08-17 | 30.6 | MIT |
 
 
@@ -115,9 +115,9 @@ Selected only from projects with a verified open license, a documented proactive
 
 | Project | Mechanism / positioning | Stars | 90-day commits | Last commit UTC | Maintenance score | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Pi](https://github.com/earendil-works/pi) | needs upstream scheduling / extensions | 124,181 | 2,798 | 2026-11-27 | 100.0 | MIT |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | needs host plugins to provide the proactive mechanism | 287,845 | 14,321 | 2026-11-22 | 98.6 | MIT |
-| [Letta Code](https://github.com/letta-ai/letta-code) | remote environments / cron | 3,920 | 966 | 2026-11-26 | 88.5 | Apache-2.0 |
+| [Pi](https://github.com/earendil-works/pi) | needs upstream scheduling / extensions | 124,411 | 2,855 | 2026-11-27 | 99.9 | MIT |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | needs host plugins to provide the proactive mechanism | 288,189 | 14,280 | 2026-11-22 | 98.4 | MIT |
+| [Letta Code](https://github.com/letta-ai/letta-code) | remote environments / cron | 3,927 | 970 | 2026-11-28 | 88.7 | Apache-2.0 |
 
 
 ### Computer and browser control components
@@ -125,10 +125,10 @@ Selected only from projects with a verified open license, a documented proactive
 
 | Project | Mechanism / positioning | Stars | 90-day commits | Last commit UTC | Maintenance score | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Browser Use](https://github.com/browser-use/browser-use) | on-demand browser tasks | 122,187 | 954 | 2026-11-27 | 99.9 | MIT |
-| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) · ★Seed | invoked by the host | 12,205 | 184 | 2026-11-27 | 87.0 | MIT |
-| [Page Agent](https://github.com/alibaba/page-agent) | invoked by the page or host | 29,773 | 40 | 2026-11-18 | 79.3 | MIT |
-| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) · Archived | on-demand computer / browser tasks | 39,594 | 8 | 2026-10-09 | 63.6 | Apache-2.0 |
+| [Browser Use](https://github.com/browser-use/browser-use) | on-demand browser tasks | 122,261 | 947 | 2026-11-27 | 99.7 | MIT |
+| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) · ★Seed | invoked by the host | 12,238 | 185 | 2026-11-28 | 87.1 | MIT |
+| [Page Agent](https://github.com/alibaba/page-agent) | invoked by the page or host | 29,775 | 40 | 2026-11-18 | 79.1 | MIT |
+| [UI-TARS Desktop / Agent TARS](https://github.com/bytedance/UI-TARS-desktop) · Archived | on-demand computer / browser tasks | 39,597 | 8 | 2026-10-09 | 63.5 | Apache-2.0 |
 
 
 ### Research implementations and evaluation code
@@ -136,14 +136,14 @@ Selected only from projects with a verified open license, a documented proactive
 
 | Project | Mechanism / positioning | Stars | 90-day commits | Last commit UTC | Maintenance score | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | real-computer task evaluation | 3,279 | 213 | 2026-11-23 | 82.2 | Apache-2.0 |
-| [KnowU-Bench](https://github.com/ZJU-REAL/KnowU-Bench) | interactive personalized mobile evaluation | 83 | 1 | 2026-11-13 | 40.8 | Apache-2.0 |
-| [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) · License caution/pending | memory-driven intervention evaluation | 16 | 6 | 2026-10-22 | 37.5 | CC-BY-NC-4.0 |
-| [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | proactivity evaluation | 78 | 1 | 2026-10-13 | 34.2 | Apache-2.0 |
-| [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | event observation / task prediction | 697 | 0 | 2026-05-12 | 25.5 | Apache-2.0 |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | real-computer task evaluation | 3,279 | 212 | 2026-11-23 | 81.9 | Apache-2.0 |
+| [KnowU-Bench](https://github.com/ZJU-REAL/KnowU-Bench) | interactive personalized mobile evaluation | 83 | 1 | 2026-11-13 | 40.6 | Apache-2.0 |
+| [MemoProAgent](https://github.com/facebookresearch/Memo-Pro-Agent) · License caution/pending | memory-driven intervention evaluation | 16 | 6 | 2026-10-22 | 37.3 | CC-BY-NC-4.0 |
+| [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) | proactivity evaluation | 78 | 1 | 2026-10-13 | 34.1 | Apache-2.0 |
+| [ProactiveAgent](https://github.com/thunlp/ProactiveAgent) | event observation / task prediction | 698 | 0 | 2026-05-12 | 25.5 | Apache-2.0 |
 | [PASK](https://github.com/xzf-thu/Pask) | latent need detection / staying silent | 219 | 0 | 2026-04-17 | 20.8 | Apache-2.0 |
-| [PARE](https://github.com/deepakn97/pare) | proactive assistant / user-simulation evaluation | 50 | 0 | 2026-05-20 | 16.7 | MIT |
-| [ProactiveBench (MLLM)](https://github.com/tdemin16/proactivebench) | multimodal proactivity evaluation | 32 | 0 | 2026-06-22 | 16.5 | MIT |
+| [PARE](https://github.com/deepakn97/pare) | proactive assistant / user-simulation evaluation | 50 | 0 | 2026-05-20 | 16.6 | MIT |
+| [ProactiveBench (MLLM)](https://github.com/tdemin16/proactivebench) | multimodal proactivity evaluation | 32 | 0 | 2026-06-22 | 16.4 | MIT |
 | [ContextAgent](https://github.com/openaiotlab/ContextAgent) · License caution/pending | sensory context / service prediction | 59 | 0 | 2025-12-07 | 14.7 | Pending verification |
 
 

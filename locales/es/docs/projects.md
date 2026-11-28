@@ -12,7 +12,7 @@ Asistente personal siempre activo que conecta canales de mensajería, memoria y 
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: programación / heartbeat / eventos.
 - Límites: La ejecución en segundo plano depende de la gateway; los permisos de cada plataforma y herramienta deben configurarse por separado.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 11407 commits / 30 días, 48489 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 11560 commits / 30 días, 48600 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/openclaw/openclaw/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/openclaw/openclaw/blob/8cb658e39b6dbe1bbe03746bf2a468a898c15da2/README.md#L18) · [Fuente 2](https://docs.openclaw.ai/gateway/heartbeat) · [Fuente 3](https://docs.openclaw.ai/gateway/heartbeat).
 
@@ -25,7 +25,7 @@ Agente personal con memoria persistente, acumulación de habilidades y entrega p
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: programación / heartbeat de sesión.
 - Límites: Las funciones se documentan según la documentación oficial; no se han evaluado en ejecución real en este catálogo.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 17193 commits / 30 días, 50910 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 16886 commits / 30 días, 50934 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/NousResearch/hermes-agent/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/NousResearch/hermes-agent/blob/cad0aaaf0d77ffa4899ebf0d3db8bae7a6b5147f/README.md#L27).
 
@@ -38,7 +38,7 @@ Agente personal ligero en Python con archivos, memoria, MCP y objetivos a largo 
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: programación / disparadores locales.
 - Límites: Al reiniciar el servicio en segundo plano no se recuperan las tareas programadas perdidas; consulta la nota oficial de recuperación.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 291 commits / 30 días, 1224 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 281 commits / 30 días, 1212 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/HKUDS/nanobot/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/HKUDS/nanobot/blob/ce3aa50e70f6550d7be19f73f2cfa2ba6fb66880/README.md#L63).
 
@@ -51,7 +51,7 @@ Runtime de agentes en Rust con servicios en segundo plano, herramientas y flujos
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: cron / webhook / MQTT.
 - Límites: El alcance del control del ordenador depende de las herramientas y del entorno de ejecución configurados.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 303 commits / 30 días, 1061 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 303 commits / 30 días, 1045 commits / 90 días.
 - Licencia: [Apache-2.0](https://api.github.com/repos/zeroclaw-labs/zeroclaw/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/zeroclaw-labs/zeroclaw/blob/683d10139bc200ab8db768fcb4515f79404846ac/README.md#L83).
 
@@ -64,7 +64,7 @@ Asistente operado desde canales de mensajería que ejecuta agentes en contenedor
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: programación / script gates.
 - Límites: El entorno de ejecución es un contenedor; de ahí no puede concluirse ninguna capacidad general de operar el escritorio del anfitrión.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 157 commits / 30 días, 527 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 157 commits / 30 días, 505 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/nanocoai/nanoclaw/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/nanocoai/nanoclaw/blob/f7440e85f8b2a75b17fc9a08f0cc6aacf723a1e2/README.md#L65).
 
@@ -77,7 +77,7 @@ Aplicación de chat local-first con múltiples bots, donde cada bot puede usar m
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: schedules / webhooks / app events.
 - Límites: Los bots dependen de CLIs locales como Claude, Codex o Grok, o de proveedores de modelos compatibles; el escritorio en la nube, Composio y las funciones enterprise tienen límites propios de servicio o de licencia.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 6718 commits / 30 días, 13062 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 6883 commits / 30 días, 13341 commits / 90 días.
 - Licencia: [Apache-2.0 (excepto enterprise/)](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L519); Sin enterprise/ es la versión de código abierto Apache-2.0; enterprise/ tiene una licencia source-available aparte, requiere clave de licencia para producción y prohíbe redistribuir o alojar en servicios de terceros.
 - Verificación de funciones: 2026-11-06; [Fuente 1](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L73) · [Fuente 2](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L413) · [Fuente 3](https://github.com/milind-soni/OpenMausBot/blob/083fd7b51405e6d0c01e189b2f65ab0322509b5a/README.md#L519).
 
@@ -90,7 +90,7 @@ Bots persistentes y espacio de trabajo informático de equipo, autoalojable, con
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: routines.
 - Límites: Las capacidades del ordenador privado, del ordenador de equipo y del contenedor se distinguen según la configuración.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 3061 commits / 30 días, 4709 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 2977 commits / 30 días, 4731 commits / 90 días.
 - Licencia: [Apache-2.0](https://api.github.com/repos/elie222/rakazo/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/elie222/rakazo/blob/ed67158935a95b6153aad6c9cd874c6cc8d2413d/README.md#L24).
 
@@ -103,7 +103,7 @@ Agente personal entre móvil y ordenador que combina memoria, objetivos en segun
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: revisión de objetivos / routines.
 - Límites: Las capacidades del dispositivo y las condiciones de ejecución en segundo plano varían según la plataforma; el artículo y el software se listan por separado.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 826 commits / 30 días, 2799 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 808 commits / 30 días, 2804 commits / 90 días.
 - Licencia: [GPL-3.0](https://api.github.com/repos/nano-muse/nanoMuse/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/nano-muse/nanoMuse/blob/57f5c5abed2d66fa19ab8fc39fd52eb365e4f14d/README.md#L80).
 
@@ -142,7 +142,7 @@ Combina estado de tareas continuo y trabajo entre dispositivos, y despierta al a
 - Categoría: Asistentes personales siempre activos y runtime ligeros; Mecanismo proactivo documentado.
 - Modo de activación: routines / event loops.
 - Límites: El entorno de ejecución en la nube y la conexión a los dispositivos locales son componentes distintos.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 2 commits / 30 días, 10 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 4 commits / 30 días, 12 commits / 90 días.
 - Licencia: [AGPL-3.0](https://api.github.com/repos/AFK-surf/Comma/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/AFK-surf/Comma/blob/66ab3dc92475005aea9afd123df36a28e4ef86ab/README.md#L64).
 
@@ -207,7 +207,7 @@ Plataforma autoalojada de colegas de IA que aporta a los agentes AG-UI navegador
 - Categoría: Asistentes de espacio de trabajo y contexto; Mecanismo proactivo documentado.
 - Modo de activación: routines programadas / inicio manual.
 - Límites: OpenBot gestiona el entorno informático, las políticas, la auditoría y la planificación; la capacidad del agente la proporciona el endpoint AG-UI conectado, y las sesiones persistentes y la memoria dependen de CopilotKit Intelligence.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 1093 commits / 30 días, 1501 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 1114 commits / 30 días, 1536 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/CopilotKit/OpenBot/license); Identificada por GitHub licenseInfo; las condiciones de despliegue y licencia de CopilotKit Intelligence se cuentan aparte.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/CopilotKit/OpenBot/blob/5b94b6aa881fb7829abd4c931489415c28815122/README.md#L251) · [Fuente 2](https://github.com/CopilotKit/OpenBot/blob/5b94b6aa881fb7829abd4c931489415c28815122/README.md#L52).
 
@@ -220,7 +220,7 @@ Agente que ejecuta herramientas, proyectos y tareas de supervisión periódica e
 - Categoría: Asistentes de espacio de trabajo y contexto; Mecanismo proactivo documentado.
 - Modo de activación: scheduled operations.
 - Límites: Su límite es el entorno de ejecución configurado; no controla todos los recursos del anfitrión de forma predeterminada.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 97 commits / 30 días, 438 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 94 commits / 30 días, 438 commits / 90 días.
 - Licencia: [MIT](https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/LICENSE); LICENSE de la raíz verificada manualmente.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md#L259).
 
@@ -233,7 +233,7 @@ Escritorio y espacio de trabajo autoalojado para administrar de forma centraliza
 - Categoría: Asistentes de espacio de trabajo y contexto; Mecanismo proactivo documentado.
 - Modo de activación: scheduled / webhook / manual routines.
 - Límites: El proyecto sigue en desarrollo temprano; el servicio autoalojado y las capacidades de ordenador y navegador son experimentales; la versión gestionada es un producto aparte; el usuario aporta modelos y cuentas, y algunas integraciones solo admiten Claude o Codex.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 462 commits / 30 días, 878 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 464 commits / 30 días, 898 commits / 90 días.
 - Licencia: [Apache-2.0](https://api.github.com/repos/Anil-matcha/suparagent/license); Identificada por GitHub licenseInfo; el servicio gestionado, los motores de terceros, Composio y los proveedores de modelos siguen sus propios términos.
 - Verificación de funciones: 2026-11-11; [Fuente 1](https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L3) · [Fuente 2](https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L71) · [Fuente 3](https://github.com/Anil-matcha/suparagent/blob/6fdd8ea6ccbe5d27edf5aff3a230a04ad3ee5ed9/README.md#L183).
 
@@ -246,7 +246,7 @@ Aísla archivos, memoria y habilidades por espacio de trabajo; descubre tareas e
 - Categoría: Asistentes de espacio de trabajo y contexto; Mecanismo proactivo documentado.
 - Modo de activación: descubrimiento always-on de tareas.
 - Límites: Los benchmarks del README son autoinformados por los autores; este repositorio no los incluye en clasificaciones de capacidad entre proyectos.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 453 commits / 30 días, 960 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 415 commits / 30 días, 960 commits / 90 días.
 - Licencia: [AGPL-3.0](https://api.github.com/repos/OpenBMB/PilotDeck/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/OpenBMB/PilotDeck/blob/2865f05b1722c7473ea8a9dda317a92fb8c92dd8/README.md#L97).
 
@@ -272,7 +272,7 @@ Plantilla de aplicación de código abierto para construir asistentes proactivos
 - Categoría: Asistentes de espacio de trabajo y contexto; Mecanismo proactivo documentado.
 - Modo de activación: routines / sugerencias en segundo plano.
 - Límites: La plantilla requiere configurar dependencias y modelos; no es un servicio gestionado ya desplegado.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 22 commits / 30 días, 92 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 19 commits / 30 días, 92 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/CopilotKit/OpenDuet/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/CopilotKit/OpenDuet/blob/f52288fff5ccdbd3de428d573d9f026fce5ff480/README.md#L5).
 
@@ -298,7 +298,7 @@ Aplicación de escritorio y complementos que amplían DeepSeek Harness con memor
 - Categoría: Complementos proactivos y extensiones de planificación; Capacidad adyacente.
 - Modo de activación: bots persistentes / chats grupales; despertar autónomo pendiente de verificación.
 - Límites: La página principal no confirma un mecanismo propio de temporización; no se puede equiparar directamente una sesión prolongada con ejecución proactiva.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 4046 commits / 30 días, 5173 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 4108 commits / 30 días, 5260 commits / 90 días.
 - Licencia: [Apache-2.0](https://api.github.com/repos/Fei-Craft/DS-Bot/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/Fei-Craft/DS-Bot/blob/71d344bf193f3f18185f25de3d8e5c483046910a/README.md#L41).
 
@@ -311,7 +311,7 @@ Añade a DeepSeek Harness despertares proactivos que pueden seguir disparándose
 - Categoría: Complementos proactivos y extensiones de planificación; Mecanismo proactivo documentado.
 - Modo de activación: once / interval / cron a nivel del anfitrión.
 - Límites: Depende de la ejecución del anfitrión y de la compatibilidad de versiones; incluye configuración de no molestar y de presupuesto de notificaciones.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 0 commits / 30 días, 97 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 0 commits / 30 días, 95 commits / 90 días.
 - Licencia: [MIT](https://github.com/john-walks-slow/dsh-proactive/blob/cae01f36b8aa6af2979ef138e9f8b2b62e6af0f9/packages/dsh-proactive/LICENSE); LICENSE del subdirectorio del complemento verificada manualmente.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/john-walks-slow/dsh-proactive/blob/cae01f36b8aa6af2979ef138e9f8b2b62e6af0f9/README.md#L1).
 
@@ -363,7 +363,7 @@ Harness de agentes extensible con el que construir asistentes siempre activos me
 - Categoría: Harness extensibles y base de ejecución persistente; Capacidad adyacente.
 - Modo de activación: requiere planificación de nivel superior / extensiones.
 - Límites: La antigua ruta badlogic/pi-mono ya redirige; puede combinarse con rho o murmur.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 1798 commits / 30 días, 2798 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 1777 commits / 30 días, 2855 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/earendil-works/pi/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/earendil-works/pi/blob/fcebc099565d8f30c15b321ff6a1af5f34d89400/README.md#L15).
 
@@ -376,7 +376,7 @@ Base de ejecución de agentes con arquitectura de complementos, adecuada para co
 - Categoría: Harness extensibles y base de ejecución persistente; Capacidad adyacente.
 - Modo de activación: el mecanismo proactivo lo debe aportar un complemento del anfitrión.
 - Límites: developer preview; hay que verificar la compatibilidad de los complementos.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 3604 commits / 30 días, 14321 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 3443 commits / 30 días, 14280 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/deepseek-ai/deepseek-harness/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/deepseek-ai/deepseek-harness/blob/fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159/README.md#L7).
 
@@ -389,7 +389,7 @@ Agente con memoria persistente que, mediante entornos remotos y channels, puede 
 - Categoría: Harness extensibles y base de ejecución persistente; Mecanismo proactivo documentado.
 - Modo de activación: remote environments / cron.
 - Límites: Destino oficial de migración de LettaBot; requiere combinar entornos remotos con configuración de planificación.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 346 commits / 30 días, 966 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 308 commits / 30 días, 970 commits / 90 días.
 - Licencia: [Apache-2.0](https://api.github.com/repos/letta-ai/letta-code/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/letta-ai/letta-code/blob/e6d6cc27ef1111da80e919dc1cef179613894b66/README.md#L29) · [Fuente 2](https://docs.letta.com/letta-code/scheduling) · [Fuente 3](https://docs.letta.com/letta-code/scheduling).
 
@@ -402,7 +402,7 @@ Aporta a los agentes comprensión de páginas web y ejecución en el navegador.
 - Categoría: Componentes de control de ordenador y navegador; Capacidad adyacente.
 - Modo de activación: tareas de navegador bajo demanda.
 - Límites: Actúa principalmente en el navegador; no demuestra planificación proactiva ni control de todo el escritorio.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 661 commits / 30 días, 954 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 661 commits / 30 días, 947 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/browser-use/browser-use/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/browser-use/browser-use/blob/b49a68e4060acb226da8f784194fef301c53a6d7/README.md#L1).
 
@@ -415,7 +415,7 @@ Servicio MCP que expone a los agentes capacidades de operar un Windows.
 - Categoría: Componentes de control de ordenador y navegador; Capacidad adyacente.
 - Modo de activación: invocado por el anfitrión.
 - Límites: El componente de control no es en sí un asistente personal siempre activo; necesita modelos, memoria y disparadores externos.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 115 commits / 30 días, 184 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 114 commits / 30 días, 185 commits / 90 días.
 - Licencia: [MIT](https://api.github.com/repos/CursorTouch/Windows-MCP/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/CursorTouch/Windows-MCP/blob/9ab92bca2772dfb53ae3ed4feb98dac22c5b3dea/README.md#L25).
 
@@ -454,7 +454,7 @@ Evalúa la capacidad de ejecución de agentes multimodales en entornos informát
 - Categoría: Implementaciones de investigación y código de evaluación; Recurso de investigación.
 - Modo de activación: evaluación con tareas reales de ordenador.
 - Límites: Mide la ejecución de tareas; por sí sola no mide la iniciativa espontánea ni el momento de interrumpir.
-- Estado de mantenimiento actual: Con commits en los últimos 90 días; 69 commits / 30 días, 213 commits / 90 días.
+- Estado de mantenimiento actual: Con commits en los últimos 90 días; 64 commits / 30 días, 212 commits / 90 días.
 - Licencia: [Apache-2.0](https://api.github.com/repos/xlang-ai/OSWorld/license); Identificada por GitHub licenseInfo; no se infiere la licencia de los datos adjuntos ni de los pesos de los modelos.
 - Verificación de funciones: 2026-11-05; [Fuente 1](https://github.com/xlang-ai/OSWorld/blob/8903ebeb0efdf74331bd7dc37ed91ccbbff22317/README.md#L294).
 
